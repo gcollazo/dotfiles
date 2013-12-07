@@ -1,6 +1,16 @@
 ## dotfiles
 
-#### Error
+### Install
+
+```bash
+git clone git@github.com:gcollazo/dotfiles.git
+cd dotfiles
+./bootstrap.sh
+```
+
+The `bootstrap.sh` command will try to symlink all files to your `$HOME` directory.
+
+### Error
 
 ```bash
 .dotfiles_private: No such file or directory
