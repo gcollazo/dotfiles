@@ -1,0 +1,19 @@
+# Global gitignore
+# Created by http://gitignore.io
+
+# Ignore private settings
+.dotfiles_private
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
