@@ -5,6 +5,8 @@
 ```bash
 git clone git@github.com:gcollazo/dotfiles.git
 cd dotfiles
+git submodule init
+git submodule update
 ./bootstrap.sh
 ```
 
