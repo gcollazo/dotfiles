@@ -73,4 +73,4 @@ source ~/.git-completion.bash
 source ~/.dotfiles_private
 
 # Prompt setup
-source ~/.dotfiles_prompt
+source ~/.prompt
