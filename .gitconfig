@@ -7,12 +7,12 @@
     branch = true
     diff = true
     ui = true
-[difftool "Kaleidoscope"]
-    cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool "gitx"]
+    cmd = gitx
 [difftool]
     prompt = false
 [diff]
-    tool = Kaleidoscope
+    tool = gitx
 [alias]
     st = status
     ci = commit
