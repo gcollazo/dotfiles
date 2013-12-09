@@ -3,10 +3,8 @@
 ### Install
 
 ```bash
-git clone git@github.com:gcollazo/dotfiles.git
+git clone --recursive git@github.com:gcollazo/dotfiles.git
 cd dotfiles
-git submodule init
-git submodule update
 ./bootstrap.sh
 ```
 
