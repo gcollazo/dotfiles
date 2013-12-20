@@ -65,6 +65,7 @@ alias opendjango='open http://localhost:8000'
 alias vagrantfile='curl https://gist.github.com/gcollazo/2f996c678a7c9859d97a/raw/Vagrantfile > Vagrantfile'
 alias ember='brunch new gh:gcollazo/brunch-with-ember-reloaded $1'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
+alias json='python -mjson.tool'
 
 # Git Autocomplete
 source ~/.git-completion.bash
