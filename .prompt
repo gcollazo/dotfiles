@@ -1,3 +1,6 @@
+# Only show the current directory's name in the tab
+export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
+
 if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
       export TERM=gnome-256color
     elif infocmp xterm-256color >/dev/null 2>&1; then
