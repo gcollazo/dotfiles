@@ -67,6 +67,10 @@ alias ember='brunch new gh:gcollazo/brunch-with-ember-reloaded $1'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias json='python -mjson.tool'
 
+function mkvirtualenv2() {
+    mkvirtualenv $1 --python=/usr/local/opt/python/bin/python
+}
+
 function mkvirtualenv3() {
     mkvirtualenv $1 --python=/usr/local/opt/python3/bin/python3.3
 }
