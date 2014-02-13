@@ -42,7 +42,7 @@ alias ls='ls -lah'
 alias gpush='git push origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpull='git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
 alias gboom='gpull && gpush && echo BOOM!'
-function gi() { curl http://gitignore.io/api/$@ ;}
+function gi() { curl http://www.gitignore.io/api/$@ ;}
 
 # Network Aliases
 alias torssh='ssh -o ProxyCommand="nc -X 4 -x localhost:9150 %h %p"'
