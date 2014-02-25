@@ -20,6 +20,9 @@ export EDITOR='subl -w'
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper_lazy.sh
 
+# docker
+export DOCKER_HOST=tcp://localhost:4243
+
 # grep color
 export GREP_OPTIONS='--color=auto'
 
