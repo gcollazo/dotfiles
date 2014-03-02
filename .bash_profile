@@ -1,4 +1,5 @@
 PATH="/usr/local/bin:$PATH"
+PATH="/usr/local/sbin:$PATH"
 PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
 # Added by the Heroku Toolbelt
