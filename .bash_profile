@@ -58,6 +58,7 @@ alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias whois="whois -h whois-servers.net"
 alias flushdns='dscacheutil -flushcache'
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
+alias scan="sudo nmap -sS -Pn $1"
 
 # Other
 alias server='python -m SimpleHTTPServer 8888'
