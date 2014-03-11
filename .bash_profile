@@ -59,6 +59,7 @@ alias whois="whois -h whois-servers.net"
 alias flushdns='dscacheutil -flushcache'
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias scan="nmap -T4 --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
+alias sscan="sudo nmap -sS -T4 --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
 
 # Other
 alias server='python -m SimpleHTTPServer 8888'
