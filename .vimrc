@@ -34,3 +34,6 @@ let NERDTreeKeepTreeInNewTab=1
 " Color
 set background=dark
 colorscheme solarized
+
+" Font
+set guifont=Incosolata:h20
