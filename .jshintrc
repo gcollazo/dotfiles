@@ -65,5 +65,5 @@
     "maxlen": 80,
 
     // Allow es6 syntaxt
-    "esnext": true,
+    "esnext": true
 }
