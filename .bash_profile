@@ -14,6 +14,10 @@ ulimit -n 10000
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+# go
+export GOPATH=$HOME/Dropbox/Code/go
+PATH=$PATH:$GOPATH/bin
+
 # Default editor
 export EDITOR='subl -w'
 
@@ -33,10 +37,10 @@ export LSCOLORS=dxfxcxdxbxegedabagacad
 
 # Aliases
 alias g=git
-alias c='cd ~/Dropbox/Code'
-alias d='cd ~/Desktop'
-alias h='cd ~/'
-alias b='cd ~/Dropbox'
+alias c="cd $HOME/Dropbox/Code"
+alias d="cd $HOME/Desktop"
+alias h="cd $HOME/"
+alias b="cd $HOME/Dropbox"
 alias a='cd /Applications'
 alias s='subl .'
 alias o='open .'
@@ -70,20 +74,19 @@ alias hashsha1='openssl sha1'
 alias hashsha256='shasum -a 256'
 alias opendjango='open http://localhost:8000'
 alias vagrantfile='curl https://gist.github.com/gcollazo/2f996c678a7c9859d97a/raw/Vagrantfile > Vagrantfile'
-alias ember='brunch new gh:gcollazo/brunch-with-ember-reloaded $1'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias json='python -mjson.tool'
 
 function mkvirtualenv2() {
-    mkvirtualenv $1 --python=/usr/local/opt/python/bin/python
+    mkvirtualenv $1 --python=/usr/local/bin/python
 }
 
 function mkvirtualenv3() {
-    mkvirtualenv $1 --python=/usr/local/opt/python3/bin/python3.3
+    mkvirtualenv $1 --python=/usr/local/bin/python3
 }
 
 function mkvirtualenvpypy() {
-    mkvirtualenv $1 --python=/usr/local/opt/pypy/bin/pypy
+    mkvirtualenv $1 --python=/usr/local/bin/pypy
 }
 
 # Git Autocomplete
