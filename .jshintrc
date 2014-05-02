@@ -34,7 +34,7 @@
     "undef": true,
 
     // Suppresses warnings about the use of global strict mode
-    "globalstrict": true,
+    "strict": true,
 
     // Douglas Crockford's JavaScript coding style
     "white": false,
@@ -62,5 +62,8 @@
     "unused": true,
 
     // Enforce line length to 80 characters
-    "maxlen": 80
+    "maxlen": 80,
+
+    // Allow es6 syntaxt
+    "esnext": true,
 }
