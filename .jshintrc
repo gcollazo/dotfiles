@@ -33,7 +33,7 @@
     // Prohibits the use of explicitly undeclared variables.
     "undef": true,
 
-    // Suppresses warnings about the use of global strict mode
+    // Enable strict mode for function scope only
     "strict": true,
 
     // Douglas Crockford's JavaScript coding style
