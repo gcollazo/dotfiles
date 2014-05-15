@@ -1,6 +1,6 @@
 PATH="/usr/local/bin:$PATH"
 PATH="/usr/local/sbin:$PATH"
-PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
 # Added by the Heroku Toolbelt
 PATH="/usr/local/heroku/bin:$PATH"
@@ -73,7 +73,7 @@ alias hashmd5='openssl md5'
 alias hashsha1='openssl sha1'
 alias hashsha256='shasum -a 256'
 alias opendjango='open http://localhost:8000'
-alias vagrantfile='curl https://gist.github.com/gcollazo/2f996c678a7c9859d97a/raw/Vagrantfile > Vagrantfile'
+alias vagrantfile='curl -O https://gist.githubusercontent.com/gcollazo/2f996c678a7c9859d97a/raw/Vagrantfile'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias json='python -mjson.tool'
 
