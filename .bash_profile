@@ -26,7 +26,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 # docker
-export DOCKER_HOST=tcp://localhost:4243
+export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
 
 # grep color
 export GREP_OPTIONS='--color=auto'

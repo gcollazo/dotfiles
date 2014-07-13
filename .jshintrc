@@ -33,9 +33,6 @@
     // Prohibits the use of explicitly undeclared variables.
     "undef": true,
 
-    // Enable strict mode for function scope only
-    "strict": true,
-
     // Douglas Crockford's JavaScript coding style
     "white": false,
 
