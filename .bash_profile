@@ -76,6 +76,8 @@ alias opendjango='open http://localhost:8000'
 alias vagrantfile='curl -O https://gist.githubusercontent.com/gcollazo/2f996c678a7c9859d97a/raw/Vagrantfile'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias json='python -mjson.tool'
+alias shadowdisable='defaults write com.apple.screencapture disable-shadow -bool true && killall SystemUIServer'
+alias shadowenable='defaults write com.apple.screencapture disable-shadow -bool false && killall SystemUIServer'
 
 function mkvirtualenv2() {
     mkvirtualenv $1 --python=/usr/local/bin/python
