@@ -37,7 +37,7 @@ export LSCOLORS=dxfxcxdxbxegedabagacad
 
 # Aliases
 alias g=git
-alias c="cd $HOME/Dropbox/Code"
+alias c="cd $HOME/Code"
 alias d="cd $HOME/Desktop"
 alias h="cd $HOME/"
 alias b="cd $HOME/Dropbox"
