@@ -1,0 +1,19 @@
+{
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"Base16 Color Schemes",
+		"Browser Refresh",
+		"ColorPicker",
+		"Djaneiro",
+		"Emmet",
+		"Gist",
+		"Git",
+		"Handlebars",
+		"SideBarEnhancements",
+		"Stylus",
+		"SublimeLinter",
+		"SublimeLinter-flake8",
+		"SublimeLinter-jshint"
+	]
+}

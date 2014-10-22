@@ -10,6 +10,13 @@ cd dotfiles
 
 The `bootstrap.sh` command will try to symlink all files to your `$HOME` directory.
 
+### Sublime Text Preferences
+```
+mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+ln -s ~/Code/dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+ln -s ~/Code/dotfiles/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
+```
+
 ### Error
 
 ```bash
