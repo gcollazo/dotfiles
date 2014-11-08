@@ -1,6 +1,6 @@
 {
 	"auto_complete_delay": 0,
-	"color_scheme": "Packages/User/base16-solarized.light (SL).tmTheme",
+	"color_scheme": "Packages/User/base16-paraiso.dark (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
@@ -22,7 +22,7 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 19,
+	"font_size": 20,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
