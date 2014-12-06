@@ -41,6 +41,7 @@ alias c="cd $HOME/Code"
 alias d="cd $HOME/Desktop"
 alias h="cd $HOME/"
 alias b="cd $HOME/Dropbox"
+alias dl="cd $HOME/Downloads"
 alias a='cd /Applications'
 alias s='subl .'
 alias o='open .'
