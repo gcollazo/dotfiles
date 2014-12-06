@@ -95,8 +95,5 @@ function mkvirtualenvpypy() {
 # Git Autocomplete
 source ~/.git-completion.bash
 
-# Load private stuff
-source ~/.dotfiles_private
-
 # Prompt setup
 source ~/.prompt
