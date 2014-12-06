@@ -17,8 +17,5 @@ set tabstop=4
 set softtabstop=4
 
 " Color
-set background=dark
-colorscheme solarized
-
-" Font
-set guifont=Incosolata:h20
+" set background=dark
+colorscheme zellner
