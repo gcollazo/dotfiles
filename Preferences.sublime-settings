@@ -22,7 +22,7 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 20,
+	"font_size": 19,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -46,6 +46,7 @@
 	"scroll_past_end": true,
 	"sublimelinter_gutter_marks": true,
 	"tab_completion": false,
+	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true
