@@ -15,7 +15,7 @@ ulimit -n 10000
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # go
-export GOPATH=$HOME/Dropbox/Code/go
+export GOPATH=$HOME/Code/go
 PATH=$PATH:$GOPATH/bin
 
 # Default editor
