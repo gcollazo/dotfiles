@@ -22,10 +22,7 @@ function echoB() {
 
 # Get file list
 function getFilesInDir() {
-    ls -lah | awk '{
-        if ($9 != "" && $9 != "." && $9 != ".." && $9 != ".git" && $9 != ".DS_Store" && $9 != ".gitmodules" && $9 != "README.md" && $9 != "bootstrap.sh" && $9 != "LICENSE" && $9 != "Preferences.sublime-settings" && $9 != "Package Control.sublime-settings")
-            print $9
-        }'
+    find . -type f -name '.*' -exec basename {} ';'
 }
 
 # Set vars
