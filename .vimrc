@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 let mapleader=","
 set statusline=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
 filetype plugin indent on
@@ -12,10 +14,16 @@ set nowrap
 set autoindent
 set history=1000
 set expandtab
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
+
+" NERDTree
+map <Leader>n :NERDTreeToggle<CR>
+
+" Font
+set guifont=Inconsolata:h18
 
 " Color
-" set background=dark
-colorscheme zellner
+set background=dark
+colorscheme base16-paraiso
