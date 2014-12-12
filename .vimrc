@@ -31,3 +31,6 @@ map <Leader>n :NERDTreeToggle<CR>
 " syntastic
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_check_on_open = 1
+
+" Command-T
+let g:CommandTWildIgnore=&wildignore . ",**/bower_components/*,**/node_modules/*,**/tmp/*"
