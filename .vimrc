@@ -18,12 +18,15 @@ set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 
-" NERDTree
-map <Leader>n :NERDTreeToggle<CR>
-
 " Font
 set guifont=Inconsolata:h18
 
 " Color
 set background=dark
 colorscheme base16-paraiso
+
+" NERDTree
+map <Leader>n :NERDTreeToggle<CR>
+
+" syntastic
+let g:syntastic_javascript_checkers = ['jshint']
