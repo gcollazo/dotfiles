@@ -19,7 +19,7 @@ set tabstop=2
 set softtabstop=2
 
 " Font
-set guifont=Inconsolata:h18
+set guifont=Inconsolata\ for\ Powerline:h18
 
 " Color
 set background=dark
@@ -29,8 +29,16 @@ colorscheme base16-paraiso
 map <Leader>n :NERDTreeToggle<CR>
 
 " syntastic
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_check_on_open = 1
+let g:syntastic_javascript_checkers=['jshint']
+let g:syntastic_check_on_open=1
 
-" Command-T
-let g:CommandTWildIgnore=&wildignore . ",**/bower_components/*,**/node_modules/*,**/tmp/*"
+"ctrlp.vim
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_show_hidden=1
+
+" vim-airline
+set laststatus=2
+let g:airline_theme='powerlineish'
+let g:airline_enable_branch=1
+let g:airline_enable_syntastic=1
+let g:airline_powerline_fonts=1
