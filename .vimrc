@@ -35,6 +35,7 @@ let g:syntastic_check_on_open=1
 "ctrlp.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_show_hidden=1
+let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git\|tmp\|dist\|bower_components'
 
 " vim-airline
 set laststatus=2
