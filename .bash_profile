@@ -55,12 +55,11 @@ function gi() { curl https://www.gitignore.io/api/$@ ;}
 
 # Network Aliases
 alias torssh='ssh -o ProxyCommand="nc -X 4 -x localhost:9150 %h %p"'
-function geoip(){ open http://www.ip-adress.com/ip_tracer/"${1}"; }
+function geoip(){ open https://ipinfo.io/"${1}"; }
+function ipinfo(){ open https://ipinfo.io/"${1}"; }
 alias dig="dig ANY +noall +answer $1"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
-alias whois="whois -h whois-servers.net"
 alias flushdns='dscacheutil -flushcache'
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias scan="nmap -T4 --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
