@@ -5,6 +5,9 @@ PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 # Added by the Heroku Toolbelt
 PATH="/usr/local/heroku/bin:$PATH"
 
+# Add MongoDB.app to path
+PATH="/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
+
 # NVM
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
 
@@ -70,7 +73,6 @@ alias sscan="sudo nmap -sS -T4 --max-rtt-timeout=500ms --initial-rtt-timeout=200
 # Other
 alias server='python -m SimpleHTTPServer 8888'
 alias redis='redis-server'
-alias mongod='mongod --config /usr/local/etc/mongod.conf'
 alias hashmd5='openssl md5'
 alias hashsha1='openssl sha1'
 alias hashsha256='shasum -a 256'
