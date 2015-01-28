@@ -19,7 +19,7 @@ set tabstop=2
 set softtabstop=2
 
 " Font
-set guifont=Inconsolata\ for\ Powerline:h18
+set guifont=Inconsolata\ for\ Powerline:h19
 
 " Color
 set background=dark
