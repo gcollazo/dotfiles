@@ -15,7 +15,8 @@
 		"CVS",
 		".sass-cache",
 		"__pycache__",
-		"tmp/*"
+		"tmp/*",
+		"node_modules/*"
 	],
 	"font_face": "Inconsolata",
 	"font_options":
