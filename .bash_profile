@@ -11,9 +11,6 @@ PATH="/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
 # NVM
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
 
-# Deal with node.js open file limitations
-ulimit -n 10000
-
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
