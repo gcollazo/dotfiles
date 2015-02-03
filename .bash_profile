@@ -49,6 +49,7 @@ alias b="cd $HOME/Dropbox"
 alias dl="cd $HOME/Downloads"
 alias a='cd /Applications'
 alias s='subl .'
+alias a='atom'
 alias o='open .'
 alias ls='ls -lah'
 
