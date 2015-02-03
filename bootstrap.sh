@@ -22,7 +22,7 @@ function echoB() {
 
 # Get file list
 function getFilesInDir() {
-    find . -type f -name '.*' -exec basename {} ';'
+    find . ! -path . -maxdepth 1 -name '.*' -exec basename {} ';'
 }
 
 # Set vars

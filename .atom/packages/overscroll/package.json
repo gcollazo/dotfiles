@@ -1,0 +1,38 @@
+{
+  "name": "overscroll",
+  "main": "./lib/overscroll",
+  "version": "0.1.0",
+  "description": "Allow the user to scroll below the content of his file (50 lines)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrownBear2/atom-overscroll"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "readme": "# overscroll package\n\nAllow the user to scroll below the content of his file (50 lines)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/BrownBear2/atom-overscroll/issues"
+  },
+  "homepage": "https://github.com/BrownBear2/atom-overscroll",
+  "_id": "overscroll@0.1.0",
+  "_shasum": "3198e4ab624d35a00ae038c1e5afda672828b52c",
+  "_resolved": "file:../d-11513-2212-1s7xw6n/package.tgz",
+  "_from": "../d-11513-2212-1s7xw6n/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/overscroll.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

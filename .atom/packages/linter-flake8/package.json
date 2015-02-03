@@ -1,0 +1,41 @@
+{
+  "name": "linter-flake8",
+  "linter-package": true,
+  "main": "./lib/init",
+  "version": "1.2.0",
+  "description": "Atom linter plugin for Python, using flake8",
+  "activationEvents": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AtomLinter/linter-flake8"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "readme": "# linter-flake8 package\n\nThis is a **linter-flake8** plugin for [Linter](https://github.com/AtomLinter/Linter). It\nis an interface to [flake8](https://pypi.python.org/pypi/flake8).\n\n### Requirements\n*Linter* package must be installed in order to use this plugin. If *Linter* is not\ninstalled, please follow the instructions [here](https://github.com/AtomLinter/Linter).\n\n### Installation\nTo use a plugin, you must ensure that `flake8` is installed on your\nsystem.\n\nInstall [flake8](https://pypi.python.org/pypi/flake8) by typing the following\nin a terminal:\n   ```\n   pip install flake8\n   ```\n\nInstall plugin by typing:\n   ```\n   $ apm install linter-flake8\n   ```\n\n### Settings\nYou can configure linter-flake8 as nearly all [Atom](https://atom.io/) modules by editing *~/.atom/config.cson* (click *Open Your Config*\nin *Atom* menu).\nIn configuration you can specify executable directory if node hasn't it in **$PATH**. Example:\n\n```\n'linter-flake8':\n  'executableDir': '/usr/local/bin/'\n```\n\n### Screenshot\n![img](https://raw.githubusercontent.com/badray/linter-flake8/master/screenshot.png)\n\n## Donation\n[![Share the love!](https://chewbacco-stuff.s3.amazonaws.com/donate.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KXUYS4ARNHCN8)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/AtomLinter/linter-flake8/issues"
+  },
+  "homepage": "https://github.com/AtomLinter/linter-flake8",
+  "_id": "linter-flake8@1.2.0",
+  "_shasum": "27338be7c7517925b8b24bb052d09b9315184470",
+  "_resolved": "file:../d-11513-2305-1hyhi1a/package.tgz",
+  "_from": "../d-11513-2305-1hyhi1a/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/init.coffee",
+        "lib/linter-flake8.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

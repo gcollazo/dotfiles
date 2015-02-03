@@ -16,7 +16,7 @@
 		".sass-cache",
 		"__pycache__",
 		"tmp/*",
-		"node_modules/*"
+		"dist/*"
 	],
 	"font_face": "Inconsolata",
 	"font_options":

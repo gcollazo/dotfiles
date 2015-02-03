@@ -1,0 +1,36 @@
+"*":
+  editor:
+    invisibles: {}
+    fontSize: 20
+    softWrap: true
+  core:
+    themes: [
+      "atom-dark-ui"
+      "one-dark-syntax"
+    ]
+    projectHome: "/Users/gcollazo/code"
+  "exception-reporting":
+    userId: "b38a165e-81c9-c085-3ada-1aa3143bdaae"
+  welcome:
+    showOnStartup: false
+  "base16-syntax":
+    scheme: "Paraiso"
+  "linter-jshint": {}
+  "save-session":
+    dataSaveFolder: "/Users/gcollazo/.atom/packages/save-session/projects"
+    windowX: 1327
+    windowY: 229
+    windowWidth: 1106
+    windowHeight: 1075
+  "remember-session":
+    x: 1327
+    y: 229
+    width: 1106
+    height: 1075
+  linter:
+    statusBar: "Show error of the selected line"
+    showErrorInline: false
+  "linter-flake8": {}
+  emmet: {}
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
