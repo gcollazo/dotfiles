@@ -19,7 +19,7 @@ export GOPATH=$HOME/Code/go
 PATH=$PATH:$GOPATH/bin
 
 # Default editor
-export EDITOR='subl -w'
+export EDITOR='atom --wait'
 
 # Virtualenvwapper
 export WORKON_HOME=$HOME/.virtualenvs
