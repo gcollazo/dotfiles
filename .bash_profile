@@ -1,6 +1,6 @@
 PATH="/usr/local/bin:$PATH"
 PATH="/usr/local/sbin:$PATH"
-PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 
 # Added by the Heroku Toolbelt
 PATH="/usr/local/heroku/bin:$PATH"
