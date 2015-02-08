@@ -4,6 +4,7 @@
 	],
 	"installed_packages":
 	[
+		"AdvancedNewFile",
 		"All Autocomplete",
 		"Base16 Color Schemes",
 		"Browser Refresh",
@@ -13,14 +14,12 @@
 		"Emmet",
 		"Gist",
 		"Git",
+		"GitGutter",
 		"Handlebars",
 		"Package Control",
-		"Rust",
 		"SideBarEnhancements",
-		"Stylus",
 		"SublimeLinter",
 		"SublimeLinter-flake8",
-		"SublimeLinter-jshint",
-		"TOML"
+		"SublimeLinter-jshint"
 	]
 }
