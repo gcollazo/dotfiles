@@ -28,6 +28,7 @@ colorscheme base16-paraiso
 " NERDTree
 map <Leader>n :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\.swp$']
 
 " syntastic
 let g:syntastic_javascript_checkers=['jshint']
@@ -44,3 +45,4 @@ let g:airline_theme='powerlineish'
 let g:airline_enable_branch=1
 let g:airline_enable_syntastic=1
 let g:airline_powerline_fonts=1
+

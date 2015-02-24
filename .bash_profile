@@ -47,6 +47,7 @@ alias dl="cd $HOME/Downloads"
 alias a='cd /Applications'
 alias s='subl .'
 alias a='atom'
+alias m='mvim .'
 alias o='open .'
 alias ls='ls -lah'
 
