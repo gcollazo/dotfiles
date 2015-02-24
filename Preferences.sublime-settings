@@ -15,8 +15,7 @@
 		"CVS",
 		".sass-cache",
 		"__pycache__",
-		"tmp/*",
-		"dist/*"
+		"tmp/*"
 	],
 	"font_face": "Inconsolata",
 	"font_options":

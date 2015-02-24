@@ -27,6 +27,7 @@ colorscheme base16-paraiso
 
 " NERDTree
 map <Leader>n :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 " syntastic
 let g:syntastic_javascript_checkers=['jshint']

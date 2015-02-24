@@ -65,4 +65,4 @@ The `bootstrap.sh` command will try to symlink all files to your `$HOME` directo
   - SublimeLinter-jshint
 
 ### Other downloads
-- [Inconsolata Font](http://www.fontsquirrel.com/fonts/inconsolata)
+- [Inconsolata for Powerline Font](https://github.com/powerline/fonts/tree/master/Inconsolata)
