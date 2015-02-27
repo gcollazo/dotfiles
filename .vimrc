@@ -18,18 +18,6 @@ set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 
-if has("gui")
-  " Font
-  set guifont=Inconsolata\ for\ Powerline:h19
-
-  " Color
-  set background=dark
-  colorscheme base16-paraiso
-
-  " vim-airline
-  let g:airline_powerline_fonts = 1
-endif
-
 " Color
 set background=dark
 colorscheme solarized
@@ -60,3 +48,16 @@ set laststatus=2
 let g:airline_theme='powerlineish'
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#syntastic#enabled=1
+
+" GUI Settings
+if has("gui")
+  " Font
+  set guifont=Inconsolata\ for\ Powerline:h19
+
+  " Color
+  set background=dark
+  colorscheme base16-paraiso
+
+  " vim-airline
+  let g:airline_powerline_fonts = 1
+endif
