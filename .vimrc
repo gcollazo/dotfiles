@@ -18,18 +18,15 @@ set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 
+" Color
+set background=dark
+colorscheme solarized
+
 " 80 char ruler
 set colorcolumn=80
 
 " Remove trailing whitespace
 autocmd BufWritePre *.* :%s/\s\+$//e
-
-" Font
-set guifont=Inconsolata\ for\ Powerline:h19
-
-" Color
-set background=dark
-colorscheme base16-paraiso
 
 " NERDTree
 cd ~/Code
@@ -49,7 +46,5 @@ let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git\|tmp\|dist\|bower_compone
 " vim-airline
 set laststatus=2
 let g:airline_theme='powerlineish'
-let g:airline_enable_branch=1
-let g:airline_enable_syntastic=1
-let g:airline_powerline_fonts=1
-
+let g:airline#extensions#branch#enabled=1
+let g:airline#extensions#syntastic#enabled=1
