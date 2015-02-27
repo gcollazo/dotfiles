@@ -16,6 +16,7 @@ echo "Installing utils"
 brew install wget
 brew install tree
 brew install nmap
+brew install the_silver_searcher
 
 echo "Installing development tools..."
 brew install python3
