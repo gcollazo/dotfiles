@@ -31,7 +31,6 @@ The `bootstrap.sh` command will try to symlink all files to your `$HOME` directo
 - [Keynote](https://itunes.apple.com/us/app/keynote/id409183694?mt=12)
 
 ### Download Installers
-- [VimR](http://vimr.org/)
 - [Chrome](https://www.google.com/chrome/browser/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 - [Cyberduck](https://cyberduck.io)
@@ -48,6 +47,7 @@ The `bootstrap.sh` command will try to symlink all files to your `$HOME` directo
 - [Heroku Toolbelt](https://toolbelt.heroku.com/)
 - [Tor](https://www.torproject.org/download/download-easy.html.en)
 - [Arq](http://www.haystacksoftware.com/arq/)
+- [VimR](http://vimr.org/)
 - [SublimeText 3](http://www.sublimetext.com/3)
   - [Package Control](https://sublime.wbond.net/installation)
 
