@@ -17,7 +17,7 @@ The `bootstrap.sh` command will try to symlink all files to your `$HOME` directo
 ### Install From AppStore
 - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
 - [1Password](https://itunes.apple.com/us/app/1password-password-manager/id443987910?mt=12)
-- [Cloud](https://itunes.apple.com/us/app/cloudapp/id417602904?mt=12)
+- [Dropshare](https://itunes.apple.com/app/dropshare/id814499284?ls=1&mt=12)
 - [Dash](https://itunes.apple.com/us/app/dash-docs-snippets/id458034879?mt=12)
 - [Evernote](https://itunes.apple.com/us/app/evernote/id406056744?mt=12)
 - [Navicat Premium Essentials](https://itunes.apple.com/us/app/navicat-premium-essentials/id466416967?mt=12)
@@ -49,20 +49,6 @@ The `bootstrap.sh` command will try to symlink all files to your `$HOME` directo
 - [Arq](http://www.haystacksoftware.com/arq/)
 - [SublimeText 3](http://www.sublimetext.com/3)
   - [Package Control](https://sublime.wbond.net/installation)
-  - All Autocomplete
-  - Base16 Color Schemes
-  - Browser Refresh
-  - ColorPicker
-  - Djaneiro
-  - Emmet
-  - Gist
-  - Git
-  - Handlebars
-  - SideBarEnhancements
-  - Stylus
-  - SublimeLinter
-  - SublimeLinter-flake8
-  - SublimeLinter-jshint
 
 ### Other downloads
 - [Inconsolata for Powerline Font](https://github.com/powerline/fonts/tree/master/Inconsolata)
