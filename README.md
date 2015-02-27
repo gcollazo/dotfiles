@@ -31,6 +31,7 @@ The `bootstrap.sh` command will try to symlink all files to your `$HOME` directo
 - [Keynote](https://itunes.apple.com/us/app/keynote/id409183694?mt=12)
 
 ### Download Installers
+- [VimR](http://vimr.org/)
 - [Chrome](https://www.google.com/chrome/browser/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 - [Cyberduck](https://cyberduck.io)
