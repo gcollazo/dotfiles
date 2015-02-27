@@ -42,10 +42,6 @@ let g:syntastic_check_on_open=1
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_show_hidden=1
 let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git\|tmp\|dist\|bower_components'
-let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<c-t>'],
-    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-    \ }
 
 " vim-airline
 set laststatus=2
