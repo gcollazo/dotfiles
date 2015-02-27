@@ -6,6 +6,7 @@ filetype plugin indent on
 
 syntax on
 set number
+set numberwidth=5
 set hlsearch
 set showmatch
 set incsearch
@@ -17,13 +18,24 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
+set nobackup
+set noswapfile
+set ruler
+set autowrite
+set backspace=2
+set ruler
+
+" Open new split panes to right and bottom, which feels more natural
+set splitbelow
+set splitright
 
 " Color
 set background=dark
 colorscheme solarized
 
 " 80 char ruler
-set colorcolumn=80
+set textwidth=80
+set colorcolumn=+1
 
 " Remove trailing whitespace
 autocmd BufWritePre *.* :%s/\s\+$//e
