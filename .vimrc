@@ -18,6 +18,12 @@ set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 
+" 80 char ruler
+set colorcolumn=80
+
+" Remove trailing whitespace
+autocmd BufWritePre *.* :%s/\s\+$//e
+
 " Font
 set guifont=Inconsolata\ for\ Powerline:h19
 
@@ -26,6 +32,7 @@ set background=dark
 colorscheme base16-paraiso
 
 " NERDTree
+cd ~/Code
 map <Leader>n :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.swp$']
