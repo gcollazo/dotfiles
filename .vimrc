@@ -44,7 +44,7 @@ autocmd BufWritePre *.* :%s/\s\+$//e
 cd ~/Code
 map <Leader>n :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['\.swp$']
+let NERDTreeIgnore=['\.swp$', '\.pyc$']
 
 " syntastic
 let g:syntastic_javascript_checkers=['jshint']

@@ -22,7 +22,7 @@ function echoB() {
 
 # Get file list
 function getFilesInDir() {
-    find . ! -path . ! -path ./.git -maxdepth 1 -name '.*' -exec basename {} ';'
+    find . ! -path . ! -path ./.git ! -path ./.DS_Store -maxdepth 1 -name '.*' -exec basename {} ';'
 }
 
 # Set vars
