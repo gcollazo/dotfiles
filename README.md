@@ -34,6 +34,4 @@ The `bootstrap.sh` command will try to symlink all files to your `$HOME` directo
 - [Chrome](https://www.google.com/chrome/browser/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 - [Tor](https://www.torproject.org/download/download-easy.html.en)
-- [Arq](http://www.haystacksoftware.com/arq/)
-- [MacVim](https://github.com/b4winckler/macvim/releases)
 

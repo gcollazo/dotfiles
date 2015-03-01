@@ -26,8 +26,6 @@ brew cask install font-inconsolata
 brew cask install front-inconsolata-for-powerline
 
 echo "Installing OS X Apps..."
-brew cask install slack
-brew cask install evernote
 brew cask install spotify
 brew cask install transmission
 brew cask install paparazzi
