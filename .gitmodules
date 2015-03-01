@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/ag.vim"]
 	path = .vim/bundle/ag.vim
 	url = https://github.com/rking/ag.vim
+[submodule ".vim/bundle/nerdcommenter"]
+	path = .vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
