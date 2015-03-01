@@ -33,23 +33,7 @@ The `bootstrap.sh` command will try to symlink all files to your `$HOME` directo
 ### Download Installers
 - [Chrome](https://www.google.com/chrome/browser/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-- [Cyberduck](https://cyberduck.io)
-- [Gitx-rowanj](https://github.com/rowanj/gitx/blob/master/README.markdown)
-- [GPG Keychain Access](https://gpgtools.org/)
-- [Mou](http://25.io/mou/)
-- [Postgres.app](http://postgresapp.com/)
-- [Paparazzi](https://derailer.org/paparazzi/)
-- [Transmission](https://www.transmissionbt.com/download/)
-- [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
-- [Vagrant](https://www.vagrantup.com/downloads.html)
-- [Viscosity](http://www.sparklabs.com/viscosity/download/)
-- [iTerm2](https://iterm2.com/downloads.html)
-- [Heroku Toolbelt](https://toolbelt.heroku.com/)
 - [Tor](https://www.torproject.org/download/download-easy.html.en)
 - [Arq](http://www.haystacksoftware.com/arq/)
 - [MacVim](https://github.com/b4winckler/macvim/releases)
-- [SublimeText 3](http://www.sublimetext.com/3)
-  - [Package Control](https://sublime.wbond.net/installation)
 
-### Other downloads
-- [Inconsolata for Powerline Font](https://github.com/powerline/fonts/tree/master/Inconsolata)

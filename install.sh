@@ -33,6 +33,8 @@ brew cask install transmission
 brew cask install paparazzi
 brew cask install viscosity
 brew cask install gpgtools
+brew cask install mou
+brew cask install arq
 
 brew cask install iterm2
 brew cask install heroku-toolbelt
@@ -67,14 +69,17 @@ npm install -g npm
 npm install -g bower
 npm install -g ember-cli
 npm install -g jshint
+npm install -g nodemon
 
 # Install Python tools
 echo "Installing Python tools..."
 mkdir ~/.virtualenvs
 pip install virtualenvwrapper
+pip3 install virtualenvwrapper
 pip3 install flake8
 
 # Setup Sublime Text 3
+
 mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 ln -sf $PWD/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 ln -sf $PWD/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
