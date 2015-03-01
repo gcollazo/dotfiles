@@ -47,7 +47,7 @@ The `bootstrap.sh` command will try to symlink all files to your `$HOME` directo
 - [Heroku Toolbelt](https://toolbelt.heroku.com/)
 - [Tor](https://www.torproject.org/download/download-easy.html.en)
 - [Arq](http://www.haystacksoftware.com/arq/)
-- [VimR](http://vimr.org/)
+- [MacVim](https://github.com/b4winckler/macvim/releases)
 - [SublimeText 3](http://www.sublimetext.com/3)
   - [Package Control](https://sublime.wbond.net/installation)
 

@@ -12,15 +12,44 @@ echo "Installing Homebrew..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
 
-echo "Installing utils"
-brew install wget
+echo "Installing utils..."
 brew install tree
 brew install nmap
-brew install the_silver_searcher
+
+echo "Installing Cask..."
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+
+echo "Installing fonts..."
+brew tap caskroom/fonts
+brew cask install font-inconsolata
+brew cask install front-inconsolata-for-powerline
+
+echo "Installing OS X Apps..."
+brew cask install slack
+brew cask install evernote
+brew cask install spotify
+brew cask install transmission
+brew cask install paparazzi
+brew cask install viscosity
+brew cask install gpgtools
+
+brew cask install iterm2
+brew cask install heroku-toolbelt
+brew cask install virtualbox
+brew cask install vagrant
+brew cask install gitx-rowanj
+brew cask install cyberduck
+brew cask install postgres
+brew cask install sublime-text3
+brew cask install macvim
 
 echo "Installing development tools..."
+brew install bash-completion
+brew install git
 brew install python3
 brew install python
+brew install the_silver_searcher
 
 # Install nvm
 echo "Installing nvm..."
@@ -40,7 +69,7 @@ npm install -g ember-cli
 npm install -g jshint
 
 # Install Python tools
-echo "Installing Python tools"
+echo "Installing Python tools..."
 mkdir ~/.virtualenvs
 pip install virtualenvwrapper
 pip3 install flake8

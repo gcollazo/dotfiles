@@ -36,8 +36,8 @@
     tree = log --graph --decorate --pretty=oneline --abbrev-commit
 [core]
     quotepath = false
-	excludesfile = ~/.gitignore
+  	excludesfile = ~/.gitignore
 [format]
     pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
 [push]
-	default = simple
+	  default = simple
