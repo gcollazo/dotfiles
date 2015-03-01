@@ -1,7 +1,6 @@
 execute pathogen#infect()
 
 let mapleader=","
-set statusline=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
 filetype plugin indent on
 
 syntax on
