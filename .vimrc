@@ -58,13 +58,16 @@ let NERDTreeIgnore=['\.swp$', '\.pyc$']
 " syntastic
 let g:syntastic_javascript_checkers=['jshint']
 let g:syntastic_check_on_open=1
-let g:syntastic_error_symbol = '✘'
-let g:syntastic_warning_symbol = "▲"
+let g:syntastic_error_symbol='✘'
+let g:syntastic_warning_symbol="▲"
 
 "ctrlp.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_show_hidden = 1
+let g:ctrlp_show_hidden=1
 let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git\|tmp\|dist\|bower_components'
+
+" vim-json
+let g:vim_json_syntax_conceal=0
 
 " GUI Settings
 if has("gui")
@@ -77,7 +80,7 @@ if has("gui")
 
   " vim-airline
   set laststatus=2
-  let g:airline_powerline_fonts = 1
+  let g:airline_powerline_fonts=1
   let g:airline_theme='powerlineish'
   let g:airline#extensions#branch#enabled=1
   let g:airline#extensions#syntastic#enabled=1
