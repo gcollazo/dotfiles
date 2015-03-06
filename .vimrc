@@ -68,6 +68,9 @@ let g:syntastic_warning_symbol="▲"
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_show_hidden=1
 let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git\|tmp\|dist\|bower_components'
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_max_files=0
+let g:ctrlp_use_caching=0
 
 " vim-json
 let g:vim_json_syntax_conceal=0
