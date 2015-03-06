@@ -36,6 +36,9 @@ set splitright
 set background=dark
 colorscheme solarized
 
+" Hide search highlight
+nnoremap <Esc><Esc> :nohlsearch<CR>
+
 " 80 char ruler
 set textwidth=80
 set colorcolumn=+1
