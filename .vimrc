@@ -12,7 +12,6 @@ set hlsearch
 set showmatch
 set incsearch
 set ignorecase
-set nowrap
 set autoindent
 set history=1000
 set expandtab
@@ -27,6 +26,7 @@ set backspace=2
 set ruler
 set mouse=a
 set showcmd
+set nowrap
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
