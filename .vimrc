@@ -56,7 +56,7 @@ nnoremap <Down> :echoe "Use j"<CR>
 cd ~/Code
 map <Leader>n :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['\.swp$', '\.pyc$', '\.git$']
+let NERDTreeIgnore=['\.swp$', '\.pyc$', '\.git$', '\.DS_Store']
 
 " syntastic
 let g:syntastic_javascript_checkers=['jshint']
