@@ -23,7 +23,7 @@ brew tap caskroom/versions
 echo "Installing fonts..."
 brew tap caskroom/fonts
 brew cask install font-inconsolata
-brew cask install front-inconsolata-for-powerline
+brew cask install font-inconsolata-for-powerline
 
 echo "Installing OS X Apps..."
 brew cask install spotify
