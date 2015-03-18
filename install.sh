@@ -52,7 +52,7 @@ brew install the_silver_searcher
 
 # Install nvm
 echo "Installing nvm..."
-curl https://raw.githubusercontent.com/creationix/nvm/v0.17.2/install.sh | PROFILE=~/.extras bash
+curl https://raw.githubusercontent.com/creationix/nvm/v0.24.0/install.sh | PROFILE=~/.extras bash
 source ~/.bash_profile
 
 # Install latest io.js release of node
