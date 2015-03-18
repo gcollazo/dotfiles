@@ -37,7 +37,7 @@ brew cask install iterm2
 brew cask install heroku-toolbelt
 brew cask install virtualbox
 brew cask install vagrant
-brew cask install gitx-rowanj
+brew cask install rowanj-gitx
 brew cask install cyberduck
 brew cask install postgres
 brew cask install sublime-text3
