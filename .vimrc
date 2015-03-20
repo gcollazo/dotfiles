@@ -81,7 +81,8 @@ set splitright
 syntax on
 
 " Color
-set background=dark
+set background=light
+colorscheme solarized
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -184,10 +185,6 @@ let g:vim_json_syntax_conceal=0
 if has("gui")
   " Font
   set guifont=Inconsolata\ for\ Powerline:h19
-
-  " Color
-  set background=light
-  colorscheme solarized
 
   " vim-airline
   set laststatus=2
