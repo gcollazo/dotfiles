@@ -87,8 +87,14 @@ execute pathogen#infect()
 syntax on
 
 " Color
-set background=light
-colorscheme solarized
+set background=dark
+colorscheme base16-paraiso
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => IndentLine colors
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:indentLine_color_gui='#E8E8E8'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -120,17 +126,17 @@ set softtabstop=2
 set linebreak
 set textwidth=500
 
-" Auto ident
-set autoindent
-
-" Smart indent
-set smartindent
-
 " Wrap lines
 set wrap
 
 " List disables linebreak
 set nolist
+
+" Auto ident
+set autoindent
+
+" Smart indent
+set smartindent
 
 " Remove trailing whitespace
 autocmd BufWritePre *.* :%s/\s\+$//e
