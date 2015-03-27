@@ -87,8 +87,8 @@ execute pathogen#infect()
 syntax on
 
 " Color
-set background=dark
-colorscheme base16-paraiso
+set background=light
+colorscheme solarized
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
