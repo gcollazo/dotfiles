@@ -1,6 +1,11 @@
 {
 	"auto_complete_delay": 0,
-	"color_scheme": "Packages/User/SublimeLinter/base16-paraiso.dark (SL).tmTheme",
+	"binary_file_patterns":
+	[
+		"node_modules/**/*",
+		"bower_components/**/*"
+	],
+	"color_scheme": "Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
@@ -17,7 +22,6 @@
 		"__pycache__",
 		"tmp/*"
 	],
-	"binary_file_patterns": ["node_modules/**/*", "bower_components/**/*"],
 	"font_face": "Inconsolata",
 	"font_options":
 	[
