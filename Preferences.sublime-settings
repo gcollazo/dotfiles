@@ -17,6 +17,7 @@
 		"__pycache__",
 		"tmp/*"
 	],
+	"binary_file_patterns": ["node_modules/**/*", "bower_components/**/*"],
 	"font_face": "Inconsolata",
 	"font_options":
 	[
