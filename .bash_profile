@@ -27,8 +27,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # Default editor
-export EDITOR='macvim'
-export VISUAL='macvim'
+export EDITOR='vim'
+export VISUAL='vim'
 
 # Virtualenvwapper
 export WORKON_HOME=$HOME/.virtualenvs
