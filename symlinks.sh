@@ -59,8 +59,27 @@ function createSymlinks() {
 }
 
 # Run
+echoB "--> dotfiles stuff.."
 createSymlinks
 
+# Sublime Text 3
+echoB "--> Sublime Text stuff.."
+mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+
+echoY "--> [LINK]: Preferences.sublime-settings"
+ln -sf $PWD/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+
+echoY "--> [LINK]: Package Control.sublime-settings"
+ln -sf $PWD/sublime/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
+
+echoY "--> [LINK]: Default (OSX).sublime-keymap"
+ln -sf $PWD/sublime/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap
+
+echoY "--> [LINK]: subl"
+ln -sf ~/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+
+
+# Unst and source
 echo
 echoB "--> [DONE]"
 echo
@@ -72,10 +91,3 @@ unset getFilesInDir
 unset createSymlinks
 
 source ~/.bash_profile
-
-# Sublime Text 3
-mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-ln -sf $PWD/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
-ln -sf $PWD/sublime/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
-ln -sf $PWD/sublime/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap
-ln -sf ~/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
