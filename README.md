@@ -9,8 +9,8 @@ cd dotfiles
 ./install.sh
 ```
 
-### Bootstrap
-The `bootstrap.sh` command will try to symlink all files to your `$HOME` directory. Run with `--force` to overwrite if files already exist.
+### Symlinks
+The `symlinks.sh` command will try to symlink all files to your `$HOME` directory. Run with `--force` to overwrite if files already exist.
 
 ## Manual Installation
 
