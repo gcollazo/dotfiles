@@ -4,9 +4,9 @@
 echo "Getting submodules..."
 git submodule update --init --recursive
 
-# Setup dotfiles
-echo "Setting up dotfiles..."
-./bootstrap.sh --force
+# Symlink files
+echo "Doing symlinks..."
+./symlinks.sh --force
 
 echo "Installing Homebrew..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -73,10 +73,3 @@ mkdir ~/.virtualenvs
 pip install virtualenvwrapper
 pip3 install virtualenvwrapper
 pip3 install flake8
-
-# Setup Sublime Text 3
-mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-ln -sf $PWD/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
-ln -sf $PWD/sublime/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
-ln -sf $PWD/sublime/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap
-ln -sf ~/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
