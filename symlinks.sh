@@ -75,11 +75,14 @@ ln -sf $PWD/sublime/Package\ Control.sublime-settings ~/Library/Application\ Sup
 echoY "--> [LINK]: Default (OSX).sublime-keymap"
 ln -sf $PWD/sublime/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap
 
+echoY "--> [LINK]: SublimeLinter.sublime-settings"
+ln -sf $PWD/sublime/SublimeLinter.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/SublimeLinter.sublime-settings
+
 echoY "--> [LINK]: subl"
 ln -sf ~/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 
 
-# Unst and source
+# Unset and source
 echo
 echoB "--> [DONE]"
 echo
