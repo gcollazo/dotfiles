@@ -32,6 +32,8 @@ brew cask install paparazzi
 brew cask install viscosity
 brew cask install gpgtools
 brew cask install mou
+brew cask install spotify
+brew cask install skype
 
 brew cask install iterm2
 brew cask install heroku-toolbelt
