@@ -1,6 +1,6 @@
 {
 	"auto_complete_delay": 0,
-	"theme": "Spacegray.sublime-theme",
+	"theme": "Spacegray Light.sublime-theme",
 	"binary_file_patterns":
 	[
 		"node_modules/**/*",
