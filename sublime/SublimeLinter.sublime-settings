@@ -18,6 +18,11 @@
                 "max-line-length": null,
                 "select": ""
             },
+            "jscs": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
             "jshint": {
                 "@disable": false,
                 "args": [],
