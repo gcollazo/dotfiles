@@ -1,6 +1,5 @@
 {
 	"auto_complete_delay": 0,
-	"theme": "Spacegray Light.sublime-theme",
 	"binary_file_patterns":
 	[
 		"node_modules/**/*",
@@ -53,6 +52,7 @@
 	"sublimelinter_gutter_marks": true,
 	"tab_completion": false,
 	"tab_size": 2,
+	"theme": "Spacegray Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true
