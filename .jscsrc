@@ -1,9 +1,7 @@
-
 {
   "esnext": true,
 
   "disallowEmptyBlocks": true,
-  "disallowSpacesBeforeSemicolons": true,
   "disallowKeywordsOnNewLine": ["else"],
   "disallowMultipleLineBreaks": true,
   "disallowMultipleVarDecl": "exceptUndefined",
@@ -19,7 +17,6 @@
   "disallowSpacesInCallExpression": true,
   "disallowTrailingComma": true,
   "disallowTrailingWhitespace": true,
-  "disallowVar": true,
   "requireBlocksOnNewline": true,
   "requireCamelCaseOrUpperCaseIdentifiers": true,
   "requireCapitalizedConstructors": true,
@@ -35,7 +32,6 @@
     "switch"
   ],
   "requireDotNotation": true,
-  "requireEnhancedObjectLiterals": true,
   "requireSemicolons": true,
   "requireSpaceAfterBinaryOperators": true,
   "requireSpaceAfterKeywords": [
@@ -68,7 +64,6 @@
   "requireSpacesInConditionalExpression": true,
   "requireSpacesInForStatement": true,
   "requireSpacesInsideObjectBrackets": "all",
-  "requireTemplateStringsForConcatenation": true,
   "validateIndentation": 2,
   "validateParameterSeparator": ", ",
   "validateQuoteMarks": {
