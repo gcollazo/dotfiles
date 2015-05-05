@@ -15,7 +15,6 @@
 	"folder_exclude_patterns":
 	[
 		".svn",
-		".git",
 		".hg",
 		"CVS",
 		".sass-cache",
