@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Get submodules
-echo "Getting submodules..."
-git submodule update --init --recursive
-
 # Symlink files
 echo "Doing symlinks..."
 ./symlinks.sh --force
@@ -50,7 +46,6 @@ brew install bash-completion
 brew install git
 brew install python3
 brew install python
-brew install the_silver_searcher
 
 # Install nvm
 echo "Installing nvm..."
@@ -68,7 +63,9 @@ npm install -g npm
 npm install -g bower
 npm install -g ember-cli
 npm install -g jshint
+npm install -g jscs
 npm install -g nodemon
+npm install -g phantomjs
 
 # Install Python tools
 echo "Installing Python tools..."
