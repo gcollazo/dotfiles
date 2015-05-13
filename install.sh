@@ -44,8 +44,8 @@ brew cask install imageoptim
 echo "Installing development tools..."
 brew install bash-completion
 brew install git
-brew install python3
-brew install python
+brew install pyenv
+brew install pyenv-virtualenv
 
 # Install nvm
 echo "Installing nvm..."
@@ -67,9 +67,9 @@ npm install -g jscs
 npm install -g nodemon
 npm install -g phantomjs
 
-# Install Python tools
-echo "Installing Python tools..."
-mkdir ~/.virtualenvs
-pip install virtualenvwrapper
-pip3 install virtualenvwrapper
-pip3 install flake8
+# Install Python
+echo "Installing Python..."
+pyenv install 3.4.3
+pyenv global 3.4.3
+pip install --upgrade pip
+pip install flake8

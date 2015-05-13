@@ -14,6 +14,10 @@ PATH="/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
 # NVM
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
 
+# pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
@@ -29,10 +33,6 @@ fi
 # Default editor
 export EDITOR='vim'
 export VISUAL='vim'
-
-# Virtualenvwapper
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 # docker
 export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2376
@@ -54,9 +54,6 @@ alias h="cd $HOME/"
 alias dl="cd $HOME/Downloads"
 alias a='cd /Applications'
 alias s='subl .'
-alias a='atom .'
-alias m='mvim .'
-alias v='vimr .'
 alias o='open .'
 alias ls='ls -lah'
 
@@ -90,18 +87,6 @@ alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias json='python -mjson.tool'
 alias shadowdisable='defaults write com.apple.screencapture disable-shadow -bool true && killall SystemUIServer'
 alias shadowenable='defaults write com.apple.screencapture disable-shadow -bool false && killall SystemUIServer'
-
-function mkvirtualenv2() {
-    mkvirtualenv $1 --python=/usr/local/bin/python
-}
-
-function mkvirtualenv3() {
-    mkvirtualenv $1 --python=/usr/local/bin/python3
-}
-
-function mkvirtualenvpypy() {
-    mkvirtualenv $1 --python=/usr/local/bin/pypy
-}
 
 # Prompt setup
 source ~/.prompt

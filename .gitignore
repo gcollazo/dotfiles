@@ -4,6 +4,8 @@
 # Ignore private settings
 .dotfiles_private
 
+.python-version
+
 ### OSX ###
 .DS_Store
 .AppleDouble
