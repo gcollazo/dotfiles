@@ -1,10 +1,10 @@
 # dotfiles
 
 ### Install
-`install.sh` will bootstrap dotfiles and run initial setup after a fresh install. Before running this it's a good idea to install Xcode from the App Store and install any pending system updates. This will run `bootstrap.sh` for you.
+`install.sh` will bootstrap dotfiles and run initial setup after a fresh install. Before running this it's a good idea to install Xcode from the App Store and install any pending system updates. This will run `symlinks.sh` for you.
 
 ```bash
-git clone --recursive git@github.com:gcollazo/dotfiles.git
+git clone git@github.com:gcollazo/dotfiles.git
 cd dotfiles
 ./install.sh
 ```
