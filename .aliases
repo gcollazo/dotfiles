@@ -24,9 +24,9 @@ alias json='python -mjson.tool'
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias dig="dig ANY +noall +answer $1"
-alias flushdns='sudo discoveryutil mdnsflushcache && sudo discoveryutil udnsflushcaches'
-function geoip(){ open https://ipinfo.io/"${1}"; }
-function ipinfo(){ open https://ipinfo.io/"${1}"; }
+alias flushdns="sudo discoveryutil mdnsflushcache && sudo discoveryutil udnsflushcaches"
+alias geoip="ipinfo $1"
+function ipinfo(){ open https://ipinfo.io/$@; }
 alias scan="nmap -T4 --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
 alias sscan="sudo nmap -sS -T4 --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
 
