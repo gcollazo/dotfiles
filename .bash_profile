@@ -47,7 +47,7 @@ export CLICOLOR=1
 export LSCOLORS=dxfxcxdxbxegedabagacad
 
 # Alias
-source ~/.alias
+source ~/.aliases
 
 # Prompt setup
 source ~/.prompt
