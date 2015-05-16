@@ -31,8 +31,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # Default editor
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR='subl -w'
+export VISUAL='subl -w'
 
 # docker
 export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2376
