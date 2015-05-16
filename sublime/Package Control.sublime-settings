@@ -24,9 +24,8 @@
 		"SCSS",
 		"SideBarEnhancements",
 		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-flake8",
-		"SublimeLinter-jscs",
-		"SublimeLinter-jshint",
 		"SublimeLinter-json",
 		"Theme - Spacegray"
 	]

@@ -1,9 +1,4 @@
 # Global gitignore
-# Created by http://gitignore.io
-
-# Ignore private settings
-.dotfiles_private
-
 .python-version
 
 ### OSX ###
