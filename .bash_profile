@@ -9,7 +9,7 @@ PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 PATH="/usr/local/heroku/bin:$PATH"
 
 # Adds MongoDB.app to path
-PATH="/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
+PATH="~/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
 
 # NVM
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
