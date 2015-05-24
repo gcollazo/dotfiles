@@ -37,8 +37,11 @@ brew cask install vagrant
 brew cask install rowanj-gitx
 brew cask install cyberduck
 brew cask install postgres
+brew cask install mongodb
 brew cask install sublime-text3
 brew cask install imageoptim
+brew cask install arq
+brew cask install cocoapods
 
 echo "Installing development tools..."
 brew install bash-completion
@@ -48,7 +51,7 @@ brew install pyenv-virtualenv
 
 # Install nvm
 echo "Installing nvm..."
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | PROFILE=~/.extras bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 source ~/.bash_profile
 
 # Install latest io.js release of node
@@ -70,7 +73,7 @@ npm install -g phantomjs
 
 # Install Python
 echo "Installing Python..."
-pyenv install 3.4.3
-pyenv global 3.4.3
+pyenv install 2.7.9
+pyenv global 2.7.9
 pip install --upgrade pip
 pip install flake8
