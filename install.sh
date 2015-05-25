@@ -41,7 +41,6 @@ brew cask install mongodb
 brew cask install sublime-text3
 brew cask install imageoptim
 brew cask install arq
-brew cask install cocoapods
 
 echo "Installing development tools..."
 brew install bash-completion
@@ -77,3 +76,6 @@ pyenv install 2.7.9
 pyenv global 2.7.9
 pip install --upgrade pip
 pip install flake8
+
+echo "Installing CocoaPods..."
+sudo gem install cocoapods
