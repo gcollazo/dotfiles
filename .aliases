@@ -38,3 +38,4 @@ alias hashsha256='shasum -a 256'
 alias vagrantfile='curl -O https://gist.githubusercontent.com/gcollazo/2f996c678a7c9859d97a/raw/Vagrantfile'
 alias shadowdisable='defaults write com.apple.screencapture disable-shadow -bool true && killall SystemUIServer'
 alias shadowenable='defaults write com.apple.screencapture disable-shadow -bool false && killall SystemUIServer'
+alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
