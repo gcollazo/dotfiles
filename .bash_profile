@@ -3,7 +3,7 @@ PATH="/usr/local/bin:$PATH"
 PATH="/usr/local/sbin:$PATH"
 
 # Adds Postgres.app binaries to path
-PATH="~/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
+PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 
 # Adds by the Heroku Toolbelt
 PATH="/usr/local/heroku/bin:$PATH"
