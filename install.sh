@@ -11,6 +11,7 @@ brew doctor
 echo "Installing utils..."
 brew install tree
 brew install nmap
+brew install readline
 
 echo "Installing Cask..."
 brew install caskroom/cask/brew-cask
@@ -73,8 +74,13 @@ npm install -g phantomjs
 echo "Installing Python..."
 pyenv install 2.7.9
 pyenv global 2.7.9
+source ~/.bash_profile
 pip install --upgrade pip
 pip install flake8
 
 echo "Installing CocoaPods..."
 sudo gem install cocoapods
+
+# Install Package Control for ST3
+echo "Installing Package Control..."
+curl "https://packagecontrol.io/Package Control.sublime-package" > ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/Package\ Control.sublime-package
