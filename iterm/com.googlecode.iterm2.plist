@@ -307,10 +307,12 @@
 	<false/>
 	<key>NSWindow Frame Preferences</key>
 	<string>491 303 924 485 0 0 1440 877 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>1009 585 384 129 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>760 82 650 501 0 0 1440 877 </string>
+	<string>783 27 650 501 0 0 1440 877 </string>
 	<key>NeverWarnAboutOverrides</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -1046,7 +1048,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.072767198085784912</real>
+			<real>0.043955713510513306</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -1069,6 +1071,12 @@
 			<string>/Users/gcollazo</string>
 		</dict>
 	</array>
+	<key>NoSyncNeverRemindPrefsChangesCopy</key>
+	<true/>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>454340974.73755199</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>454340974.73787999</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1131,7 +1139,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-05-24T22:24:40Z</date>
+	<date>2015-05-26T13:48:52Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1155,7 +1163,7 @@
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1432563584</real>
+	<real>1432648192</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -1174,7 +1182,11 @@
 	<integer>0</integer>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
+	<false/>
 	<key>iTerm Version</key>
-	<string>2.0</string>
+	<string>2.1.1</string>
 </dict>
 </plist>
