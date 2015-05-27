@@ -12,6 +12,7 @@ echo "Installing utils..."
 brew install tree
 brew install nmap
 brew install readline
+brew install watchman
 
 echo "Installing Cask..."
 brew install caskroom/cask/brew-cask
