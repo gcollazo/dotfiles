@@ -1,41 +1,34 @@
 # Aliases
-alias g=git
+alias a='cd /Applications'
 alias c="cd $HOME/Code"
 alias d="cd $HOME/Desktop"
-alias h="cd $HOME/"
 alias dl="cd $HOME/Downloads"
-alias a='cd /Applications'
-alias s='subl .'
-alias o='open .'
+alias g=git
+alias h="cd $HOME/"
 alias ls='ls -lah'
+alias o='open .'
+alias s='subl .'
 
 # Git
-alias gpush='git push origin $(git rev-parse --abbrev-ref HEAD)'
-alias gpull='git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
 alias gboom='gpull && gpush && echo BOOM ! ! !'
+alias gpull='git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
+alias gpush='git push origin $(git rev-parse --abbrev-ref HEAD)'
 function gi() { curl https://www.gitignore.io/api/$@ ;}
 
 # Common
+alias json='python -mjson.tool'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias server='python -m SimpleHTTPServer 8888'
-alias json='python -mjson.tool'
 
 # Network
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias dig="dig ANY +noall +answer $1"
 alias flushdns="sudo discoveryutil mdnsflushcache && sudo discoveryutil udnsflushcaches"
 alias geoip="ipinfo $1"
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 function ipinfo(){ open https://ipinfo.io/$@; }
 alias scan="nmap -T4 --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
 alias sscan="sudo nmap -sS -T4 --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
 
 # Other
-alias redis='redis-server'
-alias hashmd5='openssl md5'
-alias hashsha1='openssl sha1'
-alias hashsha256='shasum -a 256'
-alias vagrantfile='curl -O https://gist.githubusercontent.com/gcollazo/2f996c678a7c9859d97a/raw/Vagrantfile'
-alias shadowdisable='defaults write com.apple.screencapture disable-shadow -bool true && killall SystemUIServer'
-alias shadowenable='defaults write com.apple.screencapture disable-shadow -bool false && killall SystemUIServer'
 alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
