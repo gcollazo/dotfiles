@@ -42,6 +42,10 @@ export GREP_OPTIONS='--color=auto'
 export CLICOLOR=1
 export LSCOLORS=dxfxcxdxbxegedabagacad
 
+# history completion (bound to arrow keys)
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+
 # Alias
 source ~/.aliases
 
