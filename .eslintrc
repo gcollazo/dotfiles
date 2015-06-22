@@ -14,6 +14,8 @@
     "destructuring": true,
     "forOf": true,
     "generators": true,
+    "globalReturn": true,
+    "jsx": true,
     "modules": true,
     "objectLiteralComputedProperties": true,
     "objectLiteralDuplicateProperties": true,
@@ -25,13 +27,13 @@
     "spread": true,
     "superInFunctions": true,
     "templateStrings": true,
-    "unicodeCodePointEscapes": true,
-    "globalReturn": true,
-    "jsx": true
+    "unicodeCodePointEscapes": true
   },
   "rules": {
-    "space-before-function-paren": 0,
+    "func-names": 0,
     "no-console": 0,
-    "func-names": 0
+    "no-process-env": 0,
+    "one-var": [2, "never"],
+    "space-before-function-paren": 0
   }
 }
