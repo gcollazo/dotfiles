@@ -18,6 +18,10 @@ PATH="~/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
+# Python path — pip install -t .pip <package name>
+# http://blog.zoomeranalytics.com/pip-install-t/
+export PYTHONPATH="./.pip:$PYTHONPATH"
+
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
