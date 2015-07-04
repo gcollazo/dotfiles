@@ -1,3 +1,11 @@
 [
-  { "keys": ["super+n"], "command": "advanced_new_file_new"}
+  {"keys": ["super+n"], "command": "advanced_new_file_new"},
+  {
+    "keys": ["command+shift+r"], "command": "browser_refresh", "args": {
+      "auto_save": true,
+      "delay": 0.5,
+      "activate": false,
+      "browsers" : ["chrome"]
+    }
+  }
 ]
