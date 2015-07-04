@@ -62,13 +62,17 @@ nvm alias default iojs
 echo "Installing global modules with npm..."
 npm install -g npm
 npm install -g bower
-npm install -g ember-cli
 
+npm install -g ember-cli
+npm install -g broccoli-cli
+
+npm install -g babel
 npm install -g babel-eslint
 npm install -g eslint
-npm install -g eslint-config-nightmare-mode
+npm install -g eslint-config-ember
 npm install -g jscs
 npm install -g jshint
+
 npm install -g nodemon
 npm install -g phantomjs
 
