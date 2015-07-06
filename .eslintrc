@@ -2,9 +2,9 @@
   "extends": "ember",
   "env": {
     "node": true,
-    "browser": true
+    "browser": true,
+    "es6": true
   },
-  "parser": "babel-eslint",
   "rules": {
     "no-console": 0,
     "no-multiple-empty-lines": 0,
