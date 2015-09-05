@@ -22,7 +22,7 @@ alias server='python -m SimpleHTTPServer 8888'
 
 # Network
 alias dig="dig ANY +noall +answer $1"
-alias flushdns="sudo discoveryutil mdnsflushcache && sudo discoveryutil udnsflushcaches"
+alias flushdns="sudo dscacheutil -flushcache"
 alias geoip="ipinfo $1"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
