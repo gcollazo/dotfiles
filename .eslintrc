@@ -22,6 +22,7 @@
     "no-multiple-empty-lines": 0,
     "no-param-reassign": 0,
     "no-process-env": 0,
+    "no-restricted-syntax": [0, "FunctionExpression"],
     "no-shadow": 0,
     "no-ternary": 0,
     "no-undefined": 0,
