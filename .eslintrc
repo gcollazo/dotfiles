@@ -27,7 +27,6 @@
     "no-ternary": 0,
     "no-undefined": 0,
     "no-underscore-dangle": 0,
-    "no-unused-vars": 0,
     "no-use-before-define": 0,
     "no-warning-comments": 0,
     "object-curly-spacing": [2, "always"],
