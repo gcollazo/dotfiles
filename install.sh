@@ -53,10 +53,10 @@ echo "Installing nvm..."
 curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 source ~/.bash_profile
 
-# Install latest io.js release of node
-echo "Installing io.js..."
-nvm install iojs
-nvm alias default iojs
+# Install latest release of node
+echo "Installing node..."
+nvm install v5
+nvm alias default v5
 
 # Install Node.js global tools
 echo "Installing global modules with npm..."
@@ -64,17 +64,20 @@ npm install -g npm
 npm install -g bower
 
 npm install -g ember-cli
-npm install -g broccoli-cli
 
 npm install -g babel
-npm install -g babel-eslint
+
 npm install -g eslint
+npm install -g babel-eslint
 npm install -g eslint-config-ember
-npm install -g jscs
-npm install -g jshint
 
 npm install -g nodemon
 npm install -g phantomjs
+
+# Cordova stuff
+npm install -g cordova
+npm install -g ios-sim
+npm install -g ios-deploy
 
 # Install Python
 echo "Installing Python..."
