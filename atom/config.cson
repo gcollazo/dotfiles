@@ -1,0 +1,27 @@
+"*":
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "one-dark-ui"
+      "oceanic-next"
+    ]
+    disabledPackages: [
+      "metrics"
+      "exception-reporting"
+    ]
+  editor:
+    invisibles: {}
+    fontFamily: "Inconsolata for Powerline"
+    fontSize: 21
+    lineHeight: 1.2
+  "language-babel":
+    transpileOnSave: false
+  linter:
+    showErrorPanel: false
+  "linter-eslint":
+    globalNodePath: "/Users/gcollazo/.nvm/versions/node/v4.2.1"
+    eslintrcPath: "/Users/gcollazo/.eslintrc"
+    useGlobalEslint: true
+  "advanced-open-file":
+    createFileInstantly: true

@@ -85,6 +85,26 @@ echoY "--> [LINK]: subl"
 ln -sf ~/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 
 
+# Atom.io
+echoB "--> Atom.io stuff.."
+mkdir -p ~/.atom
+
+echoY "--> [LINK]: config.cson"
+ln -sf $PWD/atom/config.cson ~/.atom/config.cson
+
+echoY "--> [LINK]: init.coffee"
+ln -sf $PWD/atom/init.coffee ~/.atom/init.coffee
+
+echoY "--> [LINK]: keymap.cson"
+ln -sf $PWD/atom/keymap.cson ~/.atom/keymap.cson
+
+echoY "--> [LINK]: snippets.cson"
+ln -sf $PWD/atom/snippets.cson ~/.atom/snippets.cson
+
+echoY "--> [LINK]: styles.less"
+ln -sf $PWD/atom/styles.less ~/.atom/styles.less
+
+
 # Unset and source
 echo
 echoB "--> [DONE]"
