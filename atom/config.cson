@@ -20,8 +20,7 @@
   linter:
     showErrorPanel: false
   "linter-eslint":
-    globalNodePath: "/Users/gcollazo/.nvm/versions/node/v4.2.1"
-    eslintrcPath: "/Users/gcollazo/.eslintrc"
     useGlobalEslint: true
+    globalNodePath: "/Users/gcollazo/.nvm/versions/node/v4.2.1"
   "advanced-open-file":
     createFileInstantly: true
