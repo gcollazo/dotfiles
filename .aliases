@@ -1,5 +1,5 @@
 # Aliases
-alias a='cd /Applications'
+alias a='atom .'
 alias c="cd $HOME/Code"
 alias d="cd $HOME/Desktop"
 alias dl="cd $HOME/Downloads"
@@ -7,7 +7,7 @@ alias g=git
 alias h="cd $HOME/"
 alias ls='ls -lah'
 alias o='open .'
-alias s='subl .'
+alias s='atom .'
 
 # Git
 alias gboom='gpull && gpush && echo BOOM ! ! !'
