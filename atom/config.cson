@@ -16,6 +16,7 @@
     lineHeight: 1.2
     fontFamily: "Inconsolata for Powerline"
     scrollPastEnd: true
+    showIndentGuide: true
   "language-babel":
     transpileOnSave: false
   linter:
@@ -25,3 +26,4 @@
     globalNodePath: "/Users/gcollazo/.nvm/versions/node/v4.2.1"
   "advanced-open-file":
     createFileInstantly: true
+  "open-recent": {}
