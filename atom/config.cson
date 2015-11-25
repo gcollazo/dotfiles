@@ -17,6 +17,7 @@
     fontFamily: "Inconsolata for Powerline"
     scrollPastEnd: true
     showIndentGuide: true
+    softWrap: true
   "language-babel":
     transpileOnSave: false
   linter:
