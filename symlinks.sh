@@ -1,19 +1,19 @@
 #!/bin/bash
 
 # Colors
-function echoY() {
+function yellow() {
     prompt="$1"
     echo -e -n "\033[32m$prompt"
     echo -e -n '\033[0m'
     echo ''
 }
-function echoR() {
+function red() {
     prompt="$1"
     echo -e -n "\033[31m$prompt"
     echo -e -n '\033[0m'
     echo ''
 }
-function echoB() {
+function blue() {
     prompt="$1"
     echo -e -n "\033[34m$prompt"
     echo -e -n '\033[0m'
@@ -39,19 +39,19 @@ function createSymlinks() {
     for F in ${FILES[@]}; do
         # Delete files if --force was used
         if [ $FORCE == true ]; then
-            echoR "--> [DELETE]: $HOME/${F}"
+            red "--> [DELETE]: $HOME/${F}"
             rm $HOME/$F
         fi
 
         # Make symlink
-        echoY "--> [LINK]: ${HOME}/${F} -> ${CURRENTPATH}/${F}"
+        yellow "--> [LINK]: ${HOME}/${F} -> ${CURRENTPATH}/${F}"
         ln -s $CURRENTPATH/$F $HOME/$F
 
         if [ $? -eq 1 ]; then
             echo
-            echoR "--> [ERROR]: You have already have a file named ${F} in your home folder."
-            echoR "    Please backup of your old files."
-            echoR "    Using \"--force\" will allow you to overwrite your existing files."
+            red "--> [ERROR]: You have already have a file named ${F} in your home folder."
+            red "    Please backup of your old files."
+            red "    Using \"--force\" will allow you to overwrite your existing files."
             echo
             break
         fi
@@ -59,60 +59,38 @@ function createSymlinks() {
 }
 
 # Run
-echoB "--> dotfiles stuff.."
+blue "--> dotfiles stuff.."
 createSymlinks
-
-# Sublime Text 3
-echoB "--> Sublime Text stuff.."
-mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-
-echoY "--> [LINK]: Preferences.sublime-settings"
-ln -sf $PWD/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
-
-echoY "--> [LINK]: Package Control.sublime-settings"
-ln -sf $PWD/sublime/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
-
-echoY "--> [LINK]: Default (OSX).sublime-keymap"
-ln -sf $PWD/sublime/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap
-
-echoY "--> [LINK]: SublimeLinter.sublime-settings"
-ln -sf $PWD/sublime/SublimeLinter.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/SublimeLinter.sublime-settings
-
-echoY "--> [LINK]: Python.sublime-settings"
-ln -sf $PWD/sublime/Python.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Python.sublime-settings
-
-echoY "--> [LINK]: subl"
-ln -sf ~/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 
 
 # Atom.io
-echoB "--> Atom.io stuff.."
+blue "--> Atom.io stuff.."
 mkdir -p ~/.atom
 
-echoY "--> [LINK]: config.cson"
+yellow "--> [LINK]: config.cson"
 ln -sf $PWD/atom/config.cson ~/.atom/config.cson
 
-echoY "--> [LINK]: init.coffee"
+yellow "--> [LINK]: init.coffee"
 ln -sf $PWD/atom/init.coffee ~/.atom/init.coffee
 
-echoY "--> [LINK]: keymap.cson"
+yellow "--> [LINK]: keymap.cson"
 ln -sf $PWD/atom/keymap.cson ~/.atom/keymap.cson
 
-echoY "--> [LINK]: snippets.cson"
+yellow "--> [LINK]: snippets.cson"
 ln -sf $PWD/atom/snippets.cson ~/.atom/snippets.cson
 
-echoY "--> [LINK]: styles.less"
+yellow "--> [LINK]: styles.less"
 ln -sf $PWD/atom/styles.less ~/.atom/styles.less
 
 
 # Unset and source
 echo
-echoB "--> [DONE]"
+blue "--> [DONE]"
 echo
 
-unset echoY
-unset echoR
-unset echoB
+unset yellow
+unset red
+unset blue
 unset getFilesInDir
 unset createSymlinks
 

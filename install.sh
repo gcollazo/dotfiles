@@ -23,6 +23,7 @@ brew tap caskroom/fonts
 brew cask install font-inconsolata
 
 echo "Installing OS X Apps..."
+brew cask install atom
 brew cask install arq
 brew cask install cyberduck
 brew cask install gpgtools
@@ -87,7 +88,3 @@ pip install flake8
 
 echo "Installing CocoaPods..."
 sudo gem install cocoapods
-
-# Install Package Control for ST3
-echo "Installing Package Control..."
-curl "https://packagecontrol.io/Package Control.sublime-package" > ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/Package\ Control.sublime-package
