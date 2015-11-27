@@ -12,7 +12,23 @@ cd dotfiles
 ### Symlinks
 The `symlinks.sh` command will try to symlink all files to your `$HOME` directory. Run with `--force` to overwrite if files already exist.
 
-## Manual Installation
+## Manual Installs
+
+### Atom Packages
+All packages used are marked with a star and be found on my [user profile](https://atom.io/users/gcollazo/stars).
+
+To install packages:
+
+```bash
+apm login
+apm stars --install
+```
+
+To update packages:
+
+```bash
+apm star --installed
+```
 
 ### Install From AppStore
 - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
