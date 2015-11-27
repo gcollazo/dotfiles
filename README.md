@@ -1,7 +1,13 @@
 # dotfiles
 
-### Install & Symlink
-`install.sh` will bootstrap dotfiles and run initial setup after a fresh install. Before running this it's a good idea to install Xcode from the App Store and install any pending system updates. This will run `symlinks.sh` for you.
+### Install OS updates
+Make sure your machine has all OS updates installed.
+
+### Xcode
+Install the latest [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) from the AppStore and launch it.
+
+### Clone, install and symlink
+Clone this repo and run the install script. This script will also run `symlinks.sh`.
 
 ```bash
 git clone git@github.com:gcollazo/dotfiles.git
@@ -9,11 +15,8 @@ cd dotfiles
 ./install.sh
 ```
 
-### Symlinks
-The `symlinks.sh` command will symlink all files to your `$HOME` directory.
-
 ### Atom Packages
-All packages used are marked with a star and be found on my [user profile](https://atom.io/users/gcollazo/stars).
+Launch Atom and **Install Shell Commands**. Once the Atom shell commands are installed you can install packages. All the packages that I use are starred and can be found on my [user profile](https://atom.io/users/gcollazo/stars).
 
 To install packages:
 
