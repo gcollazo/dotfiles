@@ -1,6 +1,6 @@
 # dotfiles
 
-### Install
+### Install & Symlink
 `install.sh` will bootstrap dotfiles and run initial setup after a fresh install. Before running this it's a good idea to install Xcode from the App Store and install any pending system updates. This will run `symlinks.sh` for you.
 
 ```bash
