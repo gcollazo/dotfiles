@@ -3,6 +3,10 @@
 ### Install OS updates
 Make sure your machine has all OS updates installed.
 
+```bash
+sudo softwareupdate --install --all
+```
+
 ### Xcode
 Install the latest [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) from the AppStore and launch it.
 
