@@ -38,11 +38,11 @@ function symlinkFilesTo() {
 }
 
 # Home files
-blue "--> home stuff.."
+blue "--> home symlinks.."
 symlinkFilesTo home ${HOME}
 
 # Atom.io
-blue "--> Atom.io stuff.."
+blue "--> Atom.io symlinks.."
 symlinkFilesTo atom ${HOME}/.atom
 
 # Done
