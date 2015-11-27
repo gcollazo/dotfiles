@@ -10,7 +10,7 @@ cd dotfiles
 ```
 
 ### Symlinks
-The `symlinks.sh` command will try to symlink all files to your `$HOME` directory. Run with `--force` to overwrite if files already exist.
+The `symlinks.sh` command will symlink all files to your `$HOME` directory.
 
 ### Atom Packages
 All packages used are marked with a star and be found on my [user profile](https://atom.io/users/gcollazo/stars).

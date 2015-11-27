@@ -7,12 +7,14 @@ function yellow() {
     echo -e -n '\033[0m'
     echo ''
 }
+
 function red() {
     prompt="$1"
     echo -e -n "\033[31m$prompt"
     echo -e -n '\033[0m'
     echo ''
 }
+
 function blue() {
     prompt="$1"
     echo -e -n "\033[34m$prompt"
@@ -20,78 +22,37 @@ function blue() {
     echo ''
 }
 
-# Get file list
+# Gets a list of files
 function getFilesInDir() {
-    find . ! -path . ! -path ./.git ! -path ./.DS_Store -maxdepth 1 -name '.*' -exec basename {} ';'
+    find $1 ! -path ./.DS_Store -name '*.*' -exec basename {} ';'
 }
 
-# Set vars
-FILES=$(getFilesInDir)
-CURRENTPATH=$(pwd)
-FORCE=false
-
-# Change value of FORCE
-if [ "$1" == "--force" ]; then
-    FORCE=true
-fi
-
-function createSymlinks() {
-    for F in ${FILES[@]}; do
-        # Delete files if --force was used
-        if [ $FORCE == true ]; then
-            red "--> [DELETE]: $HOME/${F}"
-            rm $HOME/$F
-        fi
-
-        # Make symlink
-        yellow "--> [LINK]: ${HOME}/${F} -> ${CURRENTPATH}/${F}"
-        ln -s $CURRENTPATH/$F $HOME/$F
-
-        if [ $? -eq 1 ]; then
-            echo
-            red "--> [ERROR]: You have already have a file named ${F} in your home folder."
-            red "    Please backup of your old files."
-            red "    Using \"--force\" will allow you to overwrite your existing files."
-            echo
-            break
-        fi
-    done
+# $1 directory to search for files
+# $2 destination of symlink
+function symlinkFilesTo() {
+  for F in $(getFilesInDir $1); do
+    # Make symlink
+    yellow "- ${2}/${F} -> ${PWD}/${1}/${F}"
+    ln -sf ${PWD}/${1}/${F} ${2}/${F}
+  done
 }
 
-# Run
-blue "--> dotfiles stuff.."
-createSymlinks
-
+# Home files
+blue "--> home stuff.."
+symlinkFilesTo home ${HOME}
 
 # Atom.io
 blue "--> Atom.io stuff.."
-mkdir -p ~/.atom
+symlinkFilesTo atom ${HOME}/.atom
 
-yellow "--> [LINK]: config.cson"
-ln -sf $PWD/atom/config.cson ~/.atom/config.cson
-
-yellow "--> [LINK]: init.coffee"
-ln -sf $PWD/atom/init.coffee ~/.atom/init.coffee
-
-yellow "--> [LINK]: keymap.cson"
-ln -sf $PWD/atom/keymap.cson ~/.atom/keymap.cson
-
-yellow "--> [LINK]: snippets.cson"
-ln -sf $PWD/atom/snippets.cson ~/.atom/snippets.cson
-
-yellow "--> [LINK]: styles.less"
-ln -sf $PWD/atom/styles.less ~/.atom/styles.less
-
+# Done
+blue "--> Done!"
 
 # Unset and source
-echo
-blue "--> [DONE]"
-echo
-
 unset yellow
 unset red
 unset blue
 unset getFilesInDir
-unset createSymlinks
+unset symlinkFilesTo
 
 source ~/.bash_profile
