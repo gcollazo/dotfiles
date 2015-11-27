@@ -38,7 +38,6 @@ apm star --installed
 ## Manual Installs
 
 ### Install From AppStore
-- [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
 - [1Password](https://itunes.apple.com/us/app/1password-password-manager/id443987910?mt=12)
 - [Evernote](https://itunes.apple.com/us/app/evernote/id406056744?mt=12)
 - [Navicat Premium Essentials](https://itunes.apple.com/us/app/navicat-premium-essentials/id466416967?mt=12)
