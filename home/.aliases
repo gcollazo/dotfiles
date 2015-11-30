@@ -24,8 +24,10 @@ alias server='python -m SimpleHTTPServer 8888'
 alias dig="dig ANY +noall +answer $1"
 alias flushdns="sudo dscacheutil -flushcache"
 alias geoip="ipinfo $1"
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+function ip() {
+  echo "Local:  $(ipconfig getifaddr en0)"
+  echo "Remote: $(dig +short myip.opendns.com @resolver1.opendns.com)"
+}
 function ipinfo(){ open https://ipinfo.io/$@; }
 alias scan="nmap -T4 --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
 alias sscan="sudo nmap -sS -T4 --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
