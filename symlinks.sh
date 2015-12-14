@@ -30,10 +30,11 @@ function getFilesInDir() {
 # $1 directory to search for files
 # $2 destination of symlink
 function symlinkFilesTo() {
+  IFS=$'\n'
   for F in $(getFilesInDir $1); do
     # Make symlink
     yellow "- ${2}/${F} -> ${PWD}/${1}/${F}"
-    ln -sf ${PWD}/${1}/${F} ${2}/${F}
+    ln -sf "${PWD}/${1}/${F}" "${2}/${F}"
   done
 }
 
@@ -41,8 +42,14 @@ function symlinkFilesTo() {
 blue "--> home symlinks.."
 symlinkFilesTo home ${HOME}
 
+# Sublime Text
+blue "--> Sublime Text symlinks"
+mkdir -p ${HOME}/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+symlinkFilesTo sublime ${HOME}/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+
 # Atom.io
 blue "--> Atom.io symlinks.."
+mkdir -p ${HOME}/.atom
 symlinkFilesTo atom ${HOME}/.atom
 
 # Done
