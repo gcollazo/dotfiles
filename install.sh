@@ -85,6 +85,7 @@ pyenv global 2.7.9
 source ~/.bash_profile
 pip install --upgrade pip
 pip install flake8
+pip install awscli
 
 echo "Installing CocoaPods..."
 sudo gem install cocoapods
