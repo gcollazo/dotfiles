@@ -9,10 +9,8 @@
 		"All Autocomplete",
 		"ApacheConf.tmLanguage",
 		"Babel",
-		"Better CoffeeScript",
 		"Browser Refresh",
 		"ColorPicker",
-		"Ember CLI Snippets",
 		"Emmet",
 		"Gist",
 		"GitSavvy",
@@ -22,10 +20,8 @@
 		"Package Control",
 		"Sass",
 		"SideBarEnhancements",
-		"Stylus",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
-		"SublimeLinter-flake8",
 		"SublimeLinter-json",
 		"Theme - Spacegray"
 	]
