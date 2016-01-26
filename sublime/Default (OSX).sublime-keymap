@@ -7,5 +7,6 @@
       "activate": false,
       "browsers" : ["chrome"]
     }
-  }
+  },
+  {"keys": ["super+\\"], "command": "toggle_side_bar"}
 ]
