@@ -1,6 +1,6 @@
 "*":
-  welcome:
-    showOnStartup: false
+  "advanced-open-file":
+    createFileInstantly: true
   core:
     disabledPackages: [
       "metrics"
@@ -11,20 +11,29 @@
       "oceanic-next"
     ]
   editor:
-    invisibles: {}
-    fontSize: 21
-    lineHeight: 1.2
     fontFamily: "Inconsolata for Powerline"
+    fontSize: 21
+    invisibles: {}
+    lineHeight: 1.2
     scrollPastEnd: true
     showIndentGuide: true
     softWrap: true
+  "git-plus": {}
+  "git-projects":
+    rootPath: "~/Code"
+    sortBy: "Latest modification date"
   "language-babel":
     transpileOnSave: false
   linter:
     showErrorPanel: false
   "linter-eslint":
-    useGlobalEslint: true
     globalNodePath: "/Users/gcollazo/.nvm/versions/node/v5.1.0"
-  "advanced-open-file":
-    createFileInstantly: true
+    useGlobalEslint: true
+  "markdown-preview":
+    useGitHubStyle: true
   "open-recent": {}
+  "seti-icons": {}
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
