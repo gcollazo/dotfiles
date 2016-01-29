@@ -46,10 +46,7 @@
       2,
       "never"
     ],
-    "arrow-body-style": [
-      2,
-      "as-needed"
-    ],
+    "arrow-body-style": 0,
     "arrow-spacing": [
       2,
       {
@@ -209,7 +206,7 @@
     "no-lone-blocks": 2,
     "no-lonely-if": 2,
     "no-loop-func": 2,
-    "no-magic-numbers": 1,
+    "no-magic-numbers": 2,
     "no-mixed-requires": [
       2,
       false
@@ -253,7 +250,7 @@
     "no-script-url": 2,
     "no-self-compare": 2,
     "no-sequences": 2,
-    "no-shadow": 2,
+    "no-shadow": 1,
     "no-shadow-restricted-names": 2,
     "no-spaced-func": 2,
     "no-sparse-arrays": 2,
