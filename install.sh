@@ -68,7 +68,8 @@ npm install -g ember-cli
 
 npm install -g eslint
 npm install -g babel-eslint
-npm install -g eslint-config-ember
+npm install -g eslint-plugin-babel
+npm install -g eslint-config-blimp
 
 npm install -g nodemon
 npm install -g phantomjs
