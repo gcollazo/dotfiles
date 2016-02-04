@@ -27,7 +27,6 @@
   linter:
     showErrorPanel: false
   "linter-eslint":
-    eslintrcPath: "~/.eslintrc"
     globalNodePath: "/Users/gcollazo/.nvm/versions/node/v4.2.1"
     useGlobalEslint: true
   "markdown-preview":
