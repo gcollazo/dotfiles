@@ -21,7 +21,8 @@ alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias server='python -m SimpleHTTPServer 8888'
 
 # Network
-alias dig="dig ANY +noall +answer $1"
+alias dig="dig @8.8.8.8 ANY +noall +answer $1"
+alias digns="dig @8.8.8.8 +short NS $1"
 alias flushdns="sudo dscacheutil -flushcache"
 alias geoip="ipinfo $1"
 function ip() {
