@@ -13,6 +13,7 @@ brew install nmap
 brew install readline
 brew install tree
 brew install watchman
+brew install jq
 
 echo "Installing Cask..."
 brew install caskroom/cask/brew-cask
