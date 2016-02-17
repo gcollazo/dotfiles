@@ -18,6 +18,7 @@ function gi() { curl https://www.gitignore.io/api/$@ ;}
 # Common
 alias json='python -mjson.tool'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
+alias atomupdate='apm unstar $(apm stars --json | jq -r ".[].name") && apm star --installed'
 alias server='python -m SimpleHTTPServer 8888'
 
 # Network
