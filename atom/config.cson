@@ -33,6 +33,8 @@
     useGitHubStyle: true
   "open-recent": {}
   "seti-icons": {}
+  tabs:
+    usePreviewTabs: true
   "tree-view":
     hideIgnoredNames: true
   welcome:
