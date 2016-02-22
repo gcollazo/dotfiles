@@ -296,9 +296,9 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Code/dotfiles/iterm</string>
+	<string>~/Desktop</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
+	<string>{712, 459}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -340,16 +340,18 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>484 212 664 280 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>478 160 924 485 0 0 1440 877 </string>
+	<string>651 392 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>528 562 384 129 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>321 65 1010 539 0 0 1440 877 </string>
+	<string>0 376 730 501 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 4 1434 873 0 0 1440 877 </string>
+	<string>415 -38 906 710 0 0 1440 877 </string>
 	<key>NeverWarnAboutOverrides</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -923,17 +925,17 @@
 			<key>Log Directory</key>
 			<string></string>
 			<key>Minimum Contrast</key>
-			<real>0.24421875178813934</real>
+			<real>0.28716146945953369</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 14</string>
+			<string>Inconsolata 17</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 14</string>
+			<string>Inconsolata 17</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1085,7 +1087,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.043955713510513306</real>
+			<real>0.0</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -1108,14 +1110,16 @@
 			<string>/Users/gcollazo</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveShownPromoWithId_4</key>
+	<true/>
 	<key>NoSyncLastTipTime</key>
 	<real>461016726.27480203</real>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
 	<true/>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>454340974.73755199</real>
+	<real>477625356.65451002</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>476723633.17086297</real>
+	<real>477799403.26379901</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1182,7 +1186,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-02-09T15:13:16Z</date>
+	<date>2016-02-22T02:03:13Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>

@@ -11,7 +11,7 @@
       "oceanic-next"
     ]
   editor:
-    fontFamily: "Inconsolata for Powerline"
+    fontFamily: "Inconsolata"
     fontSize: 21
     invisibles: {}
     lineHeight: 1.2
