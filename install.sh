@@ -24,23 +24,21 @@ brew tap caskroom/fonts
 brew cask install font-inconsolata
 
 echo "Installing OS X Apps..."
-brew cask install atom
 brew cask install arq
+brew cask install atom
 brew cask install cyberduck
+brew cask install gitup
 brew cask install gpgtools
 brew cask install heroku-toolbelt
 brew cask install imageoptim
 brew cask install iterm2
 brew cask install mongodb
-brew cask install mou
 brew cask install paparazzi
 brew cask install postgres
-brew cask install rowanj-gitx
 brew cask install skype
 brew cask install spotify
 brew cask install sublime-text3
 brew cask install transmission
-brew cask install vagrant
 brew cask install virtualbox
 brew cask install viscosity
 
