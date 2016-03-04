@@ -25,6 +25,9 @@ export PYTHONPATH="./.pip:$PYTHONPATH"
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+# Andorid
+export ANDROID_HOME="/Users/gcollazo/Library/Android/sdk"
+
 # Bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
