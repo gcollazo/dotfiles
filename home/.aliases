@@ -1,5 +1,4 @@
 # Aliases
-alias a='atom .'
 alias c="cd $HOME/Code"
 alias d="cd $HOME/Desktop"
 alias dl="cd $HOME/Downloads"
@@ -8,6 +7,15 @@ alias h="cd $HOME/"
 alias ls='ls -lah'
 alias o='open .'
 alias s='subl .'
+
+# Atom open current dir or specified location
+function a() {
+  if [ $# -eq 0 ]; then
+    atom .;
+  else
+    atom "$@";
+  fi;
+}
 
 # System
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup'
