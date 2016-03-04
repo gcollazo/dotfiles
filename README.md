@@ -29,10 +29,10 @@ apm login
 apm stars --install
 ```
 
-To update packages:
+To update starred packages:
 
 ```bash
-apm star --installed
+atomstars
 ```
 
 ## Manual Installs
