@@ -92,6 +92,7 @@ source ~/.bash_profile
 pip install --upgrade pip
 pip install flake8
 pip install awscli
+pip install saws
 
 echo "Installing CocoaPods..."
 sudo gem install cocoapods
