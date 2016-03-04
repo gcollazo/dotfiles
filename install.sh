@@ -4,6 +4,12 @@
 echo "Doing symlinks..."
 ./symlinks.sh
 
+echo "Updating OSX...."
+sudo softwareupdate -iva
+
+echo "Installing Xcode command line tools..."
+sudo xcode-select --install
+
 echo "Installing Homebrew..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
