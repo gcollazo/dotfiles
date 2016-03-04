@@ -5,7 +5,7 @@ echo "Doing symlinks..."
 ./symlinks.sh
 
 echo "Updating OSX...."
-sudo softwareupdate -iva
+sudo softwareupdate --install --all --verbose
 
 echo "Installing Xcode command line tools..."
 sudo xcode-select --install
