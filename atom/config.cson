@@ -31,6 +31,8 @@
     useGlobalEslint: true
   "markdown-preview":
     useGitHubStyle: true
+  "one-dark-ui":
+    layoutMode: "Compact"
   "open-recent": {}
   "seti-icons": {}
   tabs:
