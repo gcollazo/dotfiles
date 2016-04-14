@@ -51,3 +51,7 @@ source ~/.aliases
 
 # Prompt setup
 source ~/.prompt
+
+# Load dnvm / .net
+[ -s "/Users/gcollazo/.dnx/dnvm/dnvm.sh" ] && . "/Users/gcollazo/.dnx/dnvm/dnvm.sh"
+PATH="/Users/gcollazo/.dnx/runtimes/dnx-mono.1.0.0-rc1-update1/bin:$PATH"
