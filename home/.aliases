@@ -30,7 +30,7 @@ function gi() { curl https://www.gitignore.io/api/$@ ;}
 alias json='python -mjson.tool'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias server='python -m SimpleHTTPServer 8888'
-alias atomstars='apm unstar $(apm stars --json | jq -r ".[].name") && apm star --installed'
+alias apm-stars-update='apm unstar $(apm stars --json | jq -r ".[].name") && apm star --installed'
 
 # Network
 alias dig="dig @8.8.8.8 ANY +noall +answer $1"
