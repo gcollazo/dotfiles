@@ -1,43 +1,47 @@
 [user]
-    name = Giovanni Collazo
-    email = hello@gcollazo.com
+  name = Giovanni Collazo
+  email = hello@gcollazo.com
+  signingkey = DCD30968
 [color]
-    interactive = true
-    status = true
-    branch = true
-    diff = true
-    ui = true
+  interactive = true
+  status = true
+  branch = true
+  diff = true
+  ui = true
+[commit]
+  gpgsign = true
 [difftool "gitx"]
-    cmd = gitx
+  cmd = gitx
 [difftool]
-    prompt = false
+  prompt = false
 [diff]
-    tool = gitx
+  tool = gitx
 [alias]
-    st = status
-    ci = commit
-    co = checkout
-    br = branch
-    ls = branch
-    s  = status
-    a  = add
-    b  = branch
-    d  = diff
-    dc = diff --cached
-    v  = show
-    l  = log
-    ll = log
-    cp = cherry-pick
-    c  = checkout
-    cc = commit
-    ri = rebase -i HEAD~10
-    sh = !git-sh
-    ro = !git fetch origin && git reset --hard origin/master
-    tree = log --graph --decorate --pretty=oneline --abbrev-commit
+  st = status
+  ci = commit
+  co = checkout
+  br = branch
+  ls = branch
+  s  = status
+  a  = add
+  b  = branch
+  d  = diff
+  dc = diff --cached
+  v  = show
+  l  = log
+  ll = log
+  cp = cherry-pick
+  c  = checkout
+  cc = commit
+  ri = rebase -i HEAD~10
+  sh = !git-sh
+  ro = !git fetch origin && git reset --hard origin/master
+  tree = log --graph --decorate --pretty=oneline --abbrev-commit
 [core]
-    quotepath = false
-  	excludesfile = ~/.gitignore
+  quotepath = false
+	excludesfile = ~/.gitignore
+  autocrlf = input
 [format]
-    pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
+  pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
 [push]
-	  default = simple
+  default = simple
