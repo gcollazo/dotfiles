@@ -36,11 +36,6 @@ fi
 # Default editor
 export EDITOR='vim'
 
-# docker
-docker-machine ip > /dev/null 2>&1
-if [ $? -eq 0 ]; then
-  eval "$(docker-machine env)"
-fi
 
 # grep color
 export GREP_OPTIONS='--color=auto'
