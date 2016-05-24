@@ -36,6 +36,8 @@ fi
 # Default editor
 export EDITOR='vim'
 
+# aws cli autocomplete
+complete -C '~/.pyenv/shims/aws_completer' aws
 
 # grep color
 export GREP_OPTIONS='--color=auto'
