@@ -78,6 +78,7 @@ npm install -g eslint-config-blimp
 
 npm install -g nodemon
 npm install -g phantomjs
+npm install -g http-server
 
 # Cordova stuff
 npm install -g cordova
