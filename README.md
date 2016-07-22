@@ -32,7 +32,7 @@ apm stars --install
 To update starred packages:
 
 ```bash
-atomstars
+apm-stars-update
 ```
 
 ## Manual Installs
