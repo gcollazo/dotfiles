@@ -27,12 +27,13 @@
   linter:
     showErrorPanel: false
   "linter-eslint":
-    globalNodePath: "/Users/gcollazo/.nvm/versions/node/v5.6.0"
+    globalNodePath: "/Users/gcollazo/.nvm/versions/node/v6.1.0"
     useGlobalEslint: true
   "markdown-preview":
     useGitHubStyle: true
   "one-dark-ui":
     layoutMode: "Compact"
+    tabSizing: "Even"
   "open-recent": {}
   "seti-icons": {}
   tabs:
