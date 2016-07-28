@@ -52,8 +52,8 @@
 	"sublimelinter_gutter_marks": true,
 	"tab_completion": false,
 	"tab_size": 2,
+	"theme": "Spacegray Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": true,
-	"theme": "Spacegray Light.sublime-theme"
+	"word_wrap": true
 }
