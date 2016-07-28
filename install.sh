@@ -20,6 +20,7 @@ brew install readline
 brew install tree
 brew install watchman
 brew install jq
+brew install autoenv
 
 echo "Installing Cask..."
 brew install caskroom/cask/brew-cask
