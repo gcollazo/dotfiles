@@ -73,6 +73,7 @@ npm install -g bower
 npm install -g ember-cli
 
 npm install -g eslint
+npm install -g eslint_d
 npm install -g babel-eslint
 npm install -g eslint-plugin-babel
 npm install -g eslint-config-blimp

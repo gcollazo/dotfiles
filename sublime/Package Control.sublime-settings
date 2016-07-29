@@ -7,7 +7,6 @@
 	[
 		"AdvancedNewFile",
 		"All Autocomplete",
-		"ApacheConf.tmLanguage",
 		"Babel",
 		"Browser Refresh",
 		"ColorPicker",
@@ -21,7 +20,7 @@
 		"Sass",
 		"SideBarEnhancements",
 		"SublimeLinter",
-		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-contrib-eslint_d",
 		"SublimeLinter-json",
 		"Theme - Spacegray"
 	]
