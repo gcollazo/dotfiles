@@ -36,7 +36,7 @@ set number
 set numberwidth=5
 
 " 80 char ruler
-set colorcolumn=80
+" set colorcolumn=80
 
 "Always show current position
 set ruler
@@ -57,7 +57,7 @@ set incsearch
 set showmatch
 
 " Enable mouse
-set mouse=a
+" set mouse=a
 
 " Make backspace work like most other apps
 set backspace=2
