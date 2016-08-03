@@ -70,7 +70,8 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'hyperterm-oceanic-next',
-    'hyperterm-1password'
+    'hyperterm-1password',
+    'hyperlinks'
   ],
 
   // in development, you can create a directory under
