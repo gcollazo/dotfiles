@@ -24,9 +24,6 @@ if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-# autoenv
-source /usr/local/opt/autoenv/activate.sh
-
 # Andorid
 export ANDROID_HOME="/Users/gcollazo/Library/Android/sdk"
 
@@ -54,4 +51,3 @@ source ~/.aliases
 
 # Prompt setup
 source ~/.prompt
-
