@@ -35,7 +35,7 @@ alias apm-stars-update='apm unstar $(apm stars --json | jq -r ".[].name") && apm
 # Network
 alias dig="dig @8.8.8.8 ANY +noall +answer $1"
 alias digns="dig @8.8.8.8 +short NS $1"
-alias flushdns="sudo dscacheutil -flushcache"
+alias flushdns="sudo killall -HUP mDNSResponder"
 function ip() {
   IP=$(ipconfig getifaddr en0)
   IFACE="en0"
