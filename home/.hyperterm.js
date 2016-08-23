@@ -71,7 +71,8 @@ module.exports = {
   plugins: [
     'hyperterm-oceanic-next',
     'hyperterm-1password',
-    'hyperlinks'
+    'hyperlinks',
+    'hypercwd'
   ],
 
   // in development, you can create a directory under
