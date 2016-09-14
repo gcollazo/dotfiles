@@ -12,7 +12,7 @@
     ]
   editor:
     fontFamily: "Inconsolata"
-    fontSize: 21
+    fontSize: 22
     invisibles: {}
     lineHeight: 1.2
     scrollPastEnd: true
