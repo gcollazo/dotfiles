@@ -7,15 +7,11 @@ alias h="cd $HOME/"
 alias ls='ls -lah'
 alias o='open .'
 alias s='subl .'
+alias a='atom .'
+alias v='code .'
 
-# Atom open current dir or specified location
-function a() {
-  if [ $# -eq 0 ]; then
-    atom .;
-  else
-    atom "$@";
-  fi;
-}
+# Current editor
+alias e='a'
 
 # System
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup'
