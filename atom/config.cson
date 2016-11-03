@@ -19,6 +19,8 @@
     scrollPastEnd: true
     showIndentGuide: true
     softWrap: true
+  "file-icons":
+    coloured: false
   "git-plus": {}
   "git-projects":
     rootPath: "~/Code"
