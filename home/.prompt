@@ -57,7 +57,7 @@ prompt_git() {
 }
 
 last_two_dirs() {
-    pwd | rev | awk -F / '{print $1,$2}' | rev | sed s_\ _/_
+  pwd | rev | awk -F / '{print $1,$2}' | rev | sed s_\ _/_;
 }
 
 bold='';
