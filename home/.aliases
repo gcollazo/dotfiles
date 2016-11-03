@@ -18,7 +18,7 @@ function a() {
 }
 
 # System
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup'
 
 # Git
 alias gboom='gpull && gpush && echo BOOM ! ! !'
