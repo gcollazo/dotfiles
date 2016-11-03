@@ -45,8 +45,8 @@ brew cask install skype
 brew cask install spotify
 brew cask install sublime-text3
 brew cask install transmission
+brew cask install tunnelblick
 brew cask install virtualbox
-brew cask install viscosity
 
 echo "Installing development tools..."
 brew install bash-completion
