@@ -47,6 +47,7 @@ brew cask install sublime-text3
 brew cask install transmission
 brew cask install tunnelblick
 brew cask install virtualbox
+brew cask install visual-studio-code
 
 echo "Installing development tools..."
 brew install bash-completion
@@ -102,7 +103,6 @@ sudo gem install cocoapods
 echo "Installing Android dev tools..."
 brew cask install java
 brew install android-sdk
-brew cask install android-studio
 
 # Install Package Control for Sublime Text
 echo "Installing Package Control..."
