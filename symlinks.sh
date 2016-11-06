@@ -39,18 +39,23 @@ function symlinkFilesTo() {
 }
 
 # Home files
-blue "--> home symlinks.."
+blue "--> home symlinks..."
 symlinkFilesTo home ${HOME}
 
 # Sublime Text
-blue "--> Sublime Text symlinks"
+blue "--> Sublime Text symlinks..."
 mkdir -p ${HOME}/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 symlinkFilesTo sublime ${HOME}/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 # Atom.io
-blue "--> Atom.io symlinks.."
+blue "--> Atom.io symlinks..."
 mkdir -p ${HOME}/.atom
 symlinkFilesTo atom ${HOME}/.atom
+
+# vscode
+blue "--> VSCode symlinks..."
+mkdir -p ${HOME}/Library/Application Support/Code/User
+symlinkFilesTo vscode ${HOME}/Library/Application Support/Code/User
 
 # Done
 blue "--> Done!"
