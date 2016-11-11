@@ -36,6 +36,7 @@ function new-app() {
   git remote rename origin upstream
   cp .env.sample .env
   yarn
+  echo "--> 'npm run watch' to start a development server on http://localhost:5000"
 }
 
 # Network
