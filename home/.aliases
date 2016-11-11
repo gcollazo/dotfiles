@@ -28,6 +28,16 @@ alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias server='http-server'
 alias apm-stars-update='apm unstar $(apm stars --json | jq -r ".[].name") && apm star --installed'
 
+# Use web project template
+function new-app() {
+  REPO_URL='git@github.com:GetBlimp/web-project-template.git'
+  git clone $REPO_URL $@
+  cd $@;
+  git remote rename origin upstream
+  cp .env.sample .env
+  yarn
+}
+
 # Network
 alias dig="dig @8.8.8.8 ANY +noall +answer $1"
 alias digns="dig @8.8.8.8 +short NS $1"
