@@ -13,6 +13,9 @@ alias v='code .'
 # Current editor
 alias e='a'
 
+# grep options
+alias grep='grep --color=auto'
+
 # System
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup'
 

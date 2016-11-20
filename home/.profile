@@ -39,9 +39,6 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-# grep color
-export GREP_OPTIONS='--color=auto'
-
 # ls color
 export CLICOLOR=1
 export LSCOLORS=dxfxcxdxbxegedabagacad
