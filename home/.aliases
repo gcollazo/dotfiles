@@ -44,15 +44,13 @@ alias dig="dig @8.8.8.8 ANY +noall +answer $1"
 alias digns="dig @8.8.8.8 +short NS $1"
 alias flushdns="sudo killall -HUP mDNSResponder"
 function ip() {
-  IP=$(ipconfig getifaddr en0)
-  IFACE="en0"
+  for NUMBER in $(seq 0 9); do
+    ip=`ipconfig getifaddr en$NUMBER`
+    if [ -n "$ip" ]; then
+      echo "Local(en$NUMBER): $ip"
+    fi
+  done
 
-  if [[ -z "$IP" ]]; then
-    IP=$(ipconfig getifaddr en4)
-    IFACE="en4"
-  fi
-
-  echo "Local($IFACE): $IP"
   echo "Remote:     $(curl -s https://ipinfo.io/ip)"
 }
 function ipinfo(){ open https://ipinfo.io/$@; }
