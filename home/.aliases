@@ -47,6 +47,7 @@ alias dig="dig @8.8.8.8 ANY +noall +answer $1"
 alias digns="dig @8.8.8.8 +short NS $1"
 alias flushdns="sudo killall -HUP mDNSResponder"
 
+# Show all ip addresses
 function ips() {
   if [[ `uname` == 'Darwin' ]]; then
     interface='en'
