@@ -27,10 +27,6 @@ if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -
 # Andorid
 export ANDROID_HOME="/Users/gcollazo/Library/Android/sdk"
 
-# Load dnvm / .net
-[ -s "/Users/gcollazo/.dnx/dnvm/dnvm.sh" ] && . "/Users/gcollazo/.dnx/dnvm/dnvm.sh"
-PATH="/Users/gcollazo/.dnx/runtimes/dnx-mono.1.0.0-rc1-update1/bin:$PATH"
-
 # aws cli autocomplete
 complete -C '~/.pyenv/shims/aws_completer' aws
 
