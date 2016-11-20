@@ -32,7 +32,7 @@ alias server='http-server'
 alias apm-stars-update='apm unstar $(apm stars --json | jq -r ".[].name") && apm star --installed'
 
 # Use web project template
-function new-app() {
+function blimp-new() {
   REPO_URL='git@github.com:GetBlimp/web-project-template.git'
   git clone $REPO_URL $@
   cd $@;
