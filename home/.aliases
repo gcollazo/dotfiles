@@ -46,17 +46,27 @@ function new-app() {
 alias dig="dig @8.8.8.8 ANY +noall +answer $1"
 alias digns="dig @8.8.8.8 +short NS $1"
 alias flushdns="sudo killall -HUP mDNSResponder"
-function ip() {
+
+function ips() {
+  if [[ `uname` == 'Darwin' ]]; then
+    interface='en'
+  else
+    interface='eth'
+  fi
   for NUMBER in $(seq 0 9); do
-    ip=`ipconfig getifaddr en$NUMBER`
+    ip=`ifconfig $interface$NUMBER 2>/dev/null |
+      grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' |
+      grep -Eo '([0-9]*\.){3}[0-9]*'`
+
     if [ -n "$ip" ]; then
-      echo "Local(en$NUMBER): $ip"
+      echo "Local($interface$NUMBER): $ip"
     fi
   done
-
   echo "Remote:     $(curl -s https://ipinfo.io/ip)"
 }
+
 function ipinfo(){ open https://ipinfo.io/$@; }
+
 alias scan="nmap -T4 -A -v --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
 
 # Other
