@@ -30,7 +30,7 @@
   linter:
     showErrorPanel: false
   "linter-eslint":
-    globalNodePath: "/Users/gcollazo/.nvm/versions/node/v6.2.2"
+    globalNodePath: "/Users/gcollazo/.nvm/versions/node/v6.9.1"
     useGlobalEslint: true
   "markdown-preview":
     useGitHubStyle: true
