@@ -54,8 +54,8 @@ symlinkFilesTo atom ${HOME}/.atom
 
 # vscode
 blue "--> VSCode symlinks..."
-mkdir -p ${HOME}/Library/Application Support/Code/User
-symlinkFilesTo vscode ${HOME}/Library/Application Support/Code/User
+mkdir -p ${HOME}/Library/Application\ Support/Code/User
+symlinkFilesTo vscode ${HOME}/Library/Application\ Support/Code/User
 
 # Done
 blue "--> Done!"
