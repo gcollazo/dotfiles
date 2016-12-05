@@ -11,15 +11,12 @@ echo "Installing Xcode command line tools..."
 sudo xcode-select --install
 
 echo "Installing Homebrew..."
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew doctor
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 echo "Installing utils..."
-brew install nmap
-brew install readline
-brew install tree
-brew install watchman
 brew install jq
+brew install nmap
+brew install tree
 
 echo "Installing Cask..."
 brew install caskroom/cask/brew-cask
@@ -30,53 +27,66 @@ brew tap caskroom/fonts
 brew cask install font-inconsolata
 
 echo "Installing OS X Apps..."
+brew cask install arduino
 brew cask install arq
 brew cask install atom
+brew cask install burp-suite
 brew cask install cyberduck
+brew cask install docker
+brew cask install font-inconsolata
+brew cask install genymotion
 brew cask install gitup
 brew cask install gpgtools
-brew cask install heroku-toolbelt
+brew cask install handbrake
 brew cask install imageoptim
 brew cask install iterm2
+brew cask install licecap
 brew cask install mongodb
+brew cask install ngrok
 brew cask install paparazzi
 brew cask install postgres
+brew cask install postman
+brew cask install robomongo
+brew cask install screenflow
+brew cask install sketch
+brew cask install skitch
 brew cask install skype
+brew cask install slack
 brew cask install spotify
-brew cask install sublime-text3
+brew cask install the-unarchiver
 brew cask install transmission
 brew cask install tunnelblick
 brew cask install virtualbox
-brew cask install visual-studio-code
+brew cask install vlc
+brew cask install webtorrent
+brew cask install wireshark
 
 echo "Installing development tools..."
+brew install awscli
 brew install bash-completion
 brew install git
-brew install pyenv
-brew install pyenv-virtualenv
+brew install heroku-toolbelt
+brew install watchman
 
 # Install nvm
 echo "Installing nvm..."
 curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-source ~/.bash_profile
+source ~/.profile
 
 # Install latest release of node
 echo "Installing node..."
-nvm install v5
-nvm alias default v5
+nvm install v6
+nvm alias default v6
 
 # Install Node.js global tools
 echo "Installing global modules with npm..."
 npm install -g npm
 npm install -g bower
 
-npm install -g ember-cli
-
 npm install -g eslint
-npm install -g eslint_d
-npm install -g babel-eslint
-npm install -g eslint-plugin-babel
 npm install -g eslint-config-blimp
+
+npm install -g ember-cli
 
 npm install -g nodemon
 npm install -g phantomjs
@@ -89,21 +99,16 @@ npm install -g ios-deploy
 
 # Install Python
 echo "Installing Python..."
-pyenv install 2.7.9
-pyenv global 2.7.9
-source ~/.bash_profile
-pip install --upgrade pip
-pip install flake8
-pip install awscli
-pip install saws
+brew install pyenv
+brew install pyenv-virtualenv
+pyenv install 2.7.12
+pyenv global 2.7.12
+source ~/.profile
 
-echo "Installing CocoaPods..."
-sudo gem install cocoapods
+# Install Ruby
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -sSL https://get.rvm.io | bash -s stable --ruby -- --ignore-dotfiles
 
 echo "Installing Android dev tools..."
 brew cask install java
 brew install android-sdk
-
-# Install Package Control for Sublime Text
-echo "Installing Package Control..."
-curl "https://packagecontrol.io/Package Control.sublime-package" > ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/Package\ Control.sublime-package
