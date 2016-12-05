@@ -15,16 +15,12 @@ echo "Installing Homebrew..."
 
 echo "Installing utils..."
 brew install jq
+brew install mas
 brew install nmap
 brew install tree
 
 echo "Installing Cask..."
-brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
-
-echo "Installing fonts..."
-brew tap caskroom/fonts
-brew cask install font-inconsolata
+brew tap caskroom/cask
 
 echo "Installing OS X Apps..."
 brew cask install arduino
@@ -60,6 +56,10 @@ brew cask install virtualbox
 brew cask install vlc
 brew cask install webtorrent
 brew cask install wireshark
+
+echo "Installing fonts..."
+brew tap caskroom/fonts
+brew cask install font-inconsolata
 
 echo "Installing development tools..."
 brew install awscli
