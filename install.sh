@@ -46,7 +46,6 @@ brew cask install robomongo
 brew cask install screenflow
 brew cask install sketch
 brew cask install skitch
-brew cask install skype
 brew cask install slack
 brew cask install spotify
 brew cask install the-unarchiver
