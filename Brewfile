@@ -59,4 +59,3 @@ mas 'Numbers', id: 409203825
 mas '1Password', id: 443987910
 mas 'Navicat Premium Essentials', id: 466416967
 mas 'Xcode', id: 497799835
-mas 'Final Cut Pro', id: 424389933
