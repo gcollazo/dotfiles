@@ -51,3 +51,6 @@ curl -sSL https://get.rvm.io | bash -s stable --ruby -- --ignore-dotfiles
 echo "Installing Atom Packages..."
 apm login
 apm stars --install
+
+echo
+echo "==> Done!"
