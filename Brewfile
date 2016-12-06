@@ -55,7 +55,7 @@ mas 'Pixelmator', id: 407963104
 mas 'Keynote', id: 409183694
 mas 'Pages', id: 409201541
 mas 'Numbers', id: 409203825
-mas 'Final Cut Pro', id: 424389933
 mas '1Password', id: 443987910
 mas 'Navicat Premium Essentials', id: 466416967
 mas 'Xcode', id: 497799835
+mas 'Final Cut Pro', id: 424389933
