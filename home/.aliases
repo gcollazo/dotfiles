@@ -64,6 +64,3 @@ function ips() {
 function ipinfo(){ open https://ipinfo.io/$@; }
 
 alias scan="nmap -T4 -A -v --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
-
-# Other
-alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"

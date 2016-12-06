@@ -31,15 +31,11 @@ nvm alias default v6
 echo "Installing global modules with npm..."
 npm install -g npm
 npm install -g bower
-
+npm install -g ember-cli
 npm install -g eslint
 npm install -g eslint-config-blimp
-
-npm install -g ember-cli
-
-npm install -g nodemon
-npm install -g phantomjs
 npm install -g http-server
+npm install -g phantomjs
 
 # Cordova stuff
 npm install -g cordova

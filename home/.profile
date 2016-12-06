@@ -5,9 +5,6 @@ PATH="/usr/local/sbin:$PATH"
 # Adds Postgres.app binaries to path
 PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 
-# Adds by the Heroku Toolbelt
-PATH="/usr/local/heroku/bin:$PATH"
-
 # Adds MongoDB.app to path
 PATH="~/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
 
@@ -15,7 +12,8 @@ PATH="~/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
 export EDITOR='vim'
 
 # NVM
-[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # pyenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
@@ -25,10 +23,7 @@ if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Andorid
-export ANDROID_HOME="/Users/gcollazo/Library/Android/sdk"
-
-# aws cli autocomplete
-complete -C '~/.pyenv/shims/aws_completer' aws
+export ANDROID_HOME="~/Library/Android/sdk"
 
 # Bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
