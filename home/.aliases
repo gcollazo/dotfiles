@@ -12,7 +12,7 @@ alias a='atom .'
 alias grep='grep --color=auto'
 
 # System
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup'
+alias update='sudo softwareupdate --install --all --verbose; brew update; brew upgrade; brew cleanup'
 
 # Git
 alias gboom='gpull && gpush && echo BOOM ! ! !'
