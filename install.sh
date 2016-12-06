@@ -1,14 +1,5 @@
 #!/bin/bash
-
-# Symlink files
-echo "Doing symlinks..."
-./symlinks.sh
-
-echo "Updating OSX...."
-sudo softwareupdate --install --all --verbose
-
-echo "Installing Xcode command line tools..."
-sudo xcode-select --install
+echo "==> Running install.sh"
 
 echo "Installing Homebrew..."
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -49,5 +40,11 @@ pyenv global 2.7.12
 source ~/.profile
 
 # Install Ruby
+echo "Installing Ruby..."
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 curl -sSL https://get.rvm.io | bash -s stable --ruby -- --ignore-dotfiles
+
+# Atom packages
+echo "Installing Atom Packages..."
+apm login
+apm stars --install

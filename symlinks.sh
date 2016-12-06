@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "==> Running symlinks.sh"
 
 # Colors
 function yellow() {
@@ -57,4 +58,4 @@ unset blue
 unset getFilesInDir
 unset symlinkFilesTo
 
-source ~/.bash_profile
+source ~/.profile
