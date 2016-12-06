@@ -16,12 +16,6 @@ cd dotfiles
 ./install.sh
 ```
 
-### Install From AppStore
-```bash
-mas signin user@example.com
-./install-mas.sh
-```
-
 ### Atom Packages
 Launch Atom and **Install Shell Commands**. Once the Atom shell commands are installed you can install packages. All the packages that I use are starred and can be found on my [user profile](https://atom.io/users/gcollazo/stars).
 
