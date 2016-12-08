@@ -15,6 +15,7 @@ brew 'watchman'
 brew 'pyenv'
 brew 'pyenv-virtualenv'
 brew 'yarn'
+brew 'mitmproxy'
 
 cask 'java'
 brew 'android-sdk'
