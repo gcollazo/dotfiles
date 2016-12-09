@@ -57,5 +57,3 @@ unset red
 unset blue
 unset getFilesInDir
 unset symlinkFilesTo
-
-source ~/.profile

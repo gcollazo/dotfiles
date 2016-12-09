@@ -6,7 +6,7 @@ PATH="/usr/local/sbin:$PATH"
 PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 # Adds MongoDB.app to path
-PATH="~/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
+PATH="/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
 
 # Default editor
 export EDITOR='vim'
