@@ -7,6 +7,7 @@ alias h="cd $HOME/"
 alias ls='ls -lah'
 alias o='open .'
 alias a='atom .'
+alias r='npm run'
 
 # grep options
 alias grep='grep --color=auto'
@@ -62,6 +63,6 @@ function ips() {
   echo "Remote:     $(curl -s https://ipinfo.io/ip)"
 }
 
-function ipinfo(){ open https://ipinfo.io/$@; }
+function ipinfo(){ curl https://ipinfo.io/$@; }
 
 alias scan="nmap -T4 -A -v --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
