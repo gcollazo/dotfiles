@@ -8,6 +8,8 @@
   branch = true
   diff = true
   ui = true
+[commit]
+  gpgsign = true
 [difftool "gitx"]
   cmd = gitx
 [difftool]
