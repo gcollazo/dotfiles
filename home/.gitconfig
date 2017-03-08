@@ -1,7 +1,7 @@
 [user]
   name = Giovanni Collazo
   email = hello@gcollazo.com
-	signingkey = DCD30968
+	signingkey = 55EC68C3
 [color]
   interactive = true
   status = true
