@@ -30,6 +30,7 @@
   linter:
     showErrorPanel: false
   "linter-eslint":
+    disableWhenNoEslintConfig: false
     globalNodePath: "/Users/gcollazo/.nvm/versions/node/v6.9.1"
     useGlobalEslint: true
   "markdown-preview":
