@@ -1,7 +1,6 @@
 # dotfiles
 
 ### Install
-
 ```bash
 curl -o- https://raw.githubusercontent.com/gcollazo/dotfiles/master/bootstrap.sh | bash
 ```
