@@ -21,9 +21,6 @@
     softWrap: true
   "file-icons":
     coloured: false
-  "gist-it":
-    newGistsDefaultToPrivate: true
-    userToken: "b90774351593d593de1fa75dd9756774262d61b6"
   "git-plus": {}
   "git-projects":
     rootPath: "~/Code"
