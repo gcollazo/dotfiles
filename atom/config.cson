@@ -21,18 +21,21 @@
     softWrap: true
   "file-icons":
     coloured: false
+  "gist-it":
+    newGistsDefaultToPrivate: true
+    userToken: "b90774351593d593de1fa75dd9756774262d61b6"
   "git-plus": {}
   "git-projects":
     rootPath: "~/Code"
     sortBy: "Latest modification date"
   "language-babel":
     transpileOnSave: false
-  linter:
-    showErrorPanel: false
+  linter: {}
   "linter-eslint":
     disableWhenNoEslintConfig: false
     globalNodePath: "/Users/gcollazo/.nvm/versions/node/v6.9.1"
     useGlobalEslint: true
+  "linter-ui-default": {}
   "markdown-preview":
     useGitHubStyle: true
   "one-dark-ui":
