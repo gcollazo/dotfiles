@@ -52,5 +52,9 @@ echo "Installing Atom Packages..."
 apm login
 apm stars --install
 
+# VSCode packages
+echo "Installing VSCode Packages..."
+vscode-extensions-update
+
 echo
 echo "==> Done!"

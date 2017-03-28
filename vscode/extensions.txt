@@ -1,0 +1,2 @@
+dbaeumer.vscode-eslint
+naumovs.theme-oceanicnext
