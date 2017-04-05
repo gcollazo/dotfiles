@@ -7,7 +7,7 @@ alias h="cd $HOME/"
 alias ls='ls -lah'
 alias o='open .'
 alias a='atom .'
-alias e='code .'
+alias v='code .'
 alias r='npm run'
 
 # grep options
