@@ -7,7 +7,21 @@
     "editor.tabSize": 2,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/*.pyc": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true
+    },
+    "search.useIgnoreFilesByDefault": true,
     "terminal.integrated.shellArgs.osx": ["-l"],
-    "workbench.colorTheme": "Oceanic Next",
-    "workbench.iconTheme": "vs-minimal"
-}
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "file-icons-colourless"
+  }
