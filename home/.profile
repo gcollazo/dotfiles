@@ -22,6 +22,9 @@ if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+# Yarn
+export PATH="$HOME/.yarn/bin:$PATH"
+
 # Andorid
 export ANDROID_HOME="/usr/local/opt/android-sdk"
 
@@ -39,3 +42,4 @@ source ~/.aliases
 
 # Prompt setup
 source ~/.prompt
+
