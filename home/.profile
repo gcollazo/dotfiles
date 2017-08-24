@@ -8,6 +8,9 @@ PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 # Adds MongoDB.app to path
 PATH="/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
 
+# Adds Redis.app  to path
+PATH="/Applications/Redis.app/Contents/Resources/Vendor/redis/bin:$PATH"
+
 # Default editor
 export EDITOR='vim'
 
