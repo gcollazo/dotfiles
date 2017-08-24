@@ -5,6 +5,7 @@
     "editor.renderIndentGuides": true,
     "editor.rulers": [80,100],
     "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "files.exclude": {
@@ -21,7 +22,11 @@
     },
     "search.useIgnoreFilesByDefault": true,
     "terminal.integrated.shellArgs.osx": ["-l"],
+    "terminal.integrated.fontSize": 16,
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Dracula",
-    "workbench.iconTheme": "file-icons-colourless"
+    "workbench.iconTheme": "file-icons-colourless",
+    "git.enableSmartCommit": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "extensions.ignoreRecommendations": false
   }
