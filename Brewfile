@@ -32,14 +32,13 @@ cask 'gitup'
 cask 'gpgtools'
 cask 'handbrake'
 cask 'imageoptim'
+cask 'insomnia'
 cask 'iterm2'
 cask 'licecap'
-cask 'logmein-client'
 cask 'mongodb'
 cask 'ngrok'
 cask 'paparazzi'
 cask 'postgres'
-cask 'postman'
 cask 'robomongo'
 cask 'screenflow'
 cask 'sketch'
@@ -55,10 +54,10 @@ cask 'vlc'
 cask 'webtorrent'
 cask 'wireshark'
 
-mas 'Pixelmator', id: 407963104
-mas 'Keynote', id: 409183694
-mas 'Pages', id: 409201541
-mas 'Numbers', id: 409203825
 mas '1Password', id: 443987910
+mas 'Keynote', id: 409183694
 mas 'Navicat Premium Essentials', id: 466416967
+mas 'Numbers', id: 409203825
+mas 'Pages', id: 409201541
+mas 'Pixelmator', id: 407963104
 mas 'Xcode', id: 497799835
