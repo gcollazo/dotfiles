@@ -14,6 +14,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AppleWindowTabbingMode</key>
+	<string>manual</string>
 	<key>AutoHideTmuxClientSession</key>
 	<false/>
 	<key>CheckTestRelease</key>
@@ -281,6 +283,8 @@
 	<integer>32</integer>
 	<key>HotkeyCode</key>
 	<integer>49</integer>
+	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
 	<key>HotkeyModifiers</key>
 	<integer>524288</integer>
 	<key>IRMemory</key>
@@ -336,7 +340,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>520 562 400 129 0 0 1440 877 </string>
+	<string>904 579 400 129 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 364 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
@@ -344,9 +348,9 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1109 235 937 512 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>638 41 1711 977 0 0 2560 1417 </string>
+	<string>692 21 730 483 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1804 908 730 483 0 0 2560 1417 </string>
+	<string>700 383 730 483 0 0 1440 877 </string>
 	<key>NeverWarnAboutOverrides</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -1109,6 +1113,10 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>22F9A6A6-E704-40B5-843F-58CFAB2161FB</string>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
@@ -1179,7 +1187,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-08-22T19:00:55Z</date>
+	<date>2017-10-06T18:43:04Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -1233,6 +1241,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.15</string>
+	<string>3.1.2</string>
 </dict>
 </plist>
