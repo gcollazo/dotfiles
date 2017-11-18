@@ -20,6 +20,7 @@
       "**/node_modules": true,
       "**/bower_components": true
     },
+    "editor.tabCompletion": true,
     "search.useIgnoreFilesByDefault": true,
     "terminal.integrated.shellArgs.osx": ["-l"],
     "terminal.integrated.fontSize": 16,
@@ -28,5 +29,7 @@
     "workbench.iconTheme": "file-icons-colourless",
     "git.enableSmartCommit": true,
     "workbench.startupEditor": "newUntitledFile",
-    "extensions.ignoreRecommendations": false
+    "extensions.ignoreRecommendations": false,
+    "workbench.panel.location": "bottom",
+    "explorer.confirmDragAndDrop": false
   }
