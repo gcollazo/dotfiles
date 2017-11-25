@@ -8,7 +8,7 @@ alias ls='ls -lah'
 alias o='open .'
 alias a='atom .'
 alias v='code .'
-alias r='npm run'
+alias r='yarn run'
 
 # grep options
 alias grep='grep --color=auto'

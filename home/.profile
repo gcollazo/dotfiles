@@ -11,8 +11,8 @@ PATH="/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
 # Adds Redis.app  to path
 PATH="/Applications/Redis.app/Contents/Resources/Vendor/redis/bin:$PATH"
 
-# Default editor
-export EDITOR='vim'
+# Yarn
+PATH="$HOME/.yarn/bin:$PATH"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
@@ -24,9 +24,6 @@ if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -
 
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-# Yarn
-export PATH="$HOME/.yarn/bin:$PATH"
 
 # Andorid
 export ANDROID_HOME="/usr/local/opt/android-sdk"
