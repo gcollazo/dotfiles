@@ -1,40 +1,42 @@
 {
-    "editor.fontFamily": "Inconsolata",
-    "editor.fontSize": 21,
-    "editor.lineHeight": 25,
-    "editor.minimap.enabled": false,
-    "editor.renderIndentGuides": true,
-    "editor.rulers": [80,100],
-    "editor.tabCompletion": true,
-    "editor.tabSize": 2,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "extensions.ignoreRecommendations": false,
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "files.exclude": {
-      "**/.git": true,
-      "**/.svn": true,
-      "**/.hg": true,
-      "**/CVS": true,
-      "**/.DS_Store": true,
-      "**/*.pyc": true
-    },
-    "git.enableSmartCommit": true,
-    "prettier.singleQuote": true,
-    "search.useIgnoreFilesByDefault": true,
-    "search.exclude": {
-      "**/node_modules": true,
-      "**/bower_components": true
-    },
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.shellArgs.osx": ["-l"],
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Dracula",
-    "workbench.iconTheme": "file-icons-colourless",
-    "workbench.panel.location": "bottom",
-    "workbench.startupEditor": "newUntitledFile",
-    "[javascript]": {
-      "editor.formatOnSave": true
-    }
-  }
+  "editor.fontFamily": "Inconsolata",
+  "editor.fontSize": 21,
+  "editor.lineHeight": 25,
+  "editor.minimap.enabled": false,
+  "editor.renderIndentGuides": true,
+  "editor.rulers": [80, 100],
+  "editor.tabCompletion": true,
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": false,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.pyc": true
+  },
+  "git.enableSmartCommit": true,
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "always",
+  "search.useIgnoreFilesByDefault": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true
+  },
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.shellArgs.osx": ["-l"],
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "file-icons-colourless",
+  "workbench.panel.location": "bottom",
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.formatOnSave": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "yapf"
+}
