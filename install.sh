@@ -18,8 +18,8 @@ source ~/.profile
 
 # Install latest release of node
 echo "Installing node..."
-nvm install v6
-nvm alias default v6
+nvm install lts/*
+nvm alias default lts/*
 
 # Install Node.js global tools
 echo "Installing global modules with npm..."
@@ -29,7 +29,6 @@ npm install -g ember-cli
 npm install -g eslint
 npm install -g eslint-config-blimp
 npm install -g http-server
-npm install -g phantomjs
 
 # Cordova stuff
 npm install -g cordova
@@ -38,19 +37,14 @@ npm install -g ios-deploy
 
 # Install Python
 echo "Installing Python..."
-pyenv install 2.7.12
-pyenv global 2.7.12
+pyenv install 2.7.14
+pyenv global 2.7.14
 source ~/.profile
 
 # Install Ruby
 echo "Installing Ruby..."
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 curl -sSL https://get.rvm.io | bash -s stable --ruby
-
-# Atom packages
-echo "Installing Atom Packages..."
-apm login
-apm stars --install
 
 # VSCode packages
 echo "Installing VSCode Packages..."

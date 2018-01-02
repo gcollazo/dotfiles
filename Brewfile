@@ -34,12 +34,12 @@ cask 'insomnia'
 cask 'iterm2'
 cask 'licecap'
 cask 'mongodb'
+cask 'owasp-zap'
 cask 'paparazzi'
 cask 'postgres'
 cask 'robo-3t'
 cask 'sketch'
 cask 'skitch'
-cask 'slack'
 cask 'spotify'
 cask 'the-unarchiver'
 cask 'transmission'
@@ -50,13 +50,16 @@ cask 'visual-studio-code'
 cask 'vlc'
 cask 'webtorrent'
 cask 'wireshark'
-cask 'owasp-zap'
 
 mas '1Password', id: 443987910
+mas 'Airmail 3', id: 918858936
 mas 'Keynote', id: 409183694
+mas 'Microsoft Remote Desktop', id: 715768417
 mas 'Navicat Premium Essentials', id: 466416967
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'Pixelmator', id: 407963104
+mas 'Slack', id: 803453959
 mas 'Todoist', id: 585829637
+mas 'WhatsApp', id: 1147396723
 mas 'Xcode', id: 497799835
