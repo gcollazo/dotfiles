@@ -61,5 +61,4 @@ mas 'Pages', id: 409201541
 mas 'Pixelmator', id: 407963104
 mas 'Slack', id: 803453959
 mas 'Todoist', id: 585829637
-mas 'WhatsApp', id: 1147396723
 mas 'Xcode', id: 497799835
