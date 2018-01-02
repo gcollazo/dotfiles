@@ -1,2 +1,8 @@
+PeterJausovec.vscode-docker
 dbaeumer.vscode-eslint
-naumovs.theme-oceanicnext
+dracula-theme.theme-dracula
+esbenp.prettier-vscode
+file-icons.file-icons
+mauve.terraform
+mrmlnc.vscode-duplicate
+ms-python.python
