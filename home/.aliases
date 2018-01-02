@@ -2,11 +2,10 @@
 alias c="cd $HOME/Code"
 alias d="cd $HOME/Desktop"
 alias dl="cd $HOME/Downloads"
-alias g=git
 alias h="cd $HOME/"
+alias g=git
 alias ls='ls -lah'
 alias o='open .'
-alias a='atom .'
 alias v='code .'
 alias r='yarn run'
 
@@ -23,12 +22,9 @@ alias gpush='git push origin $(git rev-parse --abbrev-ref HEAD)'
 function gi() { curl https://www.gitignore.io/api/$@ ;}
 
 # Random
-alias json='python -mjson.tool'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias server='http-server'
-alias apm-stars-update='apm unstar $(apm stars --json | jq -r ".[].name") && apm star --installed'
 alias vscode-extensions-update='code --list-extensions > ~/Code/dotfiles/vscode/extensions.txt && cat ~/Code/dotfiles/vscode/extensions.txt | xargs -n 1 code --install-extension'
-alias password-generate='openssl rand -base64 $@'
 
 # Use web project template
 function new-web-app() {
@@ -42,8 +38,7 @@ function new-web-app() {
 }
 
 # Network
-#alias dig="dig @8.8.8.8 ANY +noall +answer $1"
-#alias digns="dig @8.8.8.8 +short NS $1"
+alias dig="dig @8.8.8.8"
 alias flushdns="sudo killall -HUP mDNSResponder"
 
 # Show all ip addresses
