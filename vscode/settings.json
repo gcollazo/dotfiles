@@ -4,7 +4,11 @@
   "editor.lineHeight": 25,
   "editor.minimap.enabled": false,
   "editor.renderIndentGuides": true,
-  "editor.rulers": [80, 100],
+  "editor.rulers": [
+    80,
+    100
+  ],
+  "editor.formatOnSave": true,
   "editor.tabCompletion": true,
   "editor.tabSize": 2,
   "explorer.confirmDelete": false,
@@ -29,7 +33,9 @@
     "**/bower_components": true
   },
   "terminal.integrated.fontSize": 16,
-  "terminal.integrated.shellArgs.osx": ["-l"],
+  "terminal.integrated.shellArgs.osx": [
+    "-l"
+  ],
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "file-icons-colourless",
