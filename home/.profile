@@ -1,41 +1,55 @@
 # Adds homebrew install path
-PATH="/usr/local/bin:$PATH"
-PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 
-# Adds Postgres.app binaries to path
-PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+# Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
 
-# Adds MongoDB.app to path
-PATH="/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
+# Postgres.app
+export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 
-# Adds Redis.app  to path
-PATH="/Applications/Redis.app/Contents/Resources/Vendor/redis/bin:$PATH"
+# MongoDB.app
+export PATH="/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
 
-# Yarn
-PATH="$HOME/.yarn/bin:$PATH"
+# Redis.app
+export PATH="/Applications/Redis.app/Contents/Resources/Vendor/redis/bin:$PATH"
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+# Android SDK
+export ANDROID_HOME="/usr/local/opt/android-sdk"
 
 # pyenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# Andorid
-export ANDROID_HOME="/usr/local/opt/android-sdk"
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[[ -r "$NVM_DIR/bash_completion" ]] && . "$NVM_DIR/bash_completion"
 
 # Bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+# Prefer US English and use UTF-8
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US"
+
+# grep color
+export GREP_OPTIONS='--color=auto'
+
 # ls color
 export CLICOLOR=1
 export LSCOLORS=dxfxcxdxbxegedabagacad
+
+# Default editor
+export EDITOR='vim'
+export VISUAL='vim'
+
+# Homebrew
+export HOMEBREW_NO_ANALYTICS=1
 
 # Alias
 source ~/.aliases

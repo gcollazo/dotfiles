@@ -8,7 +8,7 @@ echo "Installing all of Homebrew..."
 brew tap Homebrew/bundle
 brew bundle
 
-# Accept Xcode lincense
+# Accept Xcode license
 sudo xcodebuild -license accept
 
 # Install nvm
@@ -18,37 +18,35 @@ source ~/.profile
 
 # Install latest release of node
 echo "Installing node..."
-nvm install lts/*
-nvm alias default lts/*
+nvm install lts/*  --latest-npm
+
+echo "Installing yarn..."
+brew install yarn --without-node
 
 # Install Node.js global tools
-echo "Installing global modules with npm..."
-npm install -g npm
-npm install -g bower
-npm install -g ember-cli
-npm install -g eslint
-npm install -g eslint-config-blimp
-npm install -g http-server
-
-# Cordova stuff
-npm install -g cordova
-npm install -g ios-sim
-npm install -g ios-deploy
+echo "Installing global modules from npm..."
+yarn global add bower
+yarn global add ember-cli
+yarn global add eslint
+yarn global add eslint-config-blimp
+yarn global add http-server
+yarn global add cordova
+yarn global add ios-sim
+yarn global add ios-deploy
 
 # Install Python
 echo "Installing Python..."
-pyenv install 2.7.14
-pyenv global 2.7.14
-source ~/.profile
+pyenv install 3.6.3
+pyenv global 3.6.3
 
 # Install Ruby
 echo "Installing Ruby..."
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-curl -sSL https://get.rvm.io | bash -s stable --ruby
+rbenv install 2.5.0
+rbenv global 2.5.0
 
 # VSCode packages
 echo "Installing VSCode Packages..."
-vscode-extensions-update
+vscode-extensions-install
 
 echo
 echo "==> Done!"

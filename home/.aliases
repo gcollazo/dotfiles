@@ -9,37 +9,33 @@ alias o='open .'
 alias v='code .'
 alias r='yarn run'
 
-# grep options
-alias grep='grep --color=auto'
-
 # System
 alias update='sudo softwareupdate --install --all --verbose; brew update; brew upgrade; brew cleanup'
 
 # Git
-alias gboom='gpull && gpush && echo BOOM ! ! !'
+alias gsync='gpull && gpush'
 alias gpull='git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpush='git push origin $(git rev-parse --abbrev-ref HEAD)'
+alias gboom='gsync && echo BOOM ! ! !'
 function gi() { curl https://www.gitignore.io/api/$@ ;}
 
 # Random
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias server='http-server'
-alias vscode-extensions-update='code --list-extensions > ~/Code/dotfiles/vscode/extensions.txt && cat ~/Code/dotfiles/vscode/extensions.txt | xargs -n 1 code --install-extension'
 
-# Use web project template
-function new-web-app() {
-  REPO_URL='git@github.com:GetBlimp/web-project-template.git'
-  git clone $REPO_URL $@
-  cd $@;
-  git remote rename origin upstream
-  cp .env.sample .env
-  yarn
-  echo "--> 'npm run watch' to start a development server on http://localhost:5000"
-}
+# VS Code extension management
+alias vscode-extensions-save='code --list-extensions > ~/Code/dotfiles/vscode/extensions.txt && echo Done!'
+alias vscode-extensions-install='cat ~/Code/dotfiles/vscode/extensions.txt | xargs -n 1 code --install-extension'
+
+# Empty the Trash on all mounted volumes and the main HDD
+# Also, clear Apple’s System Logs to improve shell startup speed
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
 # Network
 alias dig="dig @8.8.8.8"
 alias flushdns="sudo killall -HUP mDNSResponder"
+alias scan="nmap -T4 -A -v --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
+function ipinfo(){ curl https://ipinfo.io/$@; }
 
 # Show all ip addresses
 function ips() {
@@ -59,7 +55,3 @@ function ips() {
   done
   echo "Remote:     $(curl -s https://ipinfo.io/ip)"
 }
-
-function ipinfo(){ curl https://ipinfo.io/$@; }
-
-alias scan="nmap -T4 -A -v --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
