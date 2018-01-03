@@ -16,6 +16,9 @@ cd ~/Code
 git clone https://github.com/gcollazo/dotfiles.git
 cd dotfiles
 
+# Defaults
+./osx.sh
+
 # Symlinks
 ./symlinks.sh
 
