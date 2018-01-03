@@ -24,12 +24,12 @@ alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias server='http-server'
 
 # VS Code extension management
-alias vscode-extensions-save='code --list-extensions > ~/Code/dotfiles/vscode/extensions.txt && echo Done!'
-alias vscode-extensions-install='cat ~/Code/dotfiles/vscode/extensions.txt | xargs -n 1 code --install-extension'
+alias vscode-extensions-save="code --list-extensions > $HOME/Code/dotfiles/vscode/extensions.txt && echo Done!"
+alias vscode-extensions-install="cat $HOME/Code/dotfiles/vscode/extensions.txt | xargs -n 1 code --install-extension"
 
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
-alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+alias emptytrash='sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv "$HOME/.Trash"; sudo rm -rfv /private/var/log/asl/*.asl'
 
 # Network
 alias dig="dig @8.8.8.8"

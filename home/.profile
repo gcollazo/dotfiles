@@ -52,8 +52,8 @@ export VISUAL='vim'
 export HOMEBREW_NO_ANALYTICS=1
 
 # Alias
-source ~/.aliases
+source "$HOME/.aliases"
 
 # Prompt setup
-source ~/.prompt
+source "$HOME/.prompt"
 

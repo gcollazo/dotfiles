@@ -11,8 +11,8 @@ sudo softwareupdate -i "$CMD_LINE_TOOLS" --verbose
 rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
 
 echo "Clonning repo.."
-mkdir -p ~/Code
-cd ~/Code
+mkdir -p "$HOME/Code"
+cd "$HOME/Code"
 git clone https://github.com/gcollazo/dotfiles.git
 cd dotfiles
 
