@@ -1,28 +1,6 @@
 #!/bin/bash
 echo "==> Running symlinks.sh"
 
-# Colors
-function yellow() {
-    prompt="$1"
-    echo -e -n "\033[32m$prompt"
-    echo -e -n '\033[0m'
-    echo ''
-}
-
-function red() {
-    prompt="$1"
-    echo -e -n "\033[31m$prompt"
-    echo -e -n '\033[0m'
-    echo ''
-}
-
-function blue() {
-    prompt="$1"
-    echo -e -n "\033[34m$prompt"
-    echo -e -n '\033[0m'
-    echo ''
-}
-
 # Gets a list of files
 function getFilesInDir() {
     find $1 ! -path ./.DS_Store -name '*.*' -exec basename {} ';'
@@ -34,26 +12,23 @@ function symlinkFilesTo() {
   IFS=$'\n'
   for F in $(getFilesInDir $1); do
     # Make symlink
-    yellow "- ${2}/${F} -> ${PWD}/${1}/${F}"
+    echo "- ${2}/${F} -> ${PWD}/${1}/${F}"
     ln -sf "${PWD}/${1}/${F}" "${2}/${F}"
   done
 }
 
 # Home files
-blue "--> home symlinks..."
+echo "Making home symlinks..."
 symlinkFilesTo home ${HOME}
 
 # vscode
-blue "--> VSCode symlinks..."
+echo "Making VSCode symlinks..."
 mkdir -p ${HOME}/Library/Application\ Support/Code/User
 symlinkFilesTo vscode ${HOME}/Library/Application\ Support/Code/User
 
 # Done
-blue "--> Done!"
+echo "Done with symlinks..."
 
-# Unset and source
-unset yellow
-unset red
-unset blue
+# Unset
 unset getFilesInDir
 unset symlinkFilesTo
