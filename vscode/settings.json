@@ -45,5 +45,6 @@
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.formatting.provider": "yapf",
-  "git.confirmSync": false
+  "git.confirmSync": false,
+  "git.autofetch": true
 }
