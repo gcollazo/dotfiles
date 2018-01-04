@@ -2,8 +2,8 @@
 echo "==> Running osx.sh"
 
 # Keyboard
-defaults write -g InitialKeyRepeat -int 15
-defaults write -g KeyRepeat -int 2
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # Disable automatic capitalization as it’s annoying when typing code
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
