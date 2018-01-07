@@ -6,7 +6,7 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # Postgres.app
-export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 # MongoDB.app
 export PATH="/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"

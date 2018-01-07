@@ -12,9 +12,9 @@ rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
 
 echo "Clonning repo.."
 mkdir -p "$HOME/Code"
-cd "$HOME/Code"
+cd "$HOME/Code" || exit
 git clone https://github.com/gcollazo/dotfiles.git
-cd dotfiles
+cd dotfiles || exit
 
 # Defaults
 ./osx.sh

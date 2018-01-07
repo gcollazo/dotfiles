@@ -6,3 +6,4 @@ file-icons.file-icons
 mauve.terraform
 mrmlnc.vscode-duplicate
 ms-python.python
+timonwong.shellcheck
