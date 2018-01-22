@@ -47,5 +47,11 @@
   "python.linting.flake8Enabled": true,
   "python.formatting.provider": "yapf",
   "git.confirmSync": false,
-  "git.autofetch": true
+  "git.autofetch": true,
+  "[handlebars]": {
+    "editor.formatOnSave": false
+  },
+  "[html]": {
+    "editor.formatOnSave": false
+  }
 }
