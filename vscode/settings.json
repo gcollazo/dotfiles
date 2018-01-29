@@ -46,5 +46,6 @@
   },
   "[html]": {
     "editor.formatOnSave": false
-  }
+  },
+  "workbench.iconTheme": "file-icons-colourless"
 }
