@@ -24,7 +24,6 @@
   "git.enableSmartCommit": true,
   "prettier.singleQuote": true,
   "prettier.arrowParens": "always",
-  "search.useIgnoreFilesByDefault": true,
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true
@@ -33,11 +32,16 @@
   "terminal.integrated.shellArgs.osx": ["-l"],
   "window.zoomLevel": 0,
   "workbench.colorTheme": "One Dark Pro",
-  "workbench.panel.location": "bottom",
   "workbench.startupEditor": "newUntitledFile",
-  "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "~/.pyenv/shims/flake8",
+  "python.linting.pylintEnabled": false,
   "python.formatting.provider": "yapf",
+  "python.formatting.yapfPath": "~/.pyenv/shims/yapf",
+  "python.formatting.yapfArgs": ["--style", "facebook"],
+  "[python]": {
+    "editor.tabSize": 4
+  },
   "git.confirmSync": false,
   "git.autofetch": true,
   "editor.formatOnSave": true,
