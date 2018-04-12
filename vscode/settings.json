@@ -31,14 +31,13 @@
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.shellArgs.osx": ["-l"],
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "One Dark Pro Vivid",
   "workbench.startupEditor": "newUntitledFile",
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "~/.pyenv/shims/flake8",
   "python.linting.pylintEnabled": false,
   "python.formatting.provider": "yapf",
   "python.formatting.yapfPath": "~/.pyenv/shims/yapf",
-  "python.formatting.yapfArgs": ["--style", "facebook"],
   "[python]": {
     "editor.tabSize": 4
   },
