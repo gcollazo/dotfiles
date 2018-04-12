@@ -9,7 +9,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 # MongoDB.app
-export PATH="/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
+export PATH="/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb/bin:$PATH"
 
 # Redis.app
 export PATH="/Applications/Redis.app/Contents/Resources/Vendor/redis/bin:$PATH"
