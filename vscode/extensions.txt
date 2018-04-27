@@ -1,9 +1,13 @@
-PeterJausovec.vscode-docker
+Equinusocio.vsc-material-theme
+candidmetrics.ember-module-snippets
 dbaeumer.vscode-eslint
+emberjs.emberjs
+emberjs.vscode-ember
 esbenp.prettier-vscode
-file-icons.file-icons
-mauve.terraform
+felixrieseberg.vsc-ember-cli
+josa.ember-related-files
 mrmlnc.vscode-duplicate
 ms-python.python
+phanitejakomaravolu.EmberES6Snippets
+streetsidesoftware.code-spell-checker
 timonwong.shellcheck
-zhuangtongfa.Material-theme

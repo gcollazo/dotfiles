@@ -2,12 +2,15 @@
   "editor.fontFamily": "Inconsolata",
   "editor.fontSize": 21,
   "editor.lineHeight": 25,
-  "editor.minimap.enabled": false,
-  "editor.renderIndentGuides": true,
-  "editor.rulers": [80, 100],
-  "eslint.packageManager": "yarn",
   "editor.tabCompletion": true,
   "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "editor.renderIndentGuides": true,
+  "editor.formatOnSave": true,
+  "editor.rulers": [
+    80,
+    100
+  ],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "extensions.ignoreRecommendations": false,
@@ -21,18 +24,17 @@
     "**/.DS_Store": true,
     "**/*.pyc": true
   },
+  "window.zoomLevel": 0,
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.shellArgs.osx": [
+    "-l"
+  ],
   "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "eslint.packageManager": "yarn",
   "prettier.singleQuote": true,
   "prettier.arrowParens": "always",
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true
-  },
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.shellArgs.osx": ["-l"],
-  "window.zoomLevel": 0,
-  "workbench.colorTheme": "One Dark Pro Vivid",
-  "workbench.startupEditor": "newUntitledFile",
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "~/.pyenv/shims/flake8",
   "python.linting.pylintEnabled": false,
@@ -41,14 +43,10 @@
   "[python]": {
     "editor.tabSize": 4
   },
-  "git.confirmSync": false,
-  "git.autofetch": true,
-  "editor.formatOnSave": true,
   "[handlebars]": {
     "editor.formatOnSave": false
   },
-  "[html]": {
-    "editor.formatOnSave": false
-  },
-  "workbench.iconTheme": "file-icons-colourless"
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "workbench.colorTheme": "Material Theme Palenight High Contrast"
 }
