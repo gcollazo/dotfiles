@@ -46,7 +46,14 @@
   "[handlebars]": {
     "editor.formatOnSave": false
   },
+  "[html]": {
+    "editor.formatOnSave": false
+  },
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.iconTheme": "eq-material-theme-icons",
-  "workbench.colorTheme": "Material Theme Palenight High Contrast"
+  "workbench.colorTheme": "Material Theme Palenight High Contrast",
+  "workbench.iconTheme": "eq-material-theme-icons-palenight",
+  "cSpell.userWords": [
+    "IMAX"
+  ],
+  "materialTheme.fixIconsRunning": false
 }
