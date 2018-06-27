@@ -7,10 +7,7 @@
   "editor.minimap.enabled": false,
   "editor.renderIndentGuides": true,
   "editor.formatOnSave": true,
-  "editor.rulers": [
-    80,
-    100
-  ],
+  "editor.rulers": [80, 100],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "extensions.ignoreRecommendations": false,
@@ -26,9 +23,7 @@
   },
   "window.zoomLevel": 0,
   "terminal.integrated.fontSize": 16,
-  "terminal.integrated.shellArgs.osx": [
-    "-l"
-  ],
+  "terminal.integrated.shellArgs.osx": ["-l"],
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "git.autofetch": true,
@@ -50,10 +45,7 @@
     "editor.formatOnSave": false
   },
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "Material Theme Palenight High Contrast",
-  "workbench.iconTheme": "eq-material-theme-icons-palenight",
-  "cSpell.userWords": [
-    "IMAX"
-  ],
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.iconTheme": "eq-material-theme-icons-darker",
   "materialTheme.fixIconsRunning": false
 }
