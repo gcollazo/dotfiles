@@ -60,14 +60,14 @@ cask "vlc"
 cask "webtorrent"
 cask "wireshark"
 
-mas "1Password", id: 443987910
-mas "Airmail 3", id: 918858936
 mas "Keynote", id: 409183694
 mas "Microsoft Remote Desktop", id: 715768417
 mas "Navicat Premium Essentials", id: 466416967
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pixelmator", id: 407963104
+mas "Pastebot", id: 1179623856
 mas "Slack", id: 803453959
-mas "Todoist", id: 585829637
+mas "Spark", id: 1176895641
+mas "Things", id: 904280696
 mas "Xcode", id: 497799835
