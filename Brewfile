@@ -31,7 +31,6 @@ brew "wifi-password"
 
 cask "android-studio"
 cask "arduino"
-cask "arq"
 cask "burp-suite"
 cask "caskroom/fonts/font-inconsolata"
 cask "docker"
