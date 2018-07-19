@@ -18,10 +18,10 @@ export PATH="/Applications/Redis.app/Contents/Resources/Vendor/redis/bin:$PATH"
 export ANDROID_HOME="/usr/local/Caskroom/android-sdk"
 
 # pyenv
-# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # rbenv
-# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
