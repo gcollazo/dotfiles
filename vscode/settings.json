@@ -7,7 +7,10 @@
   "editor.minimap.enabled": false,
   "editor.renderIndentGuides": true,
   "editor.formatOnSave": true,
-  "editor.rulers": [80, 100],
+  "editor.rulers": [
+    80,
+    100
+  ],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "extensions.ignoreRecommendations": false,
@@ -23,18 +26,24 @@
   },
   "window.zoomLevel": 0,
   "terminal.integrated.fontSize": 16,
-  "terminal.integrated.shellArgs.osx": ["-l"],
+  "terminal.integrated.shellArgs.osx": [
+    "-l"
+  ],
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "git.autofetch": true,
   "eslint.packageManager": "yarn",
   "prettier.singleQuote": true,
   "prettier.arrowParens": "always",
-  "python.linting.flake8Enabled": true,
-  "python.linting.flake8Path": "~/.pyenv/shims/flake8",
-  "python.linting.pylintEnabled": false,
   "python.formatting.provider": "yapf",
-  "python.formatting.yapfPath": "~/.pyenv/shims/yapf",
+  "python.formatting.yapfPath": "/Users/gcollazo/.pyenv/shims/yapf",
+  "python.formatting.yapfArgs": [
+    "--style",
+    "facebook"
+  ],
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "/Users/gcollazo/.pyenv/shims/flake8",
+  "python.linting.pylintEnabled": false,
   "[python]": {
     "editor.tabSize": 4
   },
