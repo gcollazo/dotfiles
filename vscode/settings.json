@@ -35,15 +35,16 @@
   "eslint.packageManager": "yarn",
   "prettier.singleQuote": true,
   "prettier.arrowParens": "always",
-  "python.formatting.provider": "yapf",
-  "python.formatting.yapfPath": "/Users/gcollazo/.pyenv/shims/yapf",
-  "python.formatting.yapfArgs": [
-    "--style",
-    "facebook"
-  ],
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "/Users/gcollazo/.pyenv/versions/3.6.4/bin/black",
+  "black.lineLength": 80,
+  "black.fast": false,
+  "black.debug": false,
+  "black.path": "/Users/gcollazo/.pyenv/versions/3.6.4/bin/black",
   "python.linting.flake8Enabled": true,
-  "python.linting.flake8Path": "/Users/gcollazo/.pyenv/shims/flake8",
+  "python.linting.flake8Path": "/Users/gcollazo/.pyenv/versions/2.7.14/bin/flake8",
   "python.linting.pylintEnabled": false,
+  "python.sortImports.path": "/Users/gcollazo/.pyenv/versions/3.6.4/bin/isort",
   "[python]": {
     "editor.tabSize": 4
   },
