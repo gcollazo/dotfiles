@@ -40,16 +40,11 @@ yarn global add typescript
 echo "Installing Python..."
 pyenv install 3.6.4
 pyenv install 2.7.14
-pyenv global 2.7.14
-
-# Install Ruby
-echo "Installing Ruby..."
-rbenv install 2.5.0
-rbenv global 2.5.0
+pyenv global 3.6.4
 
 # VSCode packages
 echo "Installing VSCode Packages..."
-vscode-extensions-install
+cat "$HOME/Code/dotfiles/vscode/extensions.txt" | xargs -n 1 code --install-extension
 
 echo
 echo "==> Done!"
