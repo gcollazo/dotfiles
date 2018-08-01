@@ -15,7 +15,8 @@ export PATH="/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb/bin:$PA
 export PATH="/Applications/Redis.app/Contents/Resources/Vendor/redis/bin:$PATH"
 
 # Android SDK
-export ANDROID_HOME="/usr/local/Caskroom/android-sdk"
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 # pyenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
