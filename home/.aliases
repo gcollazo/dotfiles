@@ -24,6 +24,12 @@ function npmls() {
   npm list --depth=0 "$1" 2>/dev/null
 }
 alias server='http-server'
+function archive() {
+  tar cvJf "$1.tar.xz" "$1"
+}
+function unarchive() {
+  tar xvJf "$1"
+}
 
 # VS Code extension management
 alias vscode-extensions-save="code --list-extensions > $HOME/Code/dotfiles/vscode/extensions.txt && echo Done!"
