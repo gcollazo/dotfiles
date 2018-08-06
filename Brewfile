@@ -1,5 +1,6 @@
 tap "homebrew/core"
 tap "homebrew/bundle"
+tap "homebrew/cask-drivers"
 tap "caskroom/cask"
 tap "caskroom/fonts"
 tap "heroku/brew"
@@ -56,6 +57,7 @@ cask "visual-studio-code"
 cask "vlc"
 cask "webtorrent"
 cask "wireshark"
+cask "yubico-authenticator"
 
 mas "Keynote", id: 409183694
 mas "Microsoft Remote Desktop", id: 715768417
