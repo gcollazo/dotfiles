@@ -55,7 +55,9 @@
     "editor.formatOnSave": false
   },
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
-  "workbench.iconTheme": "eq-material-theme-icons-darker",
-  "materialTheme.fixIconsRunning": false
+  "workbench.colorTheme": "Material Theme Ocean High Contrast",
+  "materialTheme.fixIconsRunning": false,
+  "material-icon-theme.activeIconPack": "",
+  "material-icon-theme.folders.color": "#42a5f5",
+  "workbench.iconTheme": "eq-material-theme-icons-ocean"
 }

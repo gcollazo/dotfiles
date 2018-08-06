@@ -1,8 +1,8 @@
-Equinusocio.vsc-material-theme
 candidmetrics.ember-module-snippets
 dbaeumer.vscode-eslint
 emberjs.emberjs
 emberjs.vscode-ember
+Equinusocio.vsc-material-theme
 esbenp.prettier-vscode
 felixrieseberg.vsc-ember-cli
 josa.ember-related-files
