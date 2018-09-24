@@ -16,14 +16,19 @@ alias update='sudo softwareupdate --install --all --verbose; brew update; brew u
 alias gsync='gpull && gpush'
 alias gpull='git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpush='git push origin $(git rev-parse --abbrev-ref HEAD)'
-alias gboom='gsync && echo BOOM ! ! !'
+alias gboom='gsync && echo 💥'
 function gi() { curl "https://www.gitignore.io/api/$1" ;}
 
 # Random
+alias server='http-server'
+alias android-emulator="$HOME/Library/Android/sdk/emulator/emulator -avd Nexus_5X_API_28"
+
+# NPM
 function npmls() {
   npm list --depth=0 "$1" 2>/dev/null
 }
-alias server='http-server'
+
+# Archive / unarchive
 function archive() {
   tar cvJf "$1.tar.xz" "$1"
 }
