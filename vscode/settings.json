@@ -47,8 +47,7 @@
   "[html]": {
     "editor.formatOnSave": false
   },
-  "workbench.startupEditor": "newUntitledFile",
   "workbench.colorTheme": "Material Theme Palenight High Contrast",
-  "materialTheme.fixIconsRunning": false,
-  "workbench.iconTheme": "eq-material-theme-icons-palenight"
+  "workbench.iconTheme": "eq-material-theme-icons-palenight",
+  "workbench.startupEditor": "newUntitledFile"
 }

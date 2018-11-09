@@ -300,10 +300,8 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Desktop</string>
+	<string>~/Code/dotfiles/iterm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
-	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
@@ -336,23 +334,18 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
-	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
-	<dict>
-		<key>TB Is Shown</key>
-		<integer>1</integer>
-	</dict>
-	<key>NSWindow Frame SUStatusFrame</key>
-	<string>520 561 400 129 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>410 363 620 392 0 0 1440 877 </string>
-	<key>NSWindow Frame SessionsPreferences</key>
-	<string>269 139 606 456 0 0 2560 1417 </string>
+	<string>1009 768 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>534 228 796 473 0 0 1440 877 </string>
+	<string>838 -794 796 486 569 -900 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>651 122 730 483 0 0 1440 877 </string>
+	<string>812 -689 730 459 569 -900 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>196 383 730 483 0 0 1440 877 </string>
+	<string>275 187 730 459 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>768 -853 730 459 571 -900 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>789 -876 730 459 571 -900 1440 877 </string>
 	<key>NeverWarnAboutOverrides</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -1114,7 +1107,7 @@
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>22F9A6A6-E704-40B5-843F-58CFAB2161FB</string>
+	<string>E04C71C0-64D7-4DE5-9022-5FEE17107142</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1122,7 +1115,7 @@
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>502717559.96179903</real>
+	<real>554864636.02074802</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1187,11 +1180,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=53</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=58</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-25T14:31:00Z</date>
+	<date>2018-10-10T04:24:00Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -1199,7 +1192,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -1247,6 +1240,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.2.3</string>
 </dict>
 </plist>
