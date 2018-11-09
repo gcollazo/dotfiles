@@ -60,5 +60,5 @@ source "$HOME/.aliases"
 # Prompt setup
 source "$HOME/.prompt"
 
-# Credentials
-source "$HOME/.secrets"
+# Secrets
+[ -s "$HOME/.secret" ] && source "$HOME/.secret"
