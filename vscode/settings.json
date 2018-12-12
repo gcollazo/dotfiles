@@ -27,7 +27,6 @@
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "git.autofetch": true,
-  "eslint.packageManager": "yarn",
   "prettier.singleQuote": true,
   "prettier.arrowParens": "always",
   "python.formatting.provider": "black",

@@ -20,21 +20,9 @@ source "$HOME/.profile"
 echo "Installing node..."
 nvm install lts/*  --latest-npm
 
-echo "Installing yarn..."
-brew install yarn --without-node
-
 # Install Node.js global tools
 echo "Installing global modules from npm..."
-yarn global add bower
-yarn global add cordova
-yarn global add ember-cli
-yarn global add eslint
-yarn global add eslint-config-blimp
-yarn global add eslint-plugin-prefer-let
-yarn global add http-server
-yarn global add ios-deploy
-yarn global add ios-sim
-yarn global add typescript
+npm install -g add cordova
 
 # Install Python
 echo "Installing Python..."

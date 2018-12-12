@@ -7,7 +7,7 @@ alias g=git
 alias ls='ls -lah'
 alias o='open .'
 alias v='code .'
-alias r='yarn run'
+alias r='npm run'
 
 # System
 alias update='sudo softwareupdate --install --all --verbose; brew update; brew upgrade; brew cleanup'
@@ -20,7 +20,7 @@ alias gboom="gsync && echo '💥 Done 💥'"
 function gi() { curl "https://www.gitignore.io/api/$1" ;}
 
 # Random
-alias server='http-server'
+alias server='npx http-server'
 alias android-emulator="$HOME/Library/Android/sdk/emulator/emulator -avd Nexus_5X_API_28"
 
 # NPM
