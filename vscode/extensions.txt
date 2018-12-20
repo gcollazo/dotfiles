@@ -1,5 +1,6 @@
 candidmetrics.ember-module-snippets
 dbaeumer.vscode-eslint
+eamodio.gitlens
 emberjs.emberjs
 emberjs.vscode-ember
 Equinusocio.vsc-material-theme
@@ -8,6 +9,7 @@ felixrieseberg.vsc-ember-cli
 josa.ember-related-files
 mrmlnc.vscode-duplicate
 ms-python.python
+msjsdiag.debugger-for-chrome
 phanitejakomaravolu.EmberES6Snippets
 streetsidesoftware.code-spell-checker
 timonwong.shellcheck
