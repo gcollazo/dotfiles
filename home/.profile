@@ -14,10 +14,13 @@ export PATH="/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb/bin:$PA
 # Redis.app
 export PATH="/Applications/Redis.app/Contents/Resources/Vendor/redis/bin:$PATH"
 
+# fastlane
+export PATH="$HOME/.fastlane/bin:$PATH"
+
 # Android
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-export PATH="/Applications/Android Studio.app/Contents/gradle/gradle-4.4/bin:$PATH"
+export PATH="/Applications/Android Studio.app/Contents/gradle/gradle-4.6/bin:$PATH"
 export JAVA_HOME="/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home"
 
 # NVM
