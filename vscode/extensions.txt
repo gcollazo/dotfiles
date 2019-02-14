@@ -1,6 +1,6 @@
 candidmetrics.ember-module-snippets
+CoenraadS.bracket-pair-colorizer
 dbaeumer.vscode-eslint
-eamodio.gitlens
 emberjs.emberjs
 emberjs.vscode-ember
 Equinusocio.vsc-material-theme
@@ -9,7 +9,9 @@ felixrieseberg.vsc-ember-cli
 josa.ember-related-files
 mrmlnc.vscode-duplicate
 ms-python.python
+ms-vscode.vscode-typescript-tslint-plugin
 msjsdiag.debugger-for-chrome
 phanitejakomaravolu.EmberES6Snippets
+PKief.material-icon-theme
 streetsidesoftware.code-spell-checker
 timonwong.shellcheck
