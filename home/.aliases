@@ -23,6 +23,13 @@ function gi() { curl "https://www.gitignore.io/api/$1" ;}
 alias server='npx http-server'
 alias android-emulator="$HOME/Library/Android/sdk/emulator/emulator -avd Nexus_5X_API_28"
 
+function ssh-tunnel-remote-to-local() {
+  # $1: remote port
+  # $2: local port
+  # $3: server connection user@example.com
+  ssh -gNR "$1":localhost:"$2" "$3"
+}
+
 # NPM
 function npmls() {
   npm list --depth=0 "$1" 2>/dev/null
