@@ -1,3 +1,4 @@
+bungcip.better-toml
 candidmetrics.ember-module-snippets
 CoenraadS.bracket-pair-colorizer
 dbaeumer.vscode-eslint
@@ -13,5 +14,6 @@ ms-vscode.vscode-typescript-tslint-plugin
 msjsdiag.debugger-for-chrome
 phanitejakomaravolu.EmberES6Snippets
 PKief.material-icon-theme
+rust-lang.rust
 streetsidesoftware.code-spell-checker
 timonwong.shellcheck

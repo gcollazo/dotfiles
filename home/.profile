@@ -37,6 +37,9 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # Python binaries
 export PATH="$HOME/.local/bin:$PATH"
 
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # Bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
