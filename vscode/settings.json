@@ -50,6 +50,7 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.colorCustomizations": {},
   "cSpell.userWords": [
+    "Deno",
     "mixins",
     "sqlogs",
     "tesorolex"
