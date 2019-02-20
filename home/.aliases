@@ -25,41 +25,6 @@ function gi() { curl "https://www.gitignore.io/api/$1" ;}
 alias server='npx http-server'
 alias android-emulator="$HOME/Library/Android/sdk/emulator/emulator -avd Nexus_5X_API_28"
 
-function ssh-tunnel-remote-to-local() {
-  # Expose a local port
-  REMOTE_PORT="$1"
-  LOCAL_PORT="$2"
-  CONN="$3"
-
-  ssh -nNT -R "$REMOTE_PORT":localhost:"$LOCAL_PORT" "$CONN"
-}
-
-function ssh-tunnel-local-to-remote() {
-  # Connect to remote port
-  LOCAL_PORT="$1"
-  REMOTE_HOST="$2"
-  REMOTE_PORT="$3"
-  CONN="$4"
-
-  if [[ -z "$4" ]]; then
-    # We don't have a $4 param
-    # use localhost for remote host
-    REMOTE_HOST="localhost"
-    REMOTE_PORT="$2"
-    CONN="$3"
-  fi
-
-  ssh -nNT -L "$LOCAL_PORT":$REMOTE_HOST:"$REMOTE_PORT" "$CONN"
-}
-
-function ssh-proxy() {
-  # Starts a SOCKS proxy on $LOCAL_PORT
-  LOCAL_PORT="$1"
-  CONN="$2"
-
-  ssh -D $LOCAL_PORT -NCq $CONN
-}
-
 # NPM
 function npmls() {
   npm list --depth=0 "$1" 2>/dev/null
@@ -111,4 +76,54 @@ function ips() {
 # Send notification via Slack
 function notify() {
   curl -X POST --data-urlencode "payload={\"text\":\"$1\"}" "$SLACK_WEBHOOK" &> /dev/null
+}
+
+# ssh: expose a local port
+function ssh-tunnel-remote-to-local() {
+  if [[ -z "$1" ]]; then
+    printf '\nUsage:\n\tssh-tunnel-local-to-remote <REMOTE_PORT> <LOCAL_PORT> <CONN>\n\n'
+    return
+  fi
+
+  REMOTE_PORT="$1"
+  LOCAL_PORT="$2"
+  CONN="$3"
+
+  ssh -nNT -R "$REMOTE_PORT":localhost:"$LOCAL_PORT" "$CONN"
+}
+
+# ssh: connect to remote port
+function ssh-tunnel-local-to-remote() {
+  if [[ -z "$1" ]]; then
+    printf '\nUsage:\n\tssh-tunnel-local-to-remote <LOCAL_PORT> [REMOTE_HOST] <REMOTE_PORT> <CONN>\n\n'
+    return
+  fi
+
+  LOCAL_PORT="$1"
+  REMOTE_HOST="$2"
+  REMOTE_PORT="$3"
+  CONN="$4"
+
+  if [[ -z "$4" ]]; then
+    # We don't have a $4 param
+    # use localhost for remote host
+    REMOTE_HOST="localhost"
+    REMOTE_PORT="$2"
+    CONN="$3"
+  fi
+
+  ssh -nNT -L "$LOCAL_PORT":$REMOTE_HOST:"$REMOTE_PORT" "$CONN"
+}
+
+# ssh: starts a SOCKS proxy on $LOCAL_PORT
+function ssh-proxy() {
+  if [[ -z "$1" ]]; then
+    printf '\nUsage:\n\tssh-proxy <LOCAL_PORT> <CONN>\n\n'
+    return
+  fi
+
+  LOCAL_PORT="$1"
+  CONN="$2"
+
+  ssh -qNC -D "$LOCAL_PORT" "$CONN"
 }
