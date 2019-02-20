@@ -95,7 +95,7 @@ function ssh-tunnel-remote-to-local() {
 # ssh: connect to remote port
 function ssh-tunnel-local-to-remote() {
   if [[ -z "$1" ]]; then
-    printf '\nUsage:\n\tssh-tunnel-local-to-remote <LOCAL_PORT> [REMOTE_HOST] <REMOTE_PORT> <CONN>\n\n'
+    printf '\nUsage:\n\tssh-tunnel-local-to-remote <LOCAL_PORT> <REMOTE_HOST> <REMOTE_PORT> <CONN>\n\n'
     return
   fi
 
@@ -104,15 +104,7 @@ function ssh-tunnel-local-to-remote() {
   REMOTE_PORT="$3"
   CONN="$4"
 
-  if [[ -z "$4" ]]; then
-    # We don't have a $4 param
-    # use localhost for remote host
-    REMOTE_HOST="localhost"
-    REMOTE_PORT="$2"
-    CONN="$3"
-  fi
-
-  ssh -nNT -L "$LOCAL_PORT":$REMOTE_HOST:"$REMOTE_PORT" "$CONN"
+  ssh -nNT -L "$LOCAL_PORT":"$REMOTE_HOST":"$REMOTE_PORT" "$CONN"
 }
 
 # ssh: starts a SOCKS proxy on $LOCAL_PORT
