@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Aliases
 alias c="cd $HOME/Code"
 alias d="cd $HOME/Desktop"
@@ -24,10 +26,30 @@ alias server='npx http-server'
 alias android-emulator="$HOME/Library/Android/sdk/emulator/emulator -avd Nexus_5X_API_28"
 
 function ssh-tunnel-remote-to-local() {
-  # $1: remote port
-  # $2: local port
-  # $3: server connection user@example.com
-  ssh -gNR "$1":localhost:"$2" "$3"
+  # Expose a local port
+  REMOTE_PORT="$1"
+  LOCAL_PORT="$2"
+  CONN="$3"
+
+  ssh -nNT -R "$REMOTE_PORT":localhost:"$LOCAL_PORT" "$CONN"
+}
+
+function ssh-tunnel-local-to-remote() {
+  # Connect to remote port
+  LOCAL_PORT="$1"
+  REMOTE_HOST="$2"
+  REMOTE_PORT="$3"
+  CONN="$4"
+
+  if [[ -z "$4" ]]; then
+    # We don't have a $4 param
+    # use localhost for remote host
+    REMOTE_HOST="localhost"
+    REMOTE_PORT="$2"
+    CONN="$3"
+  fi
+
+  ssh -nNT -L "$LOCAL_PORT":$REMOTE_HOST:"$REMOTE_PORT" "$CONN"
 }
 
 # NPM
