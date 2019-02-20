@@ -52,6 +52,14 @@ function ssh-tunnel-local-to-remote() {
   ssh -nNT -L "$LOCAL_PORT":$REMOTE_HOST:"$REMOTE_PORT" "$CONN"
 }
 
+function ssh-proxy() {
+  # Starts a SOCKS proxy on $LOCAL_PORT
+  LOCAL_PORT="$1"
+  CONN="$2"
+
+  ssh -D $LOCAL_PORT -NCq $CONN
+}
+
 # NPM
 function npmls() {
   npm list --depth=0 "$1" 2>/dev/null
