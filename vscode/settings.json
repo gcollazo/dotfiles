@@ -44,22 +44,21 @@
     "editor.formatOnSave": false
   },
   "[html]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.colorTheme": "Material Theme Palenight High Contrast",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.colorCustomizations": {},
-  "cSpell.userWords": [
-    "Deno",
-    "mixins",
-    "sqlogs",
-    "tesorolex"
-  ],
-  "gitlens.currentLine.enabled": false,
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.codeLens.enabled": false,
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.hidesExplorerArrows": true,
   "material-icon-theme.activeIconPack": "",
-  "material-icon-theme.folders.theme": "classic"
+  "material-icon-theme.folders.theme": "classic",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "material-icon-theme.saturation": 1,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
