@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Adds homebrew install path
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
@@ -18,15 +20,20 @@ export PATH="/Applications/Redis.app/Contents/Resources/Vendor/redis/bin:$PATH"
 export PATH="$HOME/.fastlane/bin:$PATH"
 
 # Android
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-export PATH="/Applications/Android Studio.app/Contents/gradle/gradle-4.6/bin:$PATH"
+export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
+export PATH="$ANDROID_SDK_ROOT/tools:$PATH"
+export PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
+export PATH="$ANDROID_SDK_ROOT/emulator:$PATH"
+export PATH="/Applications/Android Studio.app/Contents/gradle/gradle-5.1.1/bin:$PATH"
 export JAVA_HOME="/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [[ -r "$NVM_DIR/bash_completion" ]] && . "$NVM_DIR/bash_completion"
+
+# Yarn
+export PATH="$(yarn global bin):$PATH"
 
 # deno
 export PATH=$HOME/.deno/bin:$PATH
