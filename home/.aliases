@@ -9,7 +9,7 @@ alias g=git
 alias ls='ls -lah'
 alias o='open .'
 alias v='code .'
-alias r='npm run'
+alias r='yarn run'
 
 # System
 alias update='sudo softwareupdate --install --all --verbose; brew update; brew upgrade; brew cleanup'
@@ -17,6 +17,7 @@ alias update='sudo softwareupdate --install --all --verbose; brew update; brew u
 # Git
 alias gsync='gpull && gpush'
 alias gpull='git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
+alias gfetch='git fetch --all'
 alias gpush='git push origin $(git rev-parse --abbrev-ref HEAD)'
 alias gboom="gsync && echo '💥 Done 💥'"
 function gi() { curl "https://www.gitignore.io/api/$1" ;}
@@ -32,10 +33,10 @@ function npmls() {
 
 # Archive / unarchive
 function archive() {
-  tar cvJf "$1.tar.xz" "$1"
+  tar cvJf "arhive.tar.xz" "$@"
 }
 function unarchive() {
-  tar xvJf "$1"
+  tar xvJf "$@"
 }
 
 # VS Code extension management
