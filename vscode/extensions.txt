@@ -1,4 +1,3 @@
-alonski.prettier-for-handlebars-vscode
 candidmetrics.ember-module-snippets
 CoenraadS.bracket-pair-colorizer-2
 dbaeumer.vscode-eslint
