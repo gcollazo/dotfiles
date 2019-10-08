@@ -34,6 +34,8 @@
 	<dict/>
 	<key>Default Bookmark Guid</key>
 	<string>AD5EC02B-2E4B-42F6-A1E5-6B19D2A8AF0C</string>
+	<key>Default Toolbelt Width</key>
+	<real>192</real>
 	<key>DimBackgroundWindows</key>
 	<false/>
 	<key>DimInactiveSplitPanes</key>
@@ -138,15 +140,15 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1905 203 445 103 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>552 656 400 129 0 0 1440 877 </string>
+	<string>1153 966 400 129 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>449 363 620 392 0 0 1440 877 </string>
+	<string>445 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1439 558 918 512 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>480 29 730 495 0 0 1440 877 </string>
+	<string>194 105 1054 657 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>291 463 730 459 0 0 2560 1417 </string>
+	<string>189 253 730 495 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>768 -853 730 459 571 -900 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -1049,7 +1051,7 @@
 									<key>Green Component</key>
 									<real>0.90000000000000002</real>
 									<key>Red Component</key>
-									<real>0.84599999999999997</real>
+									<real>0.90000000000000002</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -1081,7 +1083,7 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.7380000000000001</real>
+									<real>0.63</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
@@ -1119,7 +1121,7 @@
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.73799999999999988</real>
+									<real>0.90000000000000002</real>
 									<key>Red Component</key>
 									<real>0.63</real>
 								</dict>
@@ -1130,6 +1132,38 @@
 								<integer>1</integer>
 								<key>font</key>
 								<string>.AppleSystemUIFont 12</string>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
+						<string>iTermStatusBarMemoryUtilizationComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>base: compression resistance</key>
+								<integer>1</integer>
+								<key>base: priority</key>
+								<real>5</real>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.90000000000000002</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.63</real>
+									<key>Red Component</key>
+									<real>0.63</real>
+								</dict>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>1</integer>
 							</dict>
 						</dict>
 					</dict>
@@ -1155,7 +1189,7 @@
 									<key>Green Component</key>
 									<real>0.63</real>
 									<key>Red Component</key>
-									<real>0.8460000000000002</real>
+									<real>0.90000000000000002</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -1203,16 +1237,20 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.2</string>
 		<string>3.2.9</string>
-		<string>3.3.0</string>
 		<string>3.3.1</string>
+		<string>3.3.4</string>
+		<string>3.3.0</string>
+		<string>3.3.3</string>
+		<string>3.3.5</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{294, 663}</string>
+		<string>{154, 652}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -1224,8 +1262,10 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>E04C71C0-64D7-4DE5-9022-5FEE17107142</string>
+	<key>NoSyncLastTipTime</key>
+	<real>592191732.84241998</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>31</integer>
+	<integer>126</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1666,6 +1706,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>number</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentTab.currentSession.hostname</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -1718,6 +1766,22 @@
 				<true/>
 				<key>name</key>
 				<string>currentSession.commandLine</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<false/>
+				<key>name</key>
+				<string>title</string>
+				<key>nonterminalContext</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>title</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1914,8 +1978,18 @@
 	<array>
 		<string>fleet</string>
 	</array>
+	<key>NoSyncSearchHistory2</key>
+	<array>
+		<string>name</string>
+	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>554864636.02074802</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+		<string>0001</string>
+	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1986,7 +2060,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-13T14:31:51Z</date>
+	<date>2019-10-08T01:36:54Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -2023,7 +2097,7 @@
 	<integer>10</integer>
 	<key>ToolbeltTools</key>
 	<array>
-		<string>Command History</string>
+		<string>Recent Directories</string>
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
@@ -2054,7 +2128,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.1</string>
+	<string>3.3.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
