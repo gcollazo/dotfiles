@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Silence bash deprecation warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # Adds homebrew install path
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
