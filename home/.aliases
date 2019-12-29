@@ -138,3 +138,7 @@ function kms-decrypt() {
   aws kms decrypt --ciphertext-blob fileb://<(echo "$1" | base64 -D) --encryption-context "$2" --output text --query Plaintext --profile $3 | base64 -D
   echo
 }
+
+function generate-random-password() {
+  openssl rand -base64 32 | tr -d "=+/" | cut -c1-32
+}
