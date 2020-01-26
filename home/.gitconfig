@@ -1,6 +1,6 @@
 [user]
-  name = Giovanni Collazo
-  email = hello@gcollazo.com
+	name = Giovanni Collazo
+	email = hello@gcollazo.com
 	signingkey = 55EC68C3
 [core]
   quotepath = false
