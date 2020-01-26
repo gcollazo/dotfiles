@@ -6,7 +6,6 @@ tap "caskroom/fonts"
 tap "heroku/brew"
 
 brew "awscli"
-brew "bash-completion"
 brew "docker-completion"
 brew "docker-compose-completion"
 brew "docker-machine-completion"
@@ -17,6 +16,7 @@ brew "jq"
 brew "mas"
 brew "mitmproxy"
 brew "nmap"
+brew "packer"
 brew "pandoc"
 brew "pipenv"
 brew "pyenv"
@@ -30,15 +30,20 @@ brew "wifi-password"
 
 cask "android-studio"
 cask "arduino"
+cask "backblaze"
 cask "burp-suite"
+cask "caskroom/fonts/font-cascadia-pl"
+cask "caskroom/fonts/font-cascadia"
+cask "caskroom/fonts/font-inconsolata-for-powerline"
 cask "caskroom/fonts/font-inconsolata"
 cask "docker"
+cask "figma"
+cask "gcollazo-mongodb"
 cask "gpg-suite"
 cask "imageoptim"
 cask "insomnia"
 cask "iterm2"
-cask "licecap"
-cask "mongodb"
+cask "little-snitch"
 cask "ngrok"
 cask "owasp-zap"
 cask "paparazzi"
@@ -60,13 +65,11 @@ cask "wireshark"
 cask "yubico-authenticator"
 
 mas "Keynote", id: 409183694
-mas "Microsoft Remote Desktop", id: 715768417
 mas "Navicat Premium Essentials", id: 466416967
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Pixelmator", id: 407963104
 mas "Pastebot", id: 1179623856
+mas "Pixelmator", id: 407963104
 mas "Slack", id: 803453959
-mas "Spark", id: 1176895641
 mas "Things", id: 904280696
 mas "Xcode", id: 497799835
