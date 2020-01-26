@@ -1,12 +1,36 @@
 {
-  "editor.fontFamily": "Inconsolata",
-  "editor.fontSize": 21,
-  "editor.lineHeight": 25,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.fontFamily": "Cascadia Code",
+  "editor.fontSize": 19,
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "off",
   "editor.minimap.enabled": false,
   "editor.renderIndentGuides": true,
+  "editor.rulers": [
+    80,
+    100
+  ],
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
-  "editor.rulers": [80, 100],
+  "workbench.colorTheme": "Night Owl (No Italics)",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "window.zoomLevel": 0,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "eslint.packageManager": "yarn",
+  "prettier.arrowParens": "always",
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.advanced.telemetry.enabled": false,
+  "githubPullRequests.telemetry.enabled": false,
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.exclude": {
@@ -17,24 +41,11 @@
     "**/.DS_Store": true,
     "**/*.pyc": true
   },
-  "window.zoomLevel": 0,
-  "terminal.integrated.fontSize": 17,
-  "terminal.integrated.shellArgs.osx": ["-l"],
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  "git.autofetch": true,
-  "prettier.singleQuote": true,
-  "prettier.arrowParens": "always",
-  "workbench.colorTheme": "Material Theme Palenight High Contrast",
-  "workbench.startupEditor": "newUntitledFile",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.formatOnSave": false
   },
   "[handlebars]": {
     "editor.formatOnSave": false
@@ -42,7 +53,7 @@
   "[python]": {
     "editor.tabSize": 4
   },
-  "eslint.packageManager": "yarn",
+  "cSpell.language": "en,es",
   "cSpell.enabledLanguageIds": [
     "asciidoc",
     "c",
@@ -74,14 +85,5 @@
     "typescriptreact",
     "yaml",
     "yml"
-  ],
-  "workbench.iconTheme": "material-icon-theme",
-  "material-icon-theme.hidesExplorerArrows": true,
-  "material-icon-theme.folders.theme": "classic",
-  "material-icon-theme.saturation": 1,
-  "gitlens.advanced.telemetry.enabled": false,
-  "githubPullRequests.telemetry.enabled": false,
-  "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false,
-  "editor.formatOnSave": true
+  ]
 }
