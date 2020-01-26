@@ -5,14 +5,15 @@ alias c="cd $HOME/Code"
 alias d="cd $HOME/Desktop"
 alias dl="cd $HOME/Downloads"
 alias h="cd $HOME/"
-alias g=git
 alias ls='ls -lah'
 alias o='open .'
 alias v='code .'
 alias r='yarn run'
+alias zshconfig="code ~/.zshrc"
+alias ohmyzsh="code ~/.oh-my-zsh"
 
 # System
-alias update='sudo softwareupdate --install --all --verbose; brew update; brew upgrade; brew cleanup'
+alias update='sudo softwareupdate --install --all --verbose'
 
 # Git
 alias gsync='gpull && gpush'
@@ -20,7 +21,7 @@ alias gpull='git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
 alias gfetch='git fetch --all'
 alias gpush='git push origin $(git rev-parse --abbrev-ref HEAD)'
 alias gboom="gsync && echo '💥 Done 💥'"
-function gi() { curl "https://www.gitignore.io/api/$1" ;}
+function gi() { curl "https://www.gitignore.io/api/$1"; }
 
 # Random
 alias server='npx http-server'
@@ -53,7 +54,7 @@ alias flushdns="sudo killall -HUP mDNSResponder"
 function scan() {
   nmap -T4 -A -v --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s "$1"
 }
-function ipinfo(){ curl "https://ipinfo.io/$1"; }
+function ipinfo() { curl "https://ipinfo.io/$1"; }
 
 # Show all ip addresses
 function ips() {
@@ -76,7 +77,7 @@ function ips() {
 
 # Send notification via Slack
 function notify() {
-  curl -X POST --data-urlencode "payload={\"text\":\"$1\"}" "$SLACK_WEBHOOK" &> /dev/null
+  curl -X POST --data-urlencode "payload={\"text\":\"$1\"}" "$SLACK_WEBHOOK" &>/dev/null
 }
 
 # ssh: expose a local port
