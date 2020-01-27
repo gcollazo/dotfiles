@@ -148,7 +148,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1439 558 918 512 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>894 105 730 543 0 0 2560 1417 </string>
+	<string>291 72 730 543 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>463 25 810 567 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -645,9 +645,9 @@
 				<key>0xf702-0x300000</key>
 				<dict>
 					<key>Action</key>
-					<integer>10</integer>
+					<integer>11</integer>
 					<key>Text</key>
-					<string>[H</string>
+					<string>0x01</string>
 				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
@@ -680,9 +680,9 @@
 				<key>0xf703-0x300000</key>
 				<dict>
 					<key>Action</key>
-					<integer>10</integer>
+					<integer>11</integer>
 					<key>Text</key>
-					<string>[F</string>
+					<string>0x05</string>
 				</dict>
 				<key>0xf704-0x20000</key>
 				<dict>
@@ -1240,14 +1240,14 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.6</string>
-		<string>3.3.4</string>
+		<string>3.2.9</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.5</string>
 		<string>3.3.7</string>
 		<string>3.3.0</string>
-		<string>3.2.9</string>
 		<string>3.3.2</string>
+		<string>3.3.4</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -1259,9 +1259,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{578, -900}, {1440, 900}}</string>
+		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{825, -199}</string>
+		<string>{1271, 636}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -1276,7 +1276,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>592191732.84241998</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>312</integer>
+	<integer>315</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2088,7 +2088,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-25T18:59:06Z</date>
+	<date>2020-01-26T21:05:32Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
