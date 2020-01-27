@@ -11,7 +11,7 @@
   "editor.rulers": [80, 100],
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
-  "workbench.colorTheme": "Night Owl Light (No Italics)",
+  "workbench.colorTheme": "Night Owl (No Italics)",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "terminal.integrated.fontSize": 17,
@@ -29,12 +29,12 @@
   "eslint.packageManager": "yarn",
   "prettier.arrowParens": "always",
   "python.formatting.blackArgs": ["--line-length", "88"],
-  "python.formatting.blackPath": "/Users/gcollazo/.local/bin/black",
+  "python.formatting.blackPath": "~/.local/bin/black",
   "python.formatting.provider": "black",
   "python.linting.flake8Enabled": true,
-  "python.linting.flake8Path": "/Users/gcollazo/.local/bin/flake8",
+  "python.linting.flake8Path": "~/.local/bin/flake8",
   "python.linting.pylintEnabled": false,
-  "python.sortImports.path": "/Users/gcollazo/.local/bin/isort",
+  "python.sortImports.path": "~/.local/bin/isort",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.exclude": {
@@ -89,5 +89,6 @@
     "typescriptreact",
     "yaml",
     "yml"
-  ]
+  ],
+  "python.venvPath": "~/.local/share/virtualenvs/"
 }
