@@ -3,7 +3,6 @@ CoenraadS.bracket-pair-colorizer-2
 dbaeumer.vscode-eslint
 eamodio.gitlens
 esbenp.prettier-vscode
-foxundermoon.shell-format
 GitHub.vscode-pull-request-github
 ms-azuretools.vscode-docker
 ms-python.python
