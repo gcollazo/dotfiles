@@ -8,9 +8,6 @@ echo "Installing all of Homebrew..."
 brew tap Homebrew/bundle
 brew bundle
 
-echo "Installing oh-my-zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-
 # Accept Xcode license
 sudo xcodebuild -license accept
 
@@ -30,6 +27,9 @@ source "$HOME/.zshrc"
 echo "Installing node..."
 nvm install lts/* --latest-npm
 npm config set python "$HOME/.pyenv/versions/$PYTHON27_VERSION/bin/python"
+
+# Install yarn and global packages
+brew install yarn
 
 # VSCode packages
 echo "Installing VSCode Packages..."
