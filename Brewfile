@@ -28,6 +28,8 @@ brew "tree"
 brew "watch"
 brew "watchman"
 brew "wifi-password"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
 
 cask "android-studio"
 cask "arduino"
