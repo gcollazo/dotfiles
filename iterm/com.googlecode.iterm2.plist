@@ -910,7 +910,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1439 558 918 512 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1443 251 810 567 0 0 2560 1417 </string>
+	<string>1526 23 970 756 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>167 9 810 567 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1573,7 +1573,7 @@
 			<key>Log Directory</key>
 			<string></string>
 			<key>Minimum Contrast</key>
-			<real>0.28716146945953369</real>
+			<real>0.14639559659090909</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
@@ -1982,9 +1982,9 @@
 		<string>3.3.3</string>
 		<string>3.3.5</string>
 		<string>3.3.7</string>
-		<string>3.2.9</string>
 		<string>3.3.0</string>
 		<string>3.3.2</string>
+		<string>3.2.9</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -1996,9 +1996,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 900}}</string>
+		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{269, 595}</string>
+		<string>{1361, 533}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -2013,7 +2013,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>592191732.84241998</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>324</integer>
+	<integer>330</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2736,6 +2736,7 @@
 	</array>
 	<key>NoSyncSearchHistory2</key>
 	<array>
+		<string>stdout</string>
 		<string>ignore</string>
 		<string>mongo</string>
 		<string>404 </string>
@@ -2745,7 +2746,6 @@
 		<string>recursive</string>
 		<string>exp</string>
 		<string>error</string>
-		<string>errir</string>
 	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>554864636.02074802</real>
@@ -2825,7 +2825,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-28T01:11:44Z</date>
+	<date>2020-01-29T01:18:46Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
