@@ -14,6 +14,7 @@
   "workbench.colorTheme": "Night Owl (No Italics)",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
   "terminal.integrated.fontSize": 17,
   "terminal.integrated.shell.osx": "/bin/zsh",
   "window.zoomLevel": 0,
@@ -35,6 +36,7 @@
   "python.linting.flake8Path": "~/.local/bin/flake8",
   "python.linting.pylintEnabled": false,
   "python.sortImports.path": "~/.local/bin/isort",
+  "python.venvPath": "~/.local/share/virtualenvs/",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.exclude": {
@@ -89,6 +91,5 @@
     "typescriptreact",
     "yaml",
     "yml"
-  ],
-  "python.venvPath": "~/.local/share/virtualenvs/"
+  ]
 }
