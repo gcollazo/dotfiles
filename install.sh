@@ -28,12 +28,16 @@ echo "Installing node..."
 nvm install lts/* --latest-npm
 npm config set python "$HOME/.pyenv/versions/$PYTHON27_VERSION/bin/python"
 
-# Install yarn and global packages
+# Install yarn
 brew install yarn
 
 # VSCode packages
 echo "Installing VSCode Packages..."
 cat "$HOME/Code/dotfiles/vscode/extensions.txt" | xargs -n 1 code --install-extension
+
+# zsh prompt
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
 
 echo
 echo "==> Done!"
