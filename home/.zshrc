@@ -1,7 +1,6 @@
 # prompt
 eval "$(starship init zsh)"
 
-
 # general
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=100000
