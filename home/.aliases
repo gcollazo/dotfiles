@@ -128,7 +128,13 @@ function kms-encrypt() {
     printf '\nUsage:\n\tkms-encrypt <PLAINTEXT> <CONTEXT> <KEY> <PROFILE>\n\n'
     return
   fi
-  aws kms encrypt --key-id "$3" --plaintext "$1" --encryption-context "$2" --query CiphertextBlob --output text --profile "$4"
+  aws kms encrypt \
+  --key-id "$3" \
+  --plaintext "$1" \
+  --encryption-context "$2" \
+  --query CiphertextBlob \
+  --output text \
+  --profile "$4"
 }
 
 function kms-decrypt() {
@@ -136,7 +142,13 @@ function kms-decrypt() {
     printf '\nUsage:\n\tkms-decrypt <CIPHERTEXT> <CONTEXT> <PROFILE>\n\n'
     return
   fi
-  aws kms decrypt --ciphertext-blob fileb://<(echo "$1" | base64 -D) --encryption-context "$2" --output text --query Plaintext --profile $3 | base64 -D
+  aws kms decrypt \
+  --ciphertext-blob fileb://<(echo "$1" | base64 -D) \
+  --encryption-context "$2" \
+  --output text \
+  --query Plaintext \
+  --profile $3 | \
+  base64 -D
   echo
 }
 

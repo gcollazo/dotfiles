@@ -10,6 +10,8 @@
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -904,17 +906,17 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1905 203 445 103 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>1761 1032 400 129 0 0 2560 1417 </string>
+	<string>555 561 400 129 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>1005 768 620 392 0 0 2560 1417 </string>
+	<string>970 768 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1439 558 918 512 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1526 23 970 756 0 0 2560 1417 </string>
+	<string>1352 81 810 591 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>167 9 810 567 0 0 1440 877 </string>
+	<string>545 31 810 567 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>768 -853 730 459 571 -900 1440 877 </string>
+	<string>258 0 810 567 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>789 -876 730 459 571 -900 1440 877 </string>
 	<key>NeverWarnAboutOverrides</key>
@@ -1573,7 +1575,7 @@
 			<key>Log Directory</key>
 			<string></string>
 			<key>Minimum Contrast</key>
-			<real>0.14639559659090909</real>
+			<real>0.26291725852272729</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
@@ -1585,7 +1587,7 @@
 			<key>Non-ASCII Ligatures</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>CascadiaCodePL-Regular 17</string>
+			<string>MesloLGSNer-Regular 17</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1977,19 +1979,19 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.6</string>
-		<string>3.3.4</string>
+		<string>3.3.8</string>
+		<string>3.3.0</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.5</string>
 		<string>3.3.7</string>
-		<string>3.3.0</string>
-		<string>3.3.2</string>
 		<string>3.2.9</string>
+		<string>3.3.2</string>
+		<string>3.3.4</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>Cascadia Code PL</string>
-		<string>Inconsolata</string>
+		<string>MesloLGS NF</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -1998,7 +2000,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{1361, 533}</string>
+		<string>{171, 624}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -2013,7 +2015,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>592191732.84241998</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>330</integer>
+	<integer>343</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2730,23 +2732,6 @@
 			</dict>
 		</array>
 	</dict>
-	<key>NoSyncSearchHistory</key>
-	<array>
-		<string>fleet</string>
-	</array>
-	<key>NoSyncSearchHistory2</key>
-	<array>
-		<string>stdout</string>
-		<string>ignore</string>
-		<string>mongo</string>
-		<string>404 </string>
-		<string>recur</string>
-		<string>red</string>
-		<string>brute</string>
-		<string>recursive</string>
-		<string>exp</string>
-		<string>error</string>
-	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>554864636.02074802</real>
 	<key>NoSyncTipsToNotShow</key>
@@ -2825,7 +2810,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-29T01:18:46Z</date>
+	<date>2020-02-04T19:45:47Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -2893,7 +2878,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.7</string>
+	<string>3.3.8</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
