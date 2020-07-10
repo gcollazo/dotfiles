@@ -109,8 +109,8 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export LANG=en_US.UTF-8
 
 # Default editor
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR='code --wait'
+export VISUAL='code --wait'
 
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
