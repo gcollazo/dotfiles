@@ -908,13 +908,13 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>555 561 400 129 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>970 768 620 392 0 0 2560 1417 </string>
+	<string>1005 768 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1439 558 918 512 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1352 81 810 591 0 0 2560 1417 </string>
+	<string>1257 502 810 591 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>545 31 810 567 0 0 1440 877 </string>
+	<string>1580 826 810 591 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>258 0 810 567 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -934,14 +934,16 @@
 			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.25882352941176473</real>
+				<real>0.46274509803921571</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.21176470588235294</real>
+				<real>0.46274509803921571</real>
 				<key>Red Component</key>
-				<real>0.027450980392156862</real>
+				<real>0.46274509803921571</real>
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
@@ -1088,14 +1090,16 @@
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.21176470588235294</real>
+				<real>0.465606689453125</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.16862745098039217</real>
+				<real>0.465606689453125</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.465606689453125</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -1213,7 +1217,7 @@
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Disable Printing</key>
-			<false/>
+			<true/>
 			<key>Disable Smcup Rmcup</key>
 			<false/>
 			<key>Disable Window Resizing</key>
@@ -1575,7 +1579,7 @@
 			<key>Log Directory</key>
 			<string></string>
 			<key>Minimum Contrast</key>
-			<real>0.26291725852272729</real>
+			<real>0.26482599431818182</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
@@ -1980,14 +1984,15 @@
 	<array>
 		<string>3.3.6</string>
 		<string>3.3.8</string>
-		<string>3.3.0</string>
+		<string>3.3.4</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.5</string>
 		<string>3.3.7</string>
+		<string>3.3.9</string>
 		<string>3.2.9</string>
 		<string>3.3.2</string>
-		<string>3.3.4</string>
+		<string>3.3.0</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -2000,7 +2005,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{171, 624}</string>
+		<string>{269, 595}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -2015,7 +2020,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>592191732.84241998</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>343</integer>
+	<integer>406</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2810,9 +2815,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-02-04T19:45:47Z</date>
+	<date>2020-03-13T18:57:06Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>3632568245</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2878,7 +2885,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.8</string>
+	<string>3.3.9</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

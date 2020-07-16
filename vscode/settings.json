@@ -3,7 +3,8 @@
     "source.organizeImports": true
   },
   "editor.fontFamily": "Cascadia Code PL",
-  "editor.fontSize": 19,
+  "editor.fontLigatures": true,
+  "editor.fontSize": 20,
   "editor.formatOnSave": true,
   "editor.lineNumbers": "off",
   "editor.minimap.enabled": false,
@@ -11,7 +12,7 @@
   "editor.rulers": [80, 100],
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
-  "workbench.colorTheme": "Night Owl (No Italics)",
+  "workbench.colorTheme": "Night Owl Light",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "terminal.integrated.fontFamily": "MesloLGS NF",
@@ -50,11 +51,11 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[json]": {
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[handlebars]": {
-    "editor.formatOnSave": false
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[python]": {
     "editor.tabSize": 4

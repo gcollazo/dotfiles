@@ -1,5 +1,8 @@
+alonski.prettier-for-handlebars-vscode
+bierner.markdown-mermaid
 candidmetrics.ember-module-snippets
 CoenraadS.bracket-pair-colorizer-2
+DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 eamodio.gitlens
 esbenp.prettier-vscode
