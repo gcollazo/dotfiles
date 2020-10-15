@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#
+# Entrypoint for new system setup
+#
+set -euf -o pipefail
+
 echo "==> Running bootstrap.sh"
 
 echo "Updating OSX..."
