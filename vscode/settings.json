@@ -12,7 +12,7 @@
   ],
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
-  "workbench.colorTheme": "Night Owl",
+  "workbench.colorTheme": "Night Owl Light",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "terminal.integrated.fontFamily": "MesloLGS NF",
