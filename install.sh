@@ -13,10 +13,10 @@ sudo xcodebuild -license accept
 
 # Install Python
 echo "Installing Python..."
-PYTHON27_VERSION="2.7.14" # Needed for npm
+PYTHON27_VERSION="2.7.18" # Needed for npm
 pyenv install "$PYTHON27_VERSION"
-pyenv install 3.8.1
-pyenv global 3.8.1
+pyenv install 3.9.0
+pyenv global 3.9.0
 
 # Install nvm
 echo "Installing nvm..."
