@@ -3,7 +3,6 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 20,
   "editor.formatOnSave": true,
-  "editor.lineNumbers": "off",
   "editor.minimap.enabled": false,
   "editor.renderIndentGuides": true,
   "editor.rulers": [
@@ -12,35 +11,20 @@
   ],
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
-  "workbench.colorTheme": "Night Owl Light",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
-  "terminal.integrated.fontFamily": "MesloLGS NF",
   "terminal.integrated.fontSize": 17,
   "terminal.integrated.shell.osx": "/bin/zsh",
-  "window.zoomLevel": 0,
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
-  "gitlens.advanced.telemetry.enabled": false,
   "githubPullRequests.telemetry.enabled": false,
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "eslint.packageManager": "yarn",
   "prettier.arrowParens": "always",
-  "python.formatting.blackArgs": [
-    "--line-length",
-    "88"
-  ],
-  "python.formatting.blackPath": "~/.local/bin/black",
-  "python.formatting.provider": "black",
-  "python.linting.flake8Enabled": true,
-  "python.linting.flake8Path": "~/.local/bin/flake8",
-  "python.linting.pylintEnabled": false,
-  "python.sortImports.path": "~/.local/bin/isort",
-  "python.venvPath": "~/.local/share/virtualenvs/",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.exclude": {
@@ -124,5 +108,15 @@
       "foreground": "#9AE6B4",
     }
   },
-  "material-icon-theme.activeIconPack": "react"
+  "material-icon-theme.activeIconPack": "react",
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
+  "window.zoomLevel": 0,
+  "markdown.preview.scrollEditorWithPreview": false,
+  "cSpell.userWords": [
+    "UNCAPTURED"
+  ],
+  "workbench.colorTheme": "Night Owl",
+  "plantuml.exportSubFolder": false,
+  "editor.lineNumbers": "off",
+  "python.showStartPage": false
 }
