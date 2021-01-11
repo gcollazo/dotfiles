@@ -2,6 +2,7 @@
 
 # Aliases
 alias c="cd $HOME/Code"
+alias a="cd $HOME/AppSec"
 alias d="cd $HOME/Desktop"
 alias dl="cd $HOME/Downloads"
 alias h="cd $HOME/"
@@ -10,8 +11,8 @@ alias o='open .'
 alias v='code .'
 alias r='yarn run'
 alias zshconfig="code ~/.zshrc"
-alias ohmyzsh="code ~/.oh-my-zsh"
 alias docs='cd ~/Code/alias/docs && yarn run watch'
+alias awsume=". ~/.pyenv/versions/3.9.0/bin/awsume"
 
 # System
 alias update='sudo softwareupdate --install --all --verbose'
