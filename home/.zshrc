@@ -4,6 +4,11 @@ eval "$(starship init zsh)"
 # zsh plugins
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# history search keys
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 # case-insensitive (uppercase from lowercase) completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
