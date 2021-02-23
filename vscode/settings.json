@@ -110,13 +110,13 @@
   },
   "material-icon-theme.activeIconPack": "react",
   "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
-  "window.zoomLevel": 0,
   "markdown.preview.scrollEditorWithPreview": false,
   "cSpell.userWords": [
     "UNCAPTURED"
   ],
-  "workbench.colorTheme": "Night Owl",
+  "workbench.colorTheme": "Night Owl Light",
   "plantuml.exportSubFolder": false,
   "editor.lineNumbers": "off",
-  "python.showStartPage": false
+  "python.showStartPage": false,
+  "githubPullRequests.fileListLayout": "flat"
 }
