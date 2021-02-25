@@ -114,9 +114,9 @@
   "cSpell.userWords": [
     "UNCAPTURED"
   ],
-  "workbench.colorTheme": "Night Owl Light",
+  "workbench.colorTheme": "Night Owl",
   "plantuml.exportSubFolder": false,
   "editor.lineNumbers": "off",
   "python.showStartPage": false,
-  "githubPullRequests.fileListLayout": "flat"
+  "githubPullRequests.fileListLayout": "tree"
 }
