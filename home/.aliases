@@ -30,6 +30,37 @@ function gi() { curl "https://www.toptal.com/developers/gitignore/api/$1"; }
 alias server='npx http-server'
 alias android-emulator='$HOME/Library/Android/sdk/emulator/emulator -avd Nexus_5X_API_28'
 
+# AppSec
+function wfuzz() {
+  # Usage: wfuzz https://example.com/FUZZ
+  docker run \
+  -v ~/AppSec/WordLists:/WordLists \
+  ghcr.io/xmendez/wfuzz \
+  wfuzz -w /WordLists/common-words.txt --hc 404 "$@"
+}
+
+function amass() {
+  # Usage: amass example.com
+  docker run \
+  -v ~/AppSec/WordLists:/WordLists \
+  caffix/amass \
+  enum -brute -w /WordLists/common-words.txt -d "$@"
+}
+
+function nmap() {
+  # Usage: nmap example.com | 1.2.3.4
+  docker run \
+  securecodebox/nmap \
+  nmap -sV -sT -sC "$@"
+}
+
+# Docker
+function docker-sh() {
+  docker run \
+  -it --entrypoint /bin/sh \
+  "$@"
+}
+
 # NPM
 function npmls() {
   npm list --depth=0 "$1" 2>/dev/null
@@ -47,16 +78,9 @@ function unarchive() {
 alias vscode-extensions-save='code --list-extensions > $HOME/Code/dotfiles/vscode/extensions.txt && echo Done!'
 alias vscode-extensions-install='cat $HOME/Code/dotfiles/vscode/extensions.txt | xargs -n 1 code --install-extension'
 
-# Empty the Trash on all mounted volumes and the main HDD
-# Also, clear Apple’s System Logs to improve shell startup speed
-alias emptytrash='sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv "$HOME/.Trash"; sudo rm -rfv /private/var/log/asl/*.asl'
-
 # Network
 alias dig="dig @8.8.8.8"
 alias flushdns="sudo killall -HUP mDNSResponder"
-function scan() {
-  nmap -T4 -A -v --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s "$1"
-}
 function ipinfo() { curl "https://ipinfo.io/$1"; }
 
 # Show all ip addresses
