@@ -6,12 +6,14 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-# history search keys
+# history search
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+export HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE='true'
 
 # case-insensitive (uppercase from lowercase) completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+zstyle ':completion:*' menu yes select
 
 # Language environment
 export LANG=en_US.UTF-8
@@ -22,12 +24,6 @@ export VISUAL='code --wait'
 
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-# Postgres.app
-export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
-
-# MongoDB.app
-export PATH="/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb/bin:$PATH"
 
 # Android
 export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
