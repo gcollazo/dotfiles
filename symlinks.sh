@@ -21,16 +21,6 @@ function symlinkFilesTo() {
 echo "Making home symlinks..."
 symlinkFilesTo home "${HOME}"
 
-# vscode
-echo "Making VSCode symlinks..."
-mkdir -p "${HOME}"/Library/Application\ Support/Code/User
-symlinkFilesTo vscode "${HOME}"/Library/Application\ Support/Code/User
-
-# zsh
-echo "Making zsh theme symlinks..."
-mkdir -p "${HOME}/.oh-my-zsh/themes"
-symlinkFilesTo zsh "${HOME}/.oh-my-zsh/themes"
-
 # Done
 echo "Done with symlinks..."
 
