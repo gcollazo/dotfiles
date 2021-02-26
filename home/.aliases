@@ -31,6 +31,14 @@ alias http-listener='node $HOME/Code/dotfiles/utils/http-listener.js'
 alias android-emulator='$HOME/Library/Android/sdk/emulator/emulator -avd Nexus_5X_API_28'
 
 # AppSec
+function gobuster() {
+  # Usage: gobuster https://example.com
+  docker run \
+  -v ~/AppSec/WordLists:/WordLists \
+  devalias/gobuster \
+  -w /WordLists/common-words.txt -u "$@"
+}
+
 function wfuzz() {
   # Usage: wfuzz https://example.com/FUZZ
   docker run \
