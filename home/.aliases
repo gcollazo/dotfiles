@@ -19,15 +19,15 @@ alias update='sudo softwareupdate --install --all --verbose'
 
 # Git
 alias gsync='gpull && gpush'
-alias gpull='git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
 alias gfetch='git fetch --prune --all'
+alias gpull='git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpush='git push origin $(git rev-parse --abbrev-ref HEAD)'
-alias gboom="gsync && echo '💥 Done 💥'"
 alias gbranches='git branch -a'
 function gi() { curl "https://www.toptal.com/developers/gitignore/api/$1"; }
 
 # Random
 alias server='npx http-server'
+alias http-listener='node $HOME/Code/dotfiles/utils/http-listener.js'
 alias android-emulator='$HOME/Library/Android/sdk/emulator/emulator -avd Nexus_5X_API_28'
 
 # AppSec
@@ -73,10 +73,6 @@ function archive() {
 function unarchive() {
   tar xvJf "$@"
 }
-
-# VS Code extension management
-alias vscode-extensions-save='code --list-extensions > $HOME/Code/dotfiles/vscode/extensions.txt && echo Done!'
-alias vscode-extensions-install='cat $HOME/Code/dotfiles/vscode/extensions.txt | xargs -n 1 code --install-extension'
 
 # Network
 alias dig="dig @8.8.8.8"
