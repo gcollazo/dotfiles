@@ -2,6 +2,7 @@
 	name = Giovanni Collazo
 	email = hello@gcollazo.com
 	signingkey = 55EC68C3
+
 [core]
   quotepath = false
 	excludesfile = ~/.gitignore
@@ -25,6 +26,7 @@
   co = checkout
   l  = log
   s  = status
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
