@@ -28,7 +28,7 @@ function gi() { curl "https://www.toptal.com/developers/gitignore/api/$1"; }
 # Random
 alias server='npx http-server'
 alias http-listener='node $HOME/Code/dotfiles/utils/http-listener.js'
-alias android-emulator='$HOME/Library/Android/sdk/emulator/emulator -avd Nexus_5X_API_28'
+alias android-emulator='$HOME/Library/Android/sdk/emulator/emulator -avd Pixel_3a_API_30_x86'
 
 # AppSec
 function gobuster() {
@@ -60,6 +60,12 @@ function nmap() {
   docker run \
   securecodebox/nmap \
   nmap -sV -sT -sC "$@"
+}
+
+function sqlmap() {
+  # Usage: sqlmap --url example.com/?id=1
+  docker run \
+  paoloo/sqlmap "$@"
 }
 
 # Docker
@@ -160,12 +166,11 @@ function kms-encrypt() {
     return
   fi
   aws kms encrypt \
-  --key-id "$3" \
   --plaintext "$1" \
   --encryption-context "$2" \
-  --query CiphertextBlob \
-  --output text \
-  --profile "$4"
+  --key-id "$3" \
+  --profile "$4" \
+  | jq -r ".CiphertextBlob"
 }
 
 function kms-decrypt() {
@@ -176,11 +181,8 @@ function kms-decrypt() {
   aws kms decrypt \
   --ciphertext-blob fileb://<(echo "$1" | base64 -D) \
   --encryption-context "$2" \
-  --output text \
-  --query Plaintext \
-  --profile $3 | \
-  base64 -D
-  echo
+  --profile "$3" \
+  | jq -r ".Plaintext"
 }
 
 function generate-random-password() {
