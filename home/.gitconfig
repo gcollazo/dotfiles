@@ -1,11 +1,10 @@
 [user]
 	name = Giovanni Collazo
-	email = hello@gcollazo.com
+	email = gcollazo@users.noreply.github.com
 	signingkey = 55EC68C3
 
 [core]
   quotepath = false
-	excludesfile = ~/.gitignore
   autocrlf = input
 
 [color]
@@ -26,9 +25,3 @@
   co = checkout
   l  = log
   s  = status
-
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true

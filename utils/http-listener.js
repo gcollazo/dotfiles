@@ -64,7 +64,15 @@ const server = http.createServer(async (req, res) => {
   console.log(requestString);
 
   // Close
-  res.writeHead(200);
+  let headers = {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "*",
+    "Access-Control-Max-Age": "600",
+    "Access-Control-Allow-Headers": "*",
+    "Access-Control-Allow-Credentials": "true",
+  };
+
+  res.writeHead(200, headers);
   res.end("\n");
 });
 

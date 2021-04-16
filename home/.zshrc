@@ -32,10 +32,9 @@ export PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
 export PATH="$ANDROID_SDK_ROOT/emulator:$PATH"
 export JAVA_HOME="/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home"
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-[[ -r "$NVM_DIR/bash_completion" ]] && . "$NVM_DIR/bash_completion"
+# volta
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 # pyenv
 if which pyenv >/dev/null; then eval "$(pyenv init -)"; fi

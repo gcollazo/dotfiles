@@ -18,14 +18,13 @@ pyenv install "$PYTHON27_VERSION"
 pyenv install 3.9.0
 pyenv global 3.9.0
 
-# Install nvm
-echo "Installing nvm..."
-curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-source "$HOME/.zshrc"
+# Install volta
+echo "Installing volta..."
+curl https://get.volta.sh | bash
 
 # Install latest release of node
 echo "Installing node..."
-nvm install lts/* --latest-npm
+volta install node
 npm config set python "$HOME/.pyenv/versions/$PYTHON27_VERSION/bin/python"
 
 # Install yarn
