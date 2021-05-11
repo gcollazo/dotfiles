@@ -1,6 +1,15 @@
 # starship
 eval "$(starship init zsh)"
 
+# enable the advanced completion system
+autoload -U compinit && compinit
+
+# case-insensitive (uppercase from lowercase) completion
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+# enable completion menu
+zstyle ':completion:*' menu yes select
+
 # zsh plugins
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -10,10 +19,6 @@ source /usr/local/share/zsh-history-substring-search/zsh-history-substring-searc
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 export HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE='true'
-
-# case-insensitive (uppercase from lowercase) completion
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-zstyle ':completion:*' menu yes select
 
 # Language environment
 export LANG=en_US.UTF-8
