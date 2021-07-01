@@ -165,7 +165,9 @@ function kms-encrypt() {
     printf '\nUsage:\n\tkms-encrypt <PLAINTEXT> <CONTEXT> <KEY> <PROFILE>\n\n'
     return
   fi
+
   aws kms encrypt \
+  --cli-binary-format raw-in-base64-out \
   --plaintext "$1" \
   --encryption-context "$2" \
   --key-id "$3" \
