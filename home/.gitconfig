@@ -1,7 +1,7 @@
 [user]
 	name = Giovanni Collazo
 	email = gcollazo@users.noreply.github.com
-	signingkey = 55EC68C3
+	signingkey = DCD30968
 
 [core]
   quotepath = false
