@@ -30,6 +30,9 @@ export VISUAL='code --wait'
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# Postgres.app
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+
 # Android
 export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export PATH="$ANDROID_SDK_ROOT/tools:$PATH"
