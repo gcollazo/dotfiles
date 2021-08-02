@@ -82,10 +82,13 @@ function npmls() {
 
 # Archive / unarchive
 function archive() {
-  tar cvJf "arhive.tar.xz" "$@"
+  tar -cvzf "arhive.tar.gz" "$@"
+}
+function archive-ls() {
+  tar -tvf "$@"
 }
 function unarchive() {
-  tar xvJf "$@"
+  tar -xvf "$@"
 }
 
 # Network
