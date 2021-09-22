@@ -12,7 +12,7 @@ alias v='code .'
 alias r='npm run'
 alias zshconfig="code ~/.zshrc"
 alias docs='cd ~/Code/alias/docs && yarn run watch'
-alias awsume=". ~/.pyenv/versions/3.9.0/bin/awsume"
+alias awsume="source \$(pyenv which awsume)"
 
 # System
 alias update='sudo softwareupdate --install --all --verbose'
