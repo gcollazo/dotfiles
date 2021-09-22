@@ -199,3 +199,15 @@ zsh_stats () {
   awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | \
   column -c3 -s " " -t | sort -nr | nl | head -n20
 }
+
+qrcode () {
+  local input="$*"
+  [ -z "$input" ] && local input="@/dev/stdin"
+  curl -d "$input" https://qrcode.show
+}
+
+qrsvg () {
+  local input="$*"
+  [ -z "$input" ] && local input="@/dev/stdin"
+  curl -d "${input}" https://qrcode.show -H "Accept: image/svg+xml"
+}
