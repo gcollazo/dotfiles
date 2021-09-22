@@ -51,6 +51,3 @@ if which pyenv >/dev/null; then eval "$(pyenv init --path)"; fi
 
 # Aliases
 source "$HOME/.aliases"
-
-# Secrets
-[ -s "$HOME/.secret" ] && source "$HOME/.secret"

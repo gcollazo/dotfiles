@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Aliases
-alias c="cd $HOME/Code"
-alias a="cd $HOME/AppSec"
-alias d="cd $HOME/Desktop"
-alias dl="cd $HOME/Downloads"
-alias h="cd $HOME/"
+alias c="cd ~/Code"
+alias a="cd ~/AppSec"
+alias d="cd ~/Desktop"
+alias dl="cd ~/Downloads"
+alias h="cd ~/"
 alias ls='ls -lah'
 alias o='open .'
 alias v='code .'
@@ -27,8 +27,8 @@ function gi() { curl "https://www.toptal.com/developers/gitignore/api/$1"; }
 
 # Random
 alias server='npx http-server'
-alias http-listener='node $HOME/Code/dotfiles/utils/http-listener.js'
-alias android-emulator='$HOME/Library/Android/sdk/emulator/emulator -avd Pixel_3a_API_30_x86'
+alias http-listener='node ~/Code/dotfiles/utils/http-listener.js'
+alias android-emulator='~/Library/Android/sdk/emulator/emulator -avd Pixel_3a_API_30_x86'
 
 # AppSec
 function gobuster() {
@@ -60,12 +60,6 @@ function nmap() {
   docker run \
   securecodebox/nmap \
   nmap -sV -sT -sC "$@"
-}
-
-function sqlmap() {
-  # Usage: sqlmap --url example.com/?id=1
-  docker run \
-  paoloo/sqlmap "$@"
 }
 
 # Docker
@@ -113,11 +107,6 @@ function ips() {
     fi
   done
   echo "Remote:     $(curl -s https://ipinfo.io/ip)"
-}
-
-# Send notification via Slack
-function notify() {
-  curl -X POST --data-urlencode "payload={\"text\":\"$1\"}" "$SLACK_WEBHOOK" &>/dev/null
 }
 
 # ssh: expose a local port
