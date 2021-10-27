@@ -13,10 +13,8 @@ sudo xcodebuild -license accept
 
 # Install Python
 echo "Installing Python..."
-PYTHON27_VERSION="2.7.18" # Needed for npm
-pyenv install "$PYTHON27_VERSION"
-pyenv install 3.9.0
-pyenv global 3.9.0
+pyenv install 3.10.0
+pyenv global 3.10.0
 
 # Install awsume
 pip install awsume
@@ -28,7 +26,6 @@ curl https://get.volta.sh | bash
 # Install latest release of node
 echo "Installing node..."
 volta install node
-npm config set python "$HOME/.pyenv/versions/$PYTHON27_VERSION/bin/python"
 
 echo
 echo "==> Done!"
