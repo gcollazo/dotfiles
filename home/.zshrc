@@ -49,5 +49,11 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 if which pyenv >/dev/null; then eval "$(pyenv init --path)"; fi
 
+# go
+export GOPATH="$HOME/code/go"
+
+# rust binaries
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # Aliases
 source "$HOME/.aliases"

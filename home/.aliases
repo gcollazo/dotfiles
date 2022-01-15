@@ -13,6 +13,7 @@ alias r='npm run'
 alias zshconfig="code ~/.zshrc"
 alias docs='cd ~/Code/alias/docs && yarn run watch'
 alias awsume="source \$(pyenv which awsume)"
+alias redis-cli="rdcli"
 
 # System
 alias update='sudo softwareupdate --install --all --verbose'
