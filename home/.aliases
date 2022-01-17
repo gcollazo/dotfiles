@@ -6,12 +6,15 @@ alias a="cd ~/AppSec"
 alias d="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 alias h="cd ~/"
-alias ls='ls -lah'
-alias o='open .'
-alias v='code .'
-alias r='npm run'
+alias ls="exa --long --header --git --all --time-style=long-iso"
+alias o="open ."
+alias v="code ."
+alias r="npm run"
+alias tree="exa --tree --git-ignore --ignore-glob='.git'"
 alias zshconfig="code ~/.zshrc"
-alias docs='cd ~/Code/alias/docs && yarn run watch'
+alias zshreload="source ~/.zshrc"
+alias reloadzsh="source ~/.zshrc"
+alias docs="cd ~/Code/alias/docs && yarn run watch"
 alias awsume="source \$(pyenv which awsume)"
 alias redis-cli="rdcli"
 
