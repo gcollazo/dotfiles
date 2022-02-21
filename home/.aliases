@@ -17,6 +17,7 @@ alias reloadzsh="source ~/.zshrc"
 alias docs="cd ~/Code/alias/docs && yarn run watch"
 alias awsume="source \$(pyenv which awsume)"
 alias redis-cli="rdcli"
+alias speed="networkQuality"
 
 # System
 alias update='sudo softwareupdate --install --all --verbose'
