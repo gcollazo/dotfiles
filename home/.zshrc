@@ -38,7 +38,7 @@ export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export PATH="$ANDROID_SDK_ROOT/tools:$PATH"
 export PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
 export PATH="$ANDROID_SDK_ROOT/emulator:$PATH"
-export JAVA_HOME="/Applications/Android Studio.app/Contents/jre/Contents/Home"
+export JAVA_HOME="/usr/local/opt/openjdk@8"
 
 # volta
 export VOLTA_HOME="$HOME/.volta"
@@ -49,8 +49,12 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 if which pyenv >/dev/null; then eval "$(pyenv init --path)"; fi
 
+# Poetry
+export PATH="$HOME/.local/bin:$PATH"
+
 # go
-export GOPATH="$HOME/code/go"
+export GOPATH="$HOME/Code/go"
+export PATH="$GOPATH/bin:$PATH"
 
 # rust binaries
 export PATH="$HOME/.cargo/bin:$PATH"

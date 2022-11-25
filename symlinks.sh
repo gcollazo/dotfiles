@@ -3,7 +3,7 @@ echo "==> Running symlinks.sh"
 
 # Gets a list of files
 function getFilesInDir() {
-    find "$1" ! -path ./.DS_Store -name '*.*' -exec basename {} ';'
+    find "$1" ! -path ./.DS_Store -name '*.*' -maxdepth 1 -exec basename {} ';'
 }
 
 # $1 directory to search for files

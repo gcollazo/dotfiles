@@ -1,3 +1,13 @@
+""""""""""""""""""""""""""""""
+" => Plugins
+""""""""""""""""""""""""""""""
+call plug#begin()
+
+Plug 'preservim/nerdtree'
+
+call plug#end()
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -34,9 +44,13 @@ nmap <leader>w :w!<cr>
 " Display line numbers
 set number
 set numberwidth=5
+set number relativenumber
 
 " 80 char ruler
-" set colorcolumn=80
+set colorcolumn=100
+
+" Scroll spacing
+set scrolloff=8
 
 "Always show current position
 set ruler
@@ -81,6 +95,7 @@ set splitright
 syntax on
 
 " Color
+colorscheme lunaperche
 set background=dark
 
 
@@ -135,3 +150,10 @@ autocmd BufWritePre *.* :%s/\s\+$//e
 
 " Always show the status line
 set laststatus=2
+
+
+""""""""""""""""""""""""""""""
+" => Remap Keys
+""""""""""""""""""""""""""""""
+nnoremap <leader>n :NERDTreeToggle<CR>
+
