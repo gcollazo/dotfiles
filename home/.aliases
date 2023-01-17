@@ -18,6 +18,8 @@ alias docs="cd ~/Code/alias/docs && yarn run watch"
 alias awsume="source \$(pyenv which awsume)"
 alias redis-cli="rdcli"
 alias speed="networkQuality"
+alias cage="tmux new -A -s cage"
+alias pip-clean="pip freeze | xargs pip uninstall -y"
 
 # System
 alias update='sudo softwareupdate --install --all --verbose'
@@ -204,4 +206,9 @@ qrsvg () {
   local input="$*"
   [ -z "$input" ] && local input="@/dev/stdin"
   curl -d "${input}" https://qrcode.show -H "Accept: image/svg+xml"
+}
+
+function restart_touchbar() {
+  sudo pkill TouchBarServer
+  sudo killall "ControlStrip"
 }

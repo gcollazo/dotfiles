@@ -40,14 +40,17 @@ export PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
 export PATH="$ANDROID_SDK_ROOT/emulator:$PATH"
 export JAVA_HOME="/usr/local/opt/openjdk@8"
 
+# homebrew
+export PATH="/usr/local/sbin:$PATH"
+
 # volta
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if which pyenv >/dev/null; then eval "$(pyenv init --path)"; fi
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # Poetry
 export PATH="$HOME/.local/bin:$PATH"
