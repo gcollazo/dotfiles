@@ -1525,6 +1525,8 @@
 			<false/>
 			<key>Normal Font</key>
 			<string>CaskaydiaCoveNerdFontComplete- 17</string>
+			<key>Open Password Manager Automatically</key>
+			<false/>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -1584,6 +1586,8 @@
 			<string></string>
 			<key>Show Status Bar</key>
 			<true/>
+			<key>Show Timestamps</key>
+			<integer>0</integer>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Smart Cursor Color</key>
@@ -1685,8 +1689,12 @@
 				<dict>
 					<key>algorithm</key>
 					<integer>1</integer>
+					<key>auto-rainbow style</key>
+					<integer>0</integer>
 					<key>font</key>
 					<string>.AppleSystemUIFont 12</string>
+					<key>remove empty components</key>
+					<true/>
 				</dict>
 				<key>components</key>
 				<array>
@@ -1723,8 +1731,12 @@
 							<dict>
 								<key>algorithm</key>
 								<integer>1</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
 								<string>.AppleSystemUIFont 12</string>
+								<key>remove empty components</key>
+								<true/>
 							</dict>
 						</dict>
 					</dict>
@@ -1754,7 +1766,7 @@
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.87570000000000003</real>
 									<key>Red Component</key>
 									<real>0.90000000000000002</real>
 								</dict>
@@ -1763,8 +1775,12 @@
 							<dict>
 								<key>algorithm</key>
 								<integer>1</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
 								<string>.AppleSystemUIFont 12</string>
+								<key>remove empty components</key>
+								<true/>
 							</dict>
 						</dict>
 					</dict>
@@ -1777,13 +1793,30 @@
 							<dict>
 								<key>iTermStatusBarSpringComponentSpringConstantKey</key>
 								<real>0.01</real>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.63</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.90000000000000002</real>
+									<key>Red Component</key>
+									<real>0.67859999999999998</real>
+								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
 								<integer>1</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
 								<string>.AppleSystemUIFont 12</string>
+								<key>remove empty components</key>
+								<true/>
 							</dict>
 						</dict>
 					</dict>
@@ -1801,21 +1834,25 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.89999997615814209</real>
+									<real>0.82710000000000006</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.89999997615814209</real>
+									<real>0.90000000000000002</real>
 									<key>Red Component</key>
-									<real>0.62999999523162842</real>
+									<real>0.63</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
 								<integer>1</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
 								<string>.AppleSystemUIFont 12</string>
+								<key>remove empty components</key>
+								<true/>
 							</dict>
 						</dict>
 					</dict>
@@ -1837,7 +1874,7 @@
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.63</real>
+									<real>0.72719999999999996</real>
 									<key>Red Component</key>
 									<real>0.63</real>
 								</dict>
@@ -1846,8 +1883,12 @@
 							<dict>
 								<key>algorithm</key>
 								<integer>1</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
 								<string>.AppleSystemUIFont 12</string>
+								<key>remove empty components</key>
+								<true/>
 							</dict>
 						</dict>
 					</dict>
@@ -1871,15 +1912,19 @@
 									<key>Green Component</key>
 									<real>0.63</real>
 									<key>Red Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.77849999999999997</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
 								<integer>1</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
 								<string>.AppleSystemUIFont 12</string>
+								<key>remove empty components</key>
+								<true/>
 							</dict>
 						</dict>
 					</dict>
@@ -1985,7 +2030,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
