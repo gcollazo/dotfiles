@@ -33,3 +33,5 @@
   p = pull
   s = status
   w = whatchanged
+[init]
+	defaultBranch = main

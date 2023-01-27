@@ -27,25 +27,14 @@ export LANG=en_US.UTF-8
 export EDITOR='code --wait'
 export VISUAL='code --wait'
 
+# homebrew
+export PATH="/usr/local/sbin:$PATH"
+
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # Postgres.app
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
-
-# Android
-export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
-export PATH="$ANDROID_SDK_ROOT/tools:$PATH"
-export PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
-export PATH="$ANDROID_SDK_ROOT/emulator:$PATH"
-export JAVA_HOME="/usr/local/opt/openjdk@8"
-
-# homebrew
-export PATH="/usr/local/sbin:$PATH"
-
-# volta
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
@@ -56,7 +45,7 @@ eval "$(pyenv init -)"
 export PATH="$HOME/.local/bin:$PATH"
 
 # go
-export GOPATH="$HOME/Code/go"
+export GOPATH="$HOME/Developer/go"
 export PATH="$GOPATH/bin:$PATH"
 
 # rust binaries

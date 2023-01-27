@@ -6,8 +6,6 @@ tap "homebrew/cask-fonts"
 tap "heroku/brew"
 
 brew "awscli"
-brew "docker-completion"
-brew "docker-compose-completion"
 brew "exa"
 brew "git"
 brew "heroku/brew/heroku"
@@ -16,7 +14,7 @@ brew "jq"
 brew "mas"
 brew "mitmproxy"
 brew "pandoc"
-brew "pipenv"
+brew "poetry"
 brew "pyenv"
 brew "shellcheck"
 brew "starship"
@@ -28,39 +26,48 @@ brew "zsh-autosuggestions"
 brew "zsh-history-substring-search"
 brew "zsh-syntax-highlighting"
 
-cask "android-studio"
 cask "backblaze"
 cask "cleanshot"
+cask "discord"
 cask "docker"
+cask "downie"
 cask "font-caskaydia-cove-nerd-font"
 cask "font-iosevka"
+cask "forecast"
 cask "gpg-suite"
+cask "grandperspective"
+cask "handbrake"
 cask "hex-fiend"
 cask "imageoptim"
 cask "insomnia"
 cask "iterm2"
 cask "itsycal"
+cask "launchcontrol"
 cask "little-snitch"
-cask "mongodb-compass"
 cask "netnewswire"
+cask "obs"
 cask "obsidian"
-cask "rectangle"
+cask "owasp-zap"
+cask "Postgres"
+cask "sf-symbols"
+cask "signal"
 cask "sketch"
-cask "spotify"
 cask "tableplus"
+cask "tailscale"
 cask "the-unarchiver"
+cask "tower"
 cask "transmission"
 cask "transmit"
 cask "visual-studio-code"
+cask "whatsapp"
 cask "yubico-authenticator"
 
-mas "1Blocker", id: 1107421413
-mas "1Password", id: 1333542190
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
+mas "Core Data Lab", id: 1460684638
+mas "Deliveries", id: 290986013
+mas "DevCleaner", id: 1388020431
 mas "Pastebot", id: 1179623856
 mas "Slack", id: 803453959
 mas "Soulver", id: 1508732804
+mas "Swift Playgrounds", id: 1496833156
 mas "Things", id: 904280696
 mas "Xcode", id: 497799835

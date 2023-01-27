@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Aliases
-alias c="cd ~/Code"
+alias c="cd ~/Developer"
 alias a="cd ~/AppSec"
 alias d="cd ~/Desktop"
 alias dl="cd ~/Downloads"
@@ -9,17 +9,16 @@ alias h="cd ~/"
 alias ls="exa --long --header --git --all --time-style=long-iso"
 alias o="open ."
 alias v="code ."
-alias r="npm run"
 alias tree="exa --tree --git-ignore --ignore-glob='.git'"
 alias zshconfig="code ~/.zshrc"
 alias zshreload="source ~/.zshrc"
-alias reloadzsh="source ~/.zshrc"
-alias docs="cd ~/Code/alias/docs && yarn run watch"
-alias awsume="source \$(pyenv which awsume)"
-alias redis-cli="rdcli"
+alias reloadzsh=zshreload
 alias speed="networkQuality"
 alias cage="tmux new -A -s cage"
 alias pip-clean="pip freeze | xargs pip uninstall -y"
+
+# Random
+alias server='python -m http.server --bind 0.0.0.0'
 
 # System
 alias update='sudo softwareupdate --install --all --verbose'
@@ -31,55 +30,6 @@ alias gpull='git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpush='git push origin $(git rev-parse --abbrev-ref HEAD)'
 alias gbranches='git branch -a'
 function gi() { curl "https://www.toptal.com/developers/gitignore/api/$1"; }
-
-# Random
-alias server='npx http-server'
-alias http-listener='node ~/Code/dotfiles/utils/http-listener.js'
-alias android-emulator='~/Library/Android/sdk/emulator/emulator -avd Pixel_3a_API_30_x86'
-
-# AppSec
-function gobuster() {
-  # Usage: gobuster https://example.com
-  docker run \
-  -v ~/AppSec/WordLists:/WordLists \
-  devalias/gobuster \
-  -w /WordLists/common-words.txt -u "$@"
-}
-
-function wfuzz() {
-  # Usage: wfuzz https://example.com/FUZZ
-  docker run \
-  -v ~/AppSec/WordLists:/WordLists \
-  ghcr.io/xmendez/wfuzz \
-  wfuzz -w /WordLists/common-words.txt --hc 404 "$@"
-}
-
-function amass() {
-  # Usage: amass example.com
-  docker run \
-  -v ~/AppSec/WordLists:/WordLists \
-  caffix/amass \
-  enum -brute -w /WordLists/common-words.txt -d "$@"
-}
-
-function nmap() {
-  # Usage: nmap example.com | 1.2.3.4
-  docker run \
-  securecodebox/nmap \
-  nmap -sV -sT -sC "$@"
-}
-
-# Docker
-function docker-sh() {
-  docker run \
-  -it --entrypoint /bin/sh \
-  "$@"
-}
-
-# NPM
-function npmls() {
-  npm list --depth=0 "$1" 2>/dev/null
-}
 
 # Archive / unarchive
 function archive() {
@@ -93,8 +43,6 @@ function unarchive() {
 }
 
 # Network
-alias dig="dig @8.8.8.8"
-alias flushdns="sudo killall -HUP mDNSResponder"
 function ipinfo() { curl "https://ipinfo.io/$1"; }
 
 # Show all ip addresses
@@ -158,34 +106,6 @@ function ssh-proxy() {
   ssh -qNC -D "$LOCAL_PORT" "$CONN"
 }
 
-# AWS KMS Encrypt and Decrypt
-function kms-encrypt() {
-  if [[ -z "$1" ]]; then
-    printf '\nUsage:\n\tkms-encrypt <PLAINTEXT> <CONTEXT> <KEY> <PROFILE>\n\n'
-    return
-  fi
-
-  aws kms encrypt \
-  --cli-binary-format raw-in-base64-out \
-  --plaintext "$1" \
-  --encryption-context "$2" \
-  --key-id "$3" \
-  --profile "$4" \
-  | jq -r ".CiphertextBlob"
-}
-
-function kms-decrypt() {
-  if [[ -z "$1" ]]; then
-    printf '\nUsage:\n\tkms-decrypt <CIPHERTEXT> <CONTEXT> <PROFILE>\n\n'
-    return
-  fi
-  aws kms decrypt \
-  --ciphertext-blob fileb://<(echo "$1" | base64 -D) \
-  --encryption-context "$2" \
-  --profile "$3" \
-  | jq -r ".Plaintext"
-}
-
 function generate-random-password() {
   openssl rand -base64 32 | tr -d "=+/" | cut -c1-32
 }
@@ -206,9 +126,4 @@ qrsvg () {
   local input="$*"
   [ -z "$input" ] && local input="@/dev/stdin"
   curl -d "${input}" https://qrcode.show -H "Accept: image/svg+xml"
-}
-
-function restart_touchbar() {
-  sudo pkill TouchBarServer
-  sudo killall "ControlStrip"
 }
