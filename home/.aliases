@@ -16,6 +16,7 @@ alias reloadzsh=zshreload
 alias speed="networkQuality"
 alias cage="tmux new -A -s cage"
 alias pip-clean="pip freeze | xargs pip uninstall -y"
+alias venv="python -m venv .venv"
 
 # Random
 alias server='python -m http.server --bind 0.0.0.0'
@@ -33,7 +34,7 @@ function gi() { curl "https://www.toptal.com/developers/gitignore/api/$1"; }
 
 # Archive / unarchive
 function archive() {
-  tar -cvzf "arhive.tar.gz" "$@"
+  tar -cvzf "$1.tar.gz" "$@"
 }
 function archive-ls() {
   tar -tvf "$@"

@@ -1,3 +1,6 @@
+# homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # starship
 eval "$(starship init zsh)"
 
@@ -11,9 +14,9 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' menu yes select
 
 # zsh plugins
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "$HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "$HOMEBREW_PREFIX/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
 
 # history search
 bindkey '^[[A' history-substring-search-up
@@ -26,12 +29,6 @@ export LANG=en_US.UTF-8
 # Default editor
 export EDITOR='code --wait'
 export VISUAL='code --wait'
-
-# homebrew
-export PATH="/usr/local/sbin:$PATH"
-
-# Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
 
 # Postgres.app
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"

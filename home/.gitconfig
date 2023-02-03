@@ -1,7 +1,6 @@
 [user]
 	name = Giovanni Collazo
 	email = hello@gcollazo.com
-	signingkey = 667943DBEB506A58398A271567AD84AADCD30968
 
 [core]
   quotepath = false
@@ -18,7 +17,7 @@
   pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
 
 [credential]
-	helper = osxkeychain
+	helper = /usr/local/share/gcm-core/git-credential-manager
 
 [alias]
   a = add
@@ -33,5 +32,6 @@
   p = pull
   s = status
   w = whatchanged
+
 [init]
 	defaultBranch = main
