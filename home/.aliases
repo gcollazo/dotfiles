@@ -12,7 +12,6 @@ alias v="code ."
 alias tree="exa --tree --git-ignore --ignore-glob='.git'"
 alias zshconfig="code ~/.zshrc"
 alias zshreload="source ~/.zshrc"
-alias reloadzsh=zshreload
 alias speed="networkQuality"
 alias cage="tmux new -A -s cage"
 alias pip-clean="pip freeze | xargs pip uninstall -y"
