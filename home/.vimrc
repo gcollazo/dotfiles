@@ -1,13 +1,3 @@
-""""""""""""""""""""""""""""""
-" => Plugins
-""""""""""""""""""""""""""""""
-call plug#begin()
-
-Plug 'preservim/nerdtree'
-
-call plug#end()
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -43,11 +33,7 @@ nmap <leader>w :w!<cr>
 
 " Display line numbers
 set number
-set numberwidth=5
 set number relativenumber
-
-" 80 char ruler
-set colorcolumn=100
 
 " Scroll spacing
 set scrolloff=8
@@ -71,7 +57,7 @@ set incsearch
 set showmatch
 
 " Enable mouse
-" set mouse=a
+set mouse=a
 
 " Make backspace work like most other apps
 set backspace=2
@@ -95,9 +81,9 @@ set splitright
 syntax on
 
 " Color
-colorscheme lunaperche
+set termguicolors
+colorscheme habamax
 set background=dark
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo

@@ -16,9 +16,5 @@ echo "Installing Python..."
 pyenv install 3.11.1
 pyenv global 3.11.1
 
-# Configure keyboard
-defaults write -g InitialKeyRepeat -int 10
-defaults write -g KeyRepeat -int 1
-
 echo
 echo "==> Done!"
