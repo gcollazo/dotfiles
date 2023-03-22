@@ -19,6 +19,7 @@ alias venv="python -m venv .venv"
 
 # Random
 alias server='python -m http.server --bind 0.0.0.0'
+alias ports='lsof -nP -iUDP -iTCP'
 
 # System
 alias update='sudo softwareupdate --install --all --verbose'
