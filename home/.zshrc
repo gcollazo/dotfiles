@@ -56,5 +56,10 @@ export NVM_DIR="$HOME/.nvm"
 # Docker Desktop
 source "$HOME/.docker/init-zsh.sh" || true
 
+# AWSume alias to source the AWSume script / Auto-Complete function for AWSume
+alias awsume="source \$(pyenv which awsume)"
+fpath=(~/.awsume/zsh-autocomplete/ $fpath)
+
 # Aliases
 source "$HOME/.aliases"
+
