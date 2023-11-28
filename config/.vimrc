@@ -136,10 +136,3 @@ autocmd BufWritePre *.* :%s/\s\+$//e
 
 " Always show the status line
 set laststatus=2
-
-
-""""""""""""""""""""""""""""""
-" => Remap Keys
-""""""""""""""""""""""""""""""
-nnoremap <leader>n :NERDTreeToggle<CR>
-

@@ -27,8 +27,8 @@ export HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE='true'
 export LANG=en_US.UTF-8
 
 # Default editor
-export EDITOR='code --wait'
-export VISUAL='code --wait'
+export EDITOR='vim'
+export VISUAL='vim'
 
 # Postgres.app
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
@@ -37,9 +37,6 @@ export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-
-# Poetry
-export PATH="$HOME/.local/bin:$PATH"
 
 # go
 export GOPATH="$HOME/Developer/go"
@@ -53,13 +50,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Docker Desktop
-source "$HOME/.docker/init-zsh.sh" || true
-
 # AWSume alias to source the AWSume script / Auto-Complete function for AWSume
 alias awsume="source \$(pyenv which awsume)"
 fpath=(~/.awsume/zsh-autocomplete/ $fpath)
 
 # Aliases
-source "$HOME/.aliases"
-
+source "$HOME/Developer/dotfiles/aliases.sh"
