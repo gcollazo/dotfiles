@@ -6,6 +6,15 @@ set -euf -o pipefail
 
 echo "==> Bootstrapping..."
 
+echo "Updating macOS..."
+sudo softwareupdate --install --all --verbose
+
+echo "Installing Xcode command line tools..."
+touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+CMD_LINE_TOOLS=$(softwareupdate -l | grep "\*.*Command Line" | tail -n 1 | awk -F"*" '{print $2}' | sed -e 's/^ *//' | tr -d '\n')
+sudo softwareupdate -i "$CMD_LINE_TOOLS" --verbose
+rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+
 echo "Clonning dotfiles repo..."
 mkdir -p "$HOME/Developer"
 cd "$HOME/Developer" || exit
@@ -19,15 +28,6 @@ ln -sf "$HOME/Developer/dotfiles/config/.hushlogin" "$HOME/.hushlogin"
 ln -sf "$HOME/Developer/dotfiles/config/.tmux.conf" "$HOME/.tmux.conf"
 ln -sf "$HOME/Developer/dotfiles/config/.vimrc" "$HOME/.vimrc"
 ln -sf "$HOME/Developer/dotfiles/config/.zshrc" "$HOME/.zshrc"
-
-echo "Updating macOS..."
-sudo softwareupdate --install --all --verbose
-
-echo "Installing Xcode command line tools..."
-touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
-CMD_LINE_TOOLS=$(softwareupdate -l | grep "\*.*Command Line" | tail -n 1 | awk -F"*" '{print $2}' | sed -e 's/^ *//' | tr -d '\n')
-sudo softwareupdate -i "$CMD_LINE_TOOLS" --verbose
-rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
 
 # Defaults
 echo "Setting macOS defaults..."
