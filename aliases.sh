@@ -18,6 +18,7 @@ alias pip-clean="pip freeze | xargs pip uninstall -y"
 alias venv="python -m venv .venv"
 alias lift="mosh lift1 -- tmux a"
 alias hip1="mosh hip1 -- tmux a"
+alias aliasconfig="vim ~/Developer/dotfiles/aliases.sh"
 
 # Random
 alias server='python -m http.server --bind 0.0.0.0'
