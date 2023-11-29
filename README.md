@@ -3,7 +3,7 @@
 ### Install
 
 ```bash
-curl -o- https://raw.githubusercontent.com/gcollazo/dotfiles/main/bootstrap.sh | bash
+sudo curl -o- https://raw.githubusercontent.com/gcollazo/dotfiles/main/bootstrap.sh | bash
 ```
 
 ## Manual Installs
