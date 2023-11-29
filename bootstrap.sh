@@ -45,6 +45,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 echo "==> Installing software"
 
 echo "Installing Homebrew..."
+sudo
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo "Installing homebrew packages..."
