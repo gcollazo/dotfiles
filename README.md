@@ -3,6 +3,8 @@
 ### Install
 
 ```bash
+xcode-select --install
+
 sudo curl -o- https://raw.githubusercontent.com/gcollazo/dotfiles/main/bootstrap.sh | bash
 ```
 
