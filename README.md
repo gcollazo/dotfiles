@@ -4,7 +4,9 @@
 
 ```bash
 xcode-select --install
+```
 
+```bash
 sudo curl -o- https://raw.githubusercontent.com/gcollazo/dotfiles/main/bootstrap.sh | bash
 ```
 
