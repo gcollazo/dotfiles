@@ -6,14 +6,11 @@ set -euf -o pipefail
 
 echo "==> Bootstrapping..."
 
-echo "Updating macOS..."
-sudo softwareupdate --install --all --verbose
-
-echo "Installing Xcode command line tools..."
-touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
-CMD_LINE_TOOLS=$(softwareupdate -l | grep "\*.*Command Line" | tail -n 1 | awk -F"*" '{print $2}' | sed -e 's/^ *//' | tr -d '\n')
-sudo softwareupdate -i "$CMD_LINE_TOOLS" --verbose
-rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+# Check if git is installed
+if ! command -v git >/dev/null; then
+  echo "Git is not installed. Please install git first. xcode-select --install"
+  exit 1
+fi
 
 echo "Clonning dotfiles repo..."
 mkdir -p "$HOME/Developer"
