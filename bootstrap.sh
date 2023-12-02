@@ -46,7 +46,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 echo "==> Installing software"
 
 echo "Installing Homebrew..."
-NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "Installing homebrew packages..."
@@ -63,5 +63,7 @@ ln -sf "$HOME/Developer/dotfiles/config/.zshrc" "$HOME/.zshrc"
 
 # Accept Xcode license
 sudo xcodebuild -license accept
+
+echo "Logout to make sure all changes are applied."
 
 echo "🎉 Done!"
