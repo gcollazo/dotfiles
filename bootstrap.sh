@@ -38,7 +38,6 @@ echo "==> Installing software"
 
 echo "Installing Homebrew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-source "$HOME/.zshrc" || true
 
 echo "Installing homebrew packages..."
 brew tap Homebrew/bundle
