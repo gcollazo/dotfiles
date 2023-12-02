@@ -3,7 +3,7 @@
 ### Bootstrap
 
 ```bash
-sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/gcollazo/dotfiles/main/bootstrap.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/gcollazo/dotfiles/main/bootstrap.sh)"
 ```
 
 ## Manual Installs
