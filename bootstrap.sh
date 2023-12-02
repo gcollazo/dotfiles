@@ -18,14 +18,6 @@ cd "$HOME/Developer" || exit
 git clone https://github.com/gcollazo/dotfiles.git
 cd dotfiles || exit
 
-# Symlinks
-echo "Creating symlinks..."
-ln -sf "$HOME/Developer/dotfiles/config/.gitconfig" "$HOME/.gitconfig"
-ln -sf "$HOME/Developer/dotfiles/config/.hushlogin" "$HOME/.hushlogin"
-ln -sf "$HOME/Developer/dotfiles/config/.tmux.conf" "$HOME/.tmux.conf"
-ln -sf "$HOME/Developer/dotfiles/config/.vimrc" "$HOME/.vimrc"
-ln -sf "$HOME/Developer/dotfiles/config/.zshrc" "$HOME/.zshrc"
-
 # Defaults
 echo "Setting macOS defaults..."
 
@@ -51,6 +43,14 @@ source "$HOME/.zshrc" || true
 echo "Installing homebrew packages..."
 brew tap Homebrew/bundle
 brew bundle
+
+# Symlinks
+echo "Creating symlinks..."
+ln -sf "$HOME/Developer/dotfiles/config/.gitconfig" "$HOME/.gitconfig"
+ln -sf "$HOME/Developer/dotfiles/config/.hushlogin" "$HOME/.hushlogin"
+ln -sf "$HOME/Developer/dotfiles/config/.tmux.conf" "$HOME/.tmux.conf"
+ln -sf "$HOME/Developer/dotfiles/config/.vimrc" "$HOME/.vimrc"
+ln -sf "$HOME/Developer/dotfiles/config/.zshrc" "$HOME/.zshrc"
 
 # Accept Xcode license
 sudo xcodebuild -license accept
