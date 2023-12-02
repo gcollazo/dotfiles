@@ -7,8 +7,7 @@ set -euf -o pipefail
 echo "==> Bootstrapping..."
 
 # Only run if the tools are not installed yet
-xcode-select -p &> /dev/null
-if [ $? -ne 0 ]; then
+if ! xcode-select -p &> /dev/null; then
   echo "Xcode CLI tools not found. Installing..."
   in_progress=/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
   touch ${in_progress}
