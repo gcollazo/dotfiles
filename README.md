@@ -1,13 +1,9 @@
 # dotfiles
 
-### Install
+### Bootstrap
 
 ```bash
-xcode-select --install
-```
-
-```bash
-sudo curl -o- https://raw.githubusercontent.com/gcollazo/dotfiles/main/bootstrap.sh | bash
+sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/gcollazo/dotfiles/main/bootstrap.sh)"
 ```
 
 ## Manual Installs
