@@ -42,7 +42,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "Installing homebrew packages..."
 brew tap Homebrew/bundle
-brew bundle
+brew bundle || true
 
 # Symlinks
 echo "Creating symlinks..."
