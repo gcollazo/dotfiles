@@ -18,6 +18,7 @@ alias pip-clean="pip freeze | xargs pip uninstall -y"
 alias venv="python -m venv .venv"
 alias lift="mosh lift1 -- tmux a"
 alias hip1="mosh hip1 -- tmux a"
+alias ssm="mosh qa-ssm-lift -- tmux a"
 alias aliasconfig="vim ~/Developer/dotfiles/aliases.sh"
 
 # Random
@@ -47,6 +48,9 @@ function archive-ls() {
 }
 function unarchive() {
   tar -xvf "$@"
+}
+function zip-password() {
+  zip -er "$1.zip" "$1"
 }
 
 # Network

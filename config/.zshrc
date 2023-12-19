@@ -38,6 +38,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# force pip to use virtualenv
+export PIP_REQUIRE_VIRTUALENV=true
+
 # go
 export GOPATH="$HOME/Developer/go"
 export PATH="$GOPATH/bin:$PATH"
@@ -56,3 +59,6 @@ fpath=(~/.awsume/zsh-autocomplete/ $fpath)
 
 # Aliases
 source "$HOME/Developer/dotfiles/aliases.sh"
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
