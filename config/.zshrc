@@ -62,3 +62,5 @@ source "$HOME/Developer/dotfiles/aliases.sh"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+bindkey -e
