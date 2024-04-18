@@ -13,12 +13,8 @@ alias tree="exa --tree --git-ignore --ignore-glob='.git'"
 alias zshconfig="vim ~/.zshrc"
 alias zshreload="source ~/.zshrc"
 alias speed="networkQuality -v"
-alias cage="tmux new -A -s cage"
 alias pip-clean="pip freeze | xargs pip uninstall -y"
 alias venv="python -m venv .venv"
-alias lift="mosh lift1 -- tmux a"
-alias hip1="mosh hip1 -- tmux a"
-alias ssm="mosh qa-ssm-lift -- tmux a"
 alias aliasconfig="vim ~/Developer/dotfiles/aliases.sh"
 
 # Random
@@ -37,11 +33,12 @@ alias gbranches='git branch -a'
 function gi() { curl "https://www.toptal.com/developers/gitignore/api/$1"; }
 
 # appsec
+function zap() { docker run -t ghcr.io/zaproxy/zaproxy zap-full-scan.py -t "$@"; }
 function gobuster() { docker run --name gobuster --rm -v "$HOME/AppSec/wordlists:/wordlists" ghcr.io/oj/gobuster "$@"; }
 
 # Archive / unarchive
 function archive() {
-  tar -cvzf "$1.tar.gz" "$@"
+  tar --zstd -cf "$1.tar.zst" "$@"
 }
 function archive-ls() {
   tar -tvf "$@"

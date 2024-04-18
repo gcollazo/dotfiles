@@ -34,6 +34,7 @@ cask "docker"
 cask "downie"
 cask "font-iosevka"
 cask "forecast"
+cask "fzf"
 cask "git-credential-manager"
 cask "gpg-suite"
 cask "grandperspective"
@@ -63,6 +64,7 @@ cask "visual-studio-code"
 cask "whatsapp"
 cask "yubico-authenticator"
 cask "zap"
+cask "zstd"
 
 mas "Channels for HDHomeRun!", id: 1117689474
 mas "Core Data Lab", id: 1460684638
