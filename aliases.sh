@@ -6,7 +6,7 @@ alias a="cd ~/AppSec"
 alias d="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 alias h="cd ~/"
-alias ls="exa --long --header --git --all --time-style=long-iso"
+alias ls="ls -lah"
 alias o="open ."
 alias v="code ."
 alias tree="exa --tree --git-ignore --ignore-glob='.git'"
@@ -16,6 +16,9 @@ alias speed="networkQuality -v"
 alias pip-clean="pip freeze | xargs pip uninstall -y"
 alias venv="python -m venv .venv"
 alias aliasconfig="vim ~/Developer/dotfiles/aliases.sh"
+alias sshconfig="vim ~/.ssh/config"
+alias secretsconfig="vim ~/Developer/dotfiles/secrets.sh"
+alias hostsconfig="sudo vim /etc/hosts"
 
 # Random
 alias server='python -m http.server --bind 0.0.0.0'

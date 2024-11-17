@@ -88,3 +88,6 @@ fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 bindkey -e
+
+# Created by `pipx` on 2024-10-04 16:34:37
+export PATH="$PATH:/Users/gcollazo/.local/bin"

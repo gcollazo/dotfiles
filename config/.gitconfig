@@ -1,6 +1,7 @@
 [user]
 	name = Giovanni Collazo
 	email = hello@gcollazo.com
+	signingkey = /Users/gcollazo/.ssh/gcollazo-ed25519.pub
 
 [core]
   quotepath = false
@@ -15,9 +16,6 @@
 
 [format]
   pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
-
-[credential]
-	helper = /usr/local/share/gcm-core/git-credential-manager
 
 [alias]
   a = add
@@ -41,3 +39,19 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+[credential "https://git.heroku.com"]
+	provider = generic
+
+[credential]
+	helper =
+	helper = /usr/local/share/gcm-core/git-credential-manager
+
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+
+[gpg]
+	format = ssh
+
+[commit]
+	gpgsign = true
