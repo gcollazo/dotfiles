@@ -35,9 +35,36 @@ alias gpush='git push origin $(git rev-parse --abbrev-ref HEAD)'
 alias gbranches='git branch -a'
 function gi() { curl "https://www.toptal.com/developers/gitignore/api/$1"; }
 
-# appsec
-function zap() { docker run -t ghcr.io/zaproxy/zaproxy zap-full-scan.py -t "$@"; }
-function gobuster() { docker run --name gobuster --rm -v "$HOME/AppSec/wordlists:/wordlists" ghcr.io/oj/gobuster "$@"; }
+# ZAP Baseline Scan: Runs OWASP ZAP baseline scan against a target URL
+zap() {
+    docker run -v "$(pwd):/zap/wrk/:rw" -t ghcr.io/zaproxy/zaproxy:stable zap-baseline.py -t "$@" -r "zap_$(date +%s).html"
+}
+
+# Gobuster: Directory and DNS enumeration using wordlists
+gobuster() {
+    docker run --rm -it -v "$(pwd):/workspace" -v "$HOME/Developer/appsec/wordlists:/wordlists" ghcr.io/oj/gobuster  "$@" -o "/workspace/gobuster_$(date +%s).txt"
+}
+
+# BBOT: Automated reconnaissance framework
+bbot() {
+    docker run --rm -it -v "$HOME/.bbot:/root/.bbot" -v "$HOME/.config/bbot:/root/.config/bbot" blacklanternsecurity/bbot:stable "$@"
+}
+
+# Fast Scan: Scan only the most popular 1,000 ports with Unix timestamp in the filename
+nmap_fast() {
+    # -Pn: Treats all hosts as up (skips ICMP ping check, useful for firewalled hosts)
+    # -T4: Aggressive timing template for faster scans
+    # --top-ports 1000: Scans the 1,000 most popular ports
+    # --open: Only displays open ports in the output
+    nmap -Pn -T4 --top-ports 1000 --open -oN "fast_scan_$(date +%s).txt" --stats-every 5s "$1"
+}
+
+# Vulnerability Scan with NSE Scripts
+nmap_vuln() {
+    # --script=vuln: Runs Nmap's vulnerability detection scripts (e.g., CVEs, misconfigurations)
+    # -p 80,443: Targets common web application ports (HTTP and HTTPS)
+    nmap --script=vuln -p 80,443 -oN "vuln_scan_$(date +%s).txt" --stats-every 5s "$1"
+}
 
 # Archive / unarchive
 function archive() {

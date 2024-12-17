@@ -1,7 +1,16 @@
 [user]
 	name = Giovanni Collazo
 	email = hello@gcollazo.com
-	signingkey = /Users/gcollazo/.ssh/gcollazo-ed25519.pub
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHEGF4BrP2CfWXh15ovNz/TyAOQNPGDpdICNarfvPo37
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
 
 [core]
   quotepath = false
@@ -49,9 +58,3 @@
 
 [credential "https://dev.azure.com"]
 	useHttpPath = true
-
-[gpg]
-	format = ssh
-
-[commit]
-	gpgsign = true
