@@ -1,0 +1,10 @@
+font-family = CaskaydiaCove Nerd Font Mono
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
+font-size = 16
+macos-auto-secure-input = true
+shell-integration = zsh
+theme = Argonaut
+window-padding-x = 8
+working-directory = /Users/gcollazo/Developer

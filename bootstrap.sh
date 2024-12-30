@@ -60,6 +60,7 @@ ln -sf "$HOME/Developer/dotfiles/config/.hushlogin" "$HOME/.hushlogin"
 ln -sf "$HOME/Developer/dotfiles/config/.tmux.conf" "$HOME/.tmux.conf"
 ln -sf "$HOME/Developer/dotfiles/config/.vimrc" "$HOME/.vimrc"
 ln -sf "$HOME/Developer/dotfiles/config/.zshrc" "$HOME/.zshrc"
+ln -sf "$HOME/Developer/dotfiles/config/ghostty" "$HOME/.config/ghostty/config"
 
 # Accept Xcode license
 sudo xcodebuild -license accept
