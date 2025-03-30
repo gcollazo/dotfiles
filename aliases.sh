@@ -6,9 +6,10 @@ alias a="cd ~/AppSec"
 alias d="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 alias h="cd ~/"
-alias ls="eza --long --icons --all --ignore-glob='.DS_Store'"
+alias ls="eza --header --long --icons --all --ignore-glob='.DS_Store'"
 alias o="open ."
 alias v="code ."
+alias g="git"
 alias tree="eza --icons --all --tree --git-ignore --ignore-glob='.git|.venv|.DS_Store'"
 alias zshconfig="vim ~/.zshrc"
 alias zshreload="source ~/.zshrc"
@@ -37,7 +38,7 @@ function gi() { curl "https://www.toptal.com/developers/gitignore/api/$1"; }
 
 # ZAP Baseline Scan: Runs OWASP ZAP baseline scan against a target URL
 zap() {
-    docker run -v "$(pwd):/zap/wrk/:rw" -t ghcr.io/zaproxy/zaproxy:stable zap-baseline.py -t "$@" -r "zap_$(date +%s).html"
+    docker run -v "$(pwd):/zap/wrk/:rw" -t ghcr.io/zaproxy/zaproxy:stable zap-baseline.py -t "$@" -l PASS -r "zap_$(date +%s).html"
 }
 
 # Gobuster: Directory and DNS enumeration using wordlists
