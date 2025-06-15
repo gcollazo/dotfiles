@@ -1,3 +1,7 @@
+if test -f ~/Developer/dotfiles/secrets.sh
+  source ~/Developer/dotfiles/secrets.sh
+end
+
 # Aliases
 alias c="cd ~/Developer"
 alias a="cd ~/AppSec"
@@ -118,6 +122,32 @@ function zap
     docker run -v (pwd):/zap/wrk/:rw -t ghcr.io/zaproxy/zaproxy:stable zap-baseline.py -t $argv -l PASS -r "zap_"(date +%s)".html"
 end
 
+function pihole-status
+  echo "$NS1:"
+  ssh admin@$NS1 docker compose --file /home/admin/pihole/compose.yml exec pihole pihole status
+
+  echo ""
+
+  echo "$NS2:"
+  ssh admin@$NS2 pihole status
+end
+
+
+function pihole-disable
+  ssh admin@$NS1 docker compose --file /home/admin/pihole/compose.yml exec pihole pihole disable
+  ssh admin@$NS2 sudo pihole disable
+  echo ""
+  pihole-status
+end
+
+function pihole-enable
+  ssh admin@$NS1 docker compose --file /home/admin/pihole/compose.yml exec pihole pihole enable
+  ssh admin@$NS2 sudo pihole enable
+  echo ""
+  pihole-status
+end
+
+
 # reset greeting
 function fish_greeting
 end
@@ -136,10 +166,6 @@ export GOPATH="$HOME/Developer/go"
 # fnm node version manager
 eval $(fnm env)
 
-if test -f ~/Developer/dotfiles/secrets.sh
-  source ~/Developer/dotfiles/secrets.sh
-end
-
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
@@ -147,3 +173,8 @@ source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+set --export PATH "/Users/gcollazo/Developer/default/flutter/bin" $PATH
+set --export PATH "/Users/gcollazo/Developer/personal/scripts" $PATH
+set --export PATH "/Applications/Postgres.app/Contents/Versions/17/bin" $PATH
+source ~/.config/op/plugins.sh
+alias claude="/Users/gcollazo/.claude/local/claude"
