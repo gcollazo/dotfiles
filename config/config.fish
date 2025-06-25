@@ -26,6 +26,16 @@ alias cfg_secrets="vim ~/Developer/dotfiles/secrets.sh"
 alias cfg_hosts="sudo vim /etc/hosts"
 alias cfg_fish="vim ~/.config/fish/config.fish"
 
+# k8s
+alias k="kubectl"
+alias kgp="kubectl get pods"
+alias kgs="kubectl get services"
+alias kgd="kubectl get deployments"
+alias kga="kubectl get all"
+alias kdp="kubectl describe pod"
+alias kaf="kubectl apply -f"
+alias kdf="kubectl delete -f"
+
 # Random
 alias server='python -m http.server --bind 0.0.0.0'
 alias ports='lsof -nP -iUDP -iTCP'

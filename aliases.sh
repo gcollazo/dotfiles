@@ -21,6 +21,15 @@ alias sshconfig="vim ~/.ssh/config"
 alias secretsconfig="vim ~/Developer/dotfiles/secrets.sh"
 alias hostsconfig="sudo vim /etc/hosts"
 
+# k8s
+alias k="kubectl"
+alias kgp="kubectl get pods"
+alias kgs="kubectl get services"
+alias kgd="kubectl get deployments"
+alias kdp="kubectl describe pod"
+alias kaf="kubectl apply -f"
+alias kdf="kubectl delete -f"
+
 # Random
 alias server='python -m http.server --bind 0.0.0.0'
 alias ports='lsof -nP -iUDP -iTCP'
