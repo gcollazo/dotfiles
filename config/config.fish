@@ -50,6 +50,7 @@ alias gpull='git pull --rebase origin (git rev-parse --abbrev-ref HEAD)'
 alias gpush='git push origin (git rev-parse --abbrev-ref HEAD)'
 alias gbranches='git branch -a'
 
+
 function gi
   curl "https://www.toptal.com/developers/gitignore/api/$argv[1]"
 end
@@ -157,7 +158,6 @@ function pihole-enable
   pihole-status
 end
 
-
 # reset greeting
 function fish_greeting
 end
@@ -187,4 +187,15 @@ set --export PATH "/Users/gcollazo/Developer/default/flutter/bin" $PATH
 set --export PATH "/Users/gcollazo/Developer/personal/scripts" $PATH
 set --export PATH "/Applications/Postgres.app/Contents/Versions/17/bin" $PATH
 source ~/.config/op/plugins.sh
+
+# pnpm
+set -gx PNPM_HOME "/Users/gcollazo/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
+
 alias claude="/Users/gcollazo/.claude/local/claude"
+
+# opencode
+fish_add_path /Users/gcollazo/.opencode/bin
