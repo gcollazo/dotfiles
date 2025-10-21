@@ -167,7 +167,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 starship init fish | source
 source /Users/gcollazo/.docker/init-fish.sh || true # Added by Docker Desktop
 
-pyenv init - fish | source
 export PIP_REQUIRE_VIRTUALENV=true
 export XDG_CONFIG_HOME=$HOME/.config
 
@@ -199,3 +198,8 @@ alias claude="/Users/gcollazo/.claude/local/claude"
 
 # opencode
 fish_add_path /Users/gcollazo/.opencode/bin
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/gcollazo/.lmstudio/bin
+# End of LM Studio CLI section
+

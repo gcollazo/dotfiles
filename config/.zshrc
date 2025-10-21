@@ -96,3 +96,8 @@ export PATH=$HOME/Developer/default/flutter/bin:$PATH
 
 export XDG_CONFIG_HOME=$HOME/.config
 
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/gcollazo/.lmstudio/bin"
+# End of LM Studio CLI section
+
