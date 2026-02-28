@@ -1,10 +1,9 @@
-font-family = CaskaydiaCove Nerd Font Mono
+font-family = Iosevka Term
 font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
 font-size = 16
 shell-integration = fish
-theme = Argonaut
-window-padding-x = 8
 working-directory = /Users/gcollazo/Developer
 keybind = shift+enter=text:\n
+theme = TokyoNight Night

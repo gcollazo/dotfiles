@@ -101,3 +101,4 @@ export XDG_CONFIG_HOME=$HOME/.config
 export PATH="$PATH:/Users/gcollazo/.lmstudio/bin"
 # End of LM Studio CLI section
 
+export PATH=$PATH:$HOME/.maestro/bin

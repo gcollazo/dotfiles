@@ -8,12 +8,14 @@ alias a="cd ~/AppSec"
 alias d="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 alias h="cd ~/"
-alias ls="eza --header --long --icons --all --ignore-glob='.DS_Store'"
+alias ls="eza --header --long --icons --all --git --ignore-glob='.DS_Store'"
+alias lsimg="fzf --preview 'chafa -f kitty {}'"
 alias o="open ."
-alias v="code ."
+alias vs="code ."
 alias ws="open -na 'WebStorm.app' --args $1"
 alias pc="open -na 'PyCharm.app' --args $1"
 alias gl="open -na 'GoLand.app' --args $1"
+alias rr="open -na 'RustRover.app' --args $1"
 alias g="git"
 alias tree="eza --icons --all --tree --git-ignore --ignore-glob='.git|.venv|.DS_Store'"
 alias speed="networkQuality -v"
@@ -37,7 +39,7 @@ alias kaf="kubectl apply -f"
 alias kdf="kubectl delete -f"
 
 # Random
-alias server='python -m http.server --bind 0.0.0.0'
+alias server='uvx python -m http.server --bind 0.0.0.0'
 alias ports='lsof -nP -iUDP -iTCP'
 
 # System
@@ -50,6 +52,14 @@ alias gpull='git pull --rebase origin (git rev-parse --abbrev-ref HEAD)'
 alias gpush='git push origin (git rev-parse --abbrev-ref HEAD)'
 alias gbranches='git branch -a'
 
+alias jjs='jj st'
+alias jjl='jj log -r "all()" --limit 20'
+alias jjf='jj git fetch'
+alias jjp='jj git push'
+
+alias servers-ping='ansible all -m ping -i ~/Developer/personal/local-network/inventory.ini'
+alias servers-status='ansible all -m shell -a "uptime" -i ~/Developer/personal/local-network/inventory.ini'
+alias servers-update='ansible-playbook -i ~/Developer/personal/local-network/inventory.ini ~/Developer/personal/local-network/update-servers.yml'
 
 function gi
   curl "https://www.toptal.com/developers/gitignore/api/$argv[1]"
@@ -194,7 +204,6 @@ if not string match -q -- $PNPM_HOME $PATH
 end
 # pnpm end
 
-alias claude="/Users/gcollazo/.claude/local/claude"
 
 # opencode
 fish_add_path /Users/gcollazo/.opencode/bin
@@ -202,4 +211,10 @@ fish_add_path /Users/gcollazo/.opencode/bin
 # Added by LM Studio CLI (lms)
 set -gx PATH $PATH /Users/gcollazo/.lmstudio/bin
 # End of LM Studio CLI section
+
+fzf --fish | source
+
+export JAVA_HOME="$HOME/Applications/Android Studio.app/Contents/jbr/Contents/Home"
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
 
