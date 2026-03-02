@@ -12,8 +12,8 @@
 # ==============================================================================
 
 # Load secrets and sensitive environment variables
-if test -f ~/Developer/dotfiles/secrets.sh
-  source ~/Developer/dotfiles/secrets.sh
+if test -f ~/Developer/dotfiles/secrets.fish
+  source ~/Developer/dotfiles/secrets.fish
 end
 
 
@@ -22,20 +22,20 @@ end
 # ==============================================================================
 
 # Python - Require virtual environments for pip installations
-export PIP_REQUIRE_VIRTUALENV=true
+set -gx PIP_REQUIRE_VIRTUALENV true
 
 # XDG Base Directory
-export XDG_CONFIG_HOME=$HOME/.config
+set -gx XDG_CONFIG_HOME $HOME/.config
 
 # Go language
-export GOPATH="$HOME/Developer/go"
+set -gx GOPATH "$HOME/Developer/go"
 
 # Java - Android Studio JDK
-export JAVA_HOME="$HOME/Applications/Android Studio.app/Contents/jbr/Contents/Home"
+set -gx JAVA_HOME "$HOME/Applications/Android Studio.app/Contents/jbr/Contents/Home"
 
 # Android SDK
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-export ANDROID_SDK_ROOT="$ANDROID_HOME"
+set -gx ANDROID_HOME "$HOME/Library/Android/sdk"
+set -gx ANDROID_SDK_ROOT $ANDROID_HOME
 
 
 # ==============================================================================
@@ -43,26 +43,24 @@ export ANDROID_SDK_ROOT="$ANDROID_HOME"
 # ==============================================================================
 
 # Bun JavaScript runtime
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
+set -gx BUN_INSTALL "$HOME/.bun"
+fish_add_path $BUN_INSTALL/bin
 
 # Flutter SDK
-set --export PATH "/Users/gcollazo/Developer/default/flutter/bin" $PATH
+fish_add_path $HOME/Developer/default/flutter/bin
 
 # Personal scripts
-set --export PATH "/Users/gcollazo/Developer/personal/scripts" $PATH
+fish_add_path $HOME/Developer/personal/scripts
 
 # PostgreSQL
-set --export PATH "/Applications/Postgres.app/Contents/Versions/17/bin" $PATH
+fish_add_path /Applications/Postgres.app/Contents/Versions/17/bin
 
 # pnpm - Node package manager
-set -gx PNPM_HOME "/Users/gcollazo/Library/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
-end
+set -gx PNPM_HOME "$HOME/Library/pnpm"
+fish_add_path $PNPM_HOME
 
 # OpenCode
-fish_add_path /Users/gcollazo/.opencode/bin
+fish_add_path $HOME/.opencode/bin
 
 
 # ==============================================================================
@@ -79,7 +77,7 @@ starship init fish | source
 source /Users/gcollazo/.docker/init-fish.sh || true
 
 # fnm - Fast Node Manager
-eval $(fnm env)
+fnm env --shell fish | source
 
 # OrbStack - Docker/Linux alternative
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
@@ -91,97 +89,96 @@ source ~/.config/op/plugins.sh
 fzf --fish | source
 
 # Disable fish greeting message
-function fish_greeting
-end
+set -g fish_greeting
 
 
 # ==============================================================================
-# Aliases - Navigation & Directory Shortcuts
+# Abbreviations - Navigation & Directory Shortcuts
 # ==============================================================================
 
-alias c="cd ~/Developer"                # Developer folder
-alias a="cd ~/AppSec"                   # AppSec folder
-alias d="cd ~/Desktop"                  # Desktop
-alias dl="cd ~/Downloads"               # Downloads
-alias h="cd ~/"                         # Home directory
-alias o="open ."                        # Open current directory in Finder
+abbr -a c "cd ~/Developer"                # Developer folder
+abbr -a a "cd ~/AppSec"                   # AppSec folder
+abbr -a d "cd ~/Desktop"                  # Desktop
+abbr -a dl "cd ~/Downloads"               # Downloads
+abbr -a h "cd ~/"                         # Home directory
+abbr -a o "open ."                        # Open current directory in Finder
 
 
 # ==============================================================================
-# Aliases - File Listing & Viewing
+# Abbreviations - File Listing & Viewing
 # ==============================================================================
 
 # Enhanced ls using eza
-alias ls="eza --header --long --icons --all --git --ignore-glob='.DS_Store'"
+abbr -a ls "eza --header --long --icons --all --git --ignore-glob='**/.DS_Store'"
 
 # Tree view with eza
-alias tree="eza --icons --all --tree --git-ignore --ignore-glob='.git|.venv|.DS_Store'"
+abbr -a tree "eza --icons --all --tree --git-ignore --ignore-glob='**/.git|**/.venv|**/.DS_Store'"
 
 # Image preview with fzf
-alias lsimg="fzf --preview 'chafa -f kitty {}'"
+abbr -a lsimg "fzf --preview 'chafa -f kitty {}'"
 
 
 # ==============================================================================
-# Aliases - Editor Shortcuts
+# Abbreviations - Editor Shortcuts
 # ==============================================================================
 
-alias vs="code ."                                   # VS Code
-alias ws="open -na 'WebStorm.app' --args $1"        # WebStorm
-alias pc="open -na 'PyCharm.app' --args $1"         # PyCharm
-alias gl="open -na 'GoLand.app' --args $1"          # GoLand
-alias rr="open -na 'RustRover.app' --args $1"       # RustRover
-
-
-# ==============================================================================
-# Aliases - Configuration File Shortcuts
-# ==============================================================================
-
-alias cfg_fish="vim ~/.config/fish/config.fish"          # Edit fish config
-alias cfg_alias="vim ~/.config/fish/config.fish"         # Edit fish config (alias)
-alias cfg_reload="source ~/.config/fish/config.fish"     # Reload fish config
-alias cfg_ssh="vim ~/.ssh/config"                        # Edit SSH config
-alias cfg_secrets="vim ~/Developer/dotfiles/secrets.sh"  # Edit secrets
-alias cfg_hosts="sudo vim /etc/hosts"                    # Edit hosts file
+abbr -a vs "code ."                                   # VS Code
+abbr -a ws "open -na 'WebStorm.app' --args"             # WebStorm
+abbr -a pc "open -na 'PyCharm.app' --args"              # PyCharm
+abbr -a gl "open -na 'GoLand.app' --args"               # GoLand
+abbr -a rr "open -na 'RustRover.app' --args"            # RustRover
 
 
 # ==============================================================================
-# Aliases - Git
+# Abbreviations - Configuration File Shortcuts
 # ==============================================================================
 
-alias g="git"                                                               # Git shortcut
-alias gfetch='git fetch --prune --all'                                      # Fetch all and prune
+abbr -a cfg_fish "vim ~/.config/fish/config.fish"          # Edit fish config
+abbr -a cfg_alias "vim ~/.config/fish/config.fish"         # Edit fish config (alias)
+abbr -a cfg_reload "source ~/.config/fish/config.fish"     # Reload fish config
+abbr -a cfg_ssh "vim ~/.ssh/config"                        # Edit SSH config
+abbr -a cfg_secrets "vim ~/Developer/dotfiles/secrets.sh"  # Edit secrets
+abbr -a cfg_hosts "sudo vim /etc/hosts"                    # Edit hosts file
+
+
+# ==============================================================================
+# Abbreviations & Aliases - Git
+# ==============================================================================
+
+abbr -a g git                                                               # Git shortcut
+abbr -a gfetch "git fetch --prune --all"                                    # Fetch all and prune
 alias gpull='git pull --rebase origin (git rev-parse --abbrev-ref HEAD)'   # Pull current branch with rebase
 alias gpush='git push origin (git rev-parse --abbrev-ref HEAD)'            # Push current branch
 alias gsync='gpull && gpush'                                                # Pull and push current branch
-alias gbranches='git branch -a'                                             # List all branches
+abbr -a gbranches "git branch -a"                                           # List all branches
 
 
 # ==============================================================================
-# Aliases - Jujutsu VCS (jj)
+# Abbreviations - Jujutsu VCS (jj)
 # ==============================================================================
 
-alias jjs='jj st'                           # Status
-alias jjl='jj log -r "all()" --limit 20'    # Log (last 20)
-alias jjf='jj git fetch'                    # Fetch
-alias jjp='jj git push'                     # Push
-
-
-# ==============================================================================
-# Aliases - Development Tools
-# ==============================================================================
-
-alias server='uvx python -m http.server --bind 0.0.0.0'  # Start HTTP server
-alias ports='lsof -nP -iUDP -iTCP'                        # List open ports
-alias speed="networkQuality -v"                           # Test network speed
+abbr -a jjs "jj st"                           # Status
+abbr -a jjl 'jj log -r "all()" --limit 20'   # Log (last 20)
+abbr -a jjf "jj git fetch"                    # Fetch
+abbr -a jjp "jj git push"                     # Push
 
 
 # ==============================================================================
-# Aliases - Server Management (Ansible)
+# Abbreviations - Development Tools
 # ==============================================================================
 
-alias servers-ping='ansible all -m ping -i ~/Developer/personal/local-network/inventory.ini'
-alias servers-status='ansible all -m shell -a "uptime" -i ~/Developer/personal/local-network/inventory.ini'
-alias servers-update='ansible-playbook -i ~/Developer/personal/local-network/inventory.ini ~/Developer/personal/local-network/update-servers.yml'
+abbr -a server "uv run python -m http.server --bind 0.0.0.0 0"  # Start HTTP server
+abbr -a ports "lsof -nP -iUDP -iTCP"                            # List open ports
+abbr -a speed "networkQuality -v"                                # Test network speed
+
+
+# ==============================================================================
+# Abbreviations - Server Management (Ansible)
+# ==============================================================================
+
+abbr -a servers-ping "ansible all -m ping -i ~/Developer/personal/local-network/inventory.ini"
+abbr -a servers-status 'ansible all -m shell -a "uptime" -i ~/Developer/personal/local-network/inventory.ini'
+abbr -a servers-update "ansible-playbook -i ~/Developer/personal/local-network/inventory.ini ~/Developer/personal/local-network/update-servers.yml"
 
 
 # ==============================================================================
@@ -202,7 +199,7 @@ end
 # Create compressed archive using zstd
 # Usage: archive myfile.txt
 function archive
-  tar --zstd -cf "$argv[1].tar.zst" $argv
+  tar --zstd -cf "$argv[1].tar.zst" "$argv[1]"
 end
 
 # List contents of archive
